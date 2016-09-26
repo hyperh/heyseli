@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 import styles from './Content.scss';
 
@@ -7,5 +7,9 @@ const Content = ({ children }) => (
     {children}
   </div>
 );
+
+Content.propTypes = {
+  children: PropTypes.object,
+};
 
 export default Content;
