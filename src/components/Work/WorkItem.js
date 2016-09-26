@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import find from 'lodash/fp/find';
 
+import styles from './WorkItem.scss';
 import data from './data';
 
 const WorkItem = ({ params }) => {
@@ -8,7 +9,7 @@ const WorkItem = ({ params }) => {
   const workItem = findLink(data);
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <div>{workItem.name}</div>
       <div>{workItem.platforms}</div>
       <div>{workItem.tech}</div>
