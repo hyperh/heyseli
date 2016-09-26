@@ -3,6 +3,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './core/App';
 import Work from './Work';
+import WorkItem from './Work/WorkItem';
 import Contact from './Contact';
 
 const Routes = () => (
@@ -10,6 +11,7 @@ const Routes = () => (
     <Route path="/" component={App}>
       <IndexRoute component={Work} />
       <Route path="work" component={Work} />
+      <Route path="work/:name" component={WorkItem} />
       <Route path="contact" component={Contact} />
     </Route>
   </Router>
