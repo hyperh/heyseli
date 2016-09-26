@@ -1,21 +1,21 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import App from './components/App';
+import Routes from './components/routes';
 
 render(
   <AppContainer>
-    <App />
+    <Routes />
   </AppContainer>,
   document.getElementById('root')
 );
 
 if (module.hot) {
-  module.hot.accept('./components/App', () => {
-    const NextApp = require('./components/App').default; // eslint-disable-line global-require
+  module.hot.accept('./components/routes', () => {
+    const NextRoutes = require('./components/routes').default; // eslint-disable-line global-require
     render(
       <AppContainer>
-        <NextApp />
+        <NextRoutes />
       </AppContainer>,
       document.getElementById('root')
     );
