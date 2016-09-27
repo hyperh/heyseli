@@ -5,6 +5,7 @@ import App from './core/App';
 import Work from './Work';
 import WorkItem from './Work/WorkItem';
 import Contact from './Contact';
+import Publications from './Publications';
 
 const Routes = () => (
   <Router history={browserHistory}>
@@ -13,6 +14,7 @@ const Routes = () => (
       <Route path="work" component={Work} />
       <Route path="work/:link" component={WorkItem} />
       <Route path="contact" component={Contact} />
+      <Route path="publications" component={Publications} />
     </Route>
   </Router>
 );

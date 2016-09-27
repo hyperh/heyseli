@@ -8,6 +8,8 @@ export default [
     ' It computes statistics about your texting habits with other people.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Git'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.talkalytics&hl=en',
+    previewImg: null,
+    headerImg: null,
     images: [
       'texty-time/all-time.png',
       'texty-time/compare.png',
@@ -25,6 +27,8 @@ export default [
     ' It syncs with your Google Calendar to help remind you of when things are going to expire and when you should finish eating them.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
+    previewImg: null,
+    headerImg: null,
     images: [
       'fridgly/fridge.png',
       'fridgly/main.png',
@@ -40,6 +44,8 @@ export default [
     ' It provides detailed statistics about your spending habits to help you drill down into the areas in which you spend the most money.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'Git'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.spending3',
+    previewImg: null,
+    headerImg: null,
     images: [
       'driller/add_trans_google.png',
       'driller/by_category_food_google.png',
@@ -59,6 +65,8 @@ export default [
     desc: 'A business communication tool designed to help you keep the most important information visible.',
     tech: ['Javascript', 'React', 'Meteor', 'MongoDB', 'Electron', 'React Native', 'Digital Ocean', 'Sketch', 'Git'],
     url: 'https://www.olisapp.com/',
+    previewImg: null,
+    headerImg: null,
     images: [],
   },
   {
@@ -68,6 +76,8 @@ export default [
     desc: 'A landing page for Olis.',
     tech: ['Javascript', 'React', 'Sketch'],
     url: 'http://www.getolis.com/',
+    previewImg: null,
+    headerImg: null,
     images: [],
   },
   {
@@ -77,6 +87,8 @@ export default [
     desc: 'A tool to help you make hard decisions.',
     tech: ['Javascript', 'React', 'Webpack', 'MobX', 'Sketch', 'Digital Ocean', 'Git'],
     url: 'http://decideotron.xyz',
+    previewImg: null,
+    headerImg: null,
     images: [],
   },
 ];

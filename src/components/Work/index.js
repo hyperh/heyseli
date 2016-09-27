@@ -13,6 +13,7 @@ const Work = () => (
         name={item.name}
         platform={item.platform}
         link={item.link}
+        previewImg={item.previewImg}
       />
     )}
   </div>
