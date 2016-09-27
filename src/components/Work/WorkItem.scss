@@ -1,17 +1,15 @@
 @import "../core/colors";
 
 .wrapper {
-  
+  img {
+    width: 20em;
+    height: auto;
+    padding: 2em;
+  }
 }
 
 .platforms {
   color: $secondary-text-dark;
-}
-
-img {
-  width: 20em;
-  height: auto;
-  padding: 2em;
 }
 
 .images {
