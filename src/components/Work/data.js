@@ -50,15 +50,15 @@ export default [
     headerImg: null,
     imgFolder: 'driller',
     images: [
+      'transactions_google.png',
       'add_trans_google.png',
-      'by_category_food_google.png',
       'by_category_google.png',
+      'by_category_food_google.png',
       'by_category_timeframe_google.png',
       'by_time_all_google.png',
       'by_time_food_google.png',
       'currency_google.png',
       'import_google.png',
-      'transactions_google.png',
     ],
   },
   {
