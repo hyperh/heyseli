@@ -81,6 +81,17 @@ export default [
     images: [],
   },
   {
+    name: 'ReactForge',
+    link: 'react-forge',
+    platforms: ['Web'],
+    desc: 'A landing page for ReactForge, a React-based web development agency.',
+    tech: ['Javascript', 'React', 'Webpack', 'Sketch'],
+    url: 'http://www.reactforge.com/',
+    previewImg: null,
+    headerImg: null,
+    images: [],
+  },
+  {
     name: 'Decide-o-Tron',
     link: 'decide-o-tron',
     platforms: ['Web'],
