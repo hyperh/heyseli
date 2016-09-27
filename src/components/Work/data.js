@@ -32,10 +32,10 @@ export default [
     headerImg: null,
     imgFolder: 'fridgly',
     images: [
-      'fridge.png',
       'main.png',
-      'meat-veal.png',
       'meat.png',
+      'meat-veal.png',
+      'fridge.png',
     ],
   },
   {
