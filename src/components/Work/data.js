@@ -8,8 +8,8 @@ export default [
     ' It computes statistics about your texting habits with other people.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Git'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.talkalytics&hl=en',
-    previewImg: null,
-    headerImg: null,
+    previewImg: 'logo.png',
+    headerImg: 'all-time.png',
     imgFolder: 'texty-time',
     images: [
       'main.png',

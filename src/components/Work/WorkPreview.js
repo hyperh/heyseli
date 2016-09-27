@@ -10,7 +10,7 @@ const WorkPreview = ({ name, platform, link, previewImg }) => (
       <img
         width={side}
         height={side}
-        src={previewImg ? require(`../../assets/img/${previewImg}`) : null} // eslint-disable-line global-require, max-len
+        src={previewImg ? require(`../../assets/img/${link}/${previewImg}`) : null} // eslint-disable-line global-require, max-len
         alt={name}
       />
     </Link>
