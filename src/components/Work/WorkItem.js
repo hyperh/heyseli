@@ -26,7 +26,7 @@ const WorkItem = ({ params }) => {
       <a href={workItem.url}>{workItem.url}</a>
 
       <div>
-        {images.map(image => <img src={image} alt="" />)}
+        {images.map(image => <img key={image} src={image} alt="" />)}
       </div>
     </div>
   );

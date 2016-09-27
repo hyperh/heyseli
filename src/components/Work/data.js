@@ -25,7 +25,12 @@ export default [
     ' It syncs with your Google Calendar to help remind you of when things are going to expire and when you should finish eating them.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
-    images: [],
+    images: [
+      'fridgly/fridge.png',
+      'fridgly/main.png',
+      'fridgly/meat-veal.png',
+      'fridgly/meat.png',
+    ],
   },
   {
     name: 'Driller',
@@ -35,7 +40,17 @@ export default [
     ' It provides detailed statistics about your spending habits to help you drill down into the areas in which you spend the most money.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'Git'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.spending3',
-    images: [],
+    images: [
+      'driller/add_trans_google.png',
+      'driller/by_category_food_google.png',
+      'driller/by_category_google.png',
+      'driller/by_category_timeframe_google.png',
+      'driller/by_time_all_google.png',
+      'driller/by_time_food_google.png',
+      'driller/currency_google.png',
+      'driller/import_google.png',
+      'driller/transactions_google.png',
+    ],
   },
   {
     name: 'Olis',
