@@ -1,3 +1,20 @@
 .wrapper {
   
 }
+
+img {
+  width: 20em;
+  height: auto;
+  padding: 2em;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgWrapper {
+  width: 20em;
+  height: 20em;
+  overflow: hidden;
+}

@@ -15,18 +15,25 @@ const WorkItem = ({ params }) => {
       <div>
         <img src="" alt="header" />
       </div>
-
-      <h1>{workItem.name}</h1>
-      <p>{workItem.platforms.join(', ')}</p>
-      <div>{workItem.desc}</div>
       <div>
-        <h2>Tech Used:</h2>
+        <h1>{workItem.name}</h1>
+        <p>{workItem.platforms.join(', ')}</p>
+        <a href={workItem.url}>{workItem.url}</a>
+      </div>
+
+      <div>{workItem.desc}</div>
+
+      <div>
+        <h2>Ingredients</h2>
         <p>{workItem.tech.join(', ')}</p>
       </div>
-      <a href={workItem.url}>{workItem.url}</a>
 
-      <div>
-        {images.map(image => <img key={image} src={image} alt="" />)}
+      <div className={styles.images}>
+        {images.map(image =>
+          <div className={styles.imgWrapper}>
+            <img key={image} src={image} alt="" />
+          </div>
+        )}
       </div>
     </div>
   );
