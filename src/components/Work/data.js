@@ -28,7 +28,7 @@ export default [
     ' It syncs with your Google Calendar to help remind you of when things are going to expire and when you should finish eating them.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
-    previewImg: null,
+    previewImg: 'logo.png',
     headerImg: null,
     imgFolder: 'fridgly',
     images: [
@@ -46,7 +46,7 @@ export default [
     ' It provides detailed statistics about your spending habits to help you drill down into the areas in which you spend the most money.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'Git'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.spending3',
-    previewImg: null,
+    previewImg: 'logo.png',
     headerImg: null,
     imgFolder: 'driller',
     images: [
