@@ -7,7 +7,7 @@ import styles from './styles.scss';
 /* eslint-disable max-len */
 const Contact = () => (
   <div className={styles.wrapper}>
-    PUBLICATIONS
+    I used to be in academia. I published a few papers during my time there.
   </div>
 );
 
