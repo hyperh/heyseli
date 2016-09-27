@@ -6,14 +6,20 @@ import styles from './WorkItem.scss';
 import data from './data';
 
 /* eslint-disable global-require */
+const headerImg = (workItem) => {
+  const headerImgPath = workItem.headerImg ?
+    require(`../../assets/img/${workItem.imgFolder}/${workItem.headerImg}`) : null;
+  return workItem.headerImg ? <div><img src={headerImgPath} alt="header" /></div> : null;
+};
+
 const WorkItem = ({ params }) => {
   const findLink = find(item => item.link === params.link);
   const workItem = findLink(data);
-  const headerImgPath = require(`../../assets/img/${workItem.imgFolder}/${workItem.headerImg}`);
+
 
   return (
     <div className={styles.wrapper}>
-      <div><img src={headerImgPath} alt="header" /></div>
+      {headerImg(workItem)}
       <div>
         <h1>{workItem.name}</h1>
         <p className={styles.platforms}>{workItem.platforms.join(', ')}</p>
