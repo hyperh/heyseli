@@ -11,12 +11,12 @@ export default [
     previewImg: null,
     headerImg: null,
     images: [
-      'texty-time/all-time.png',
-      'texty-time/compare.png',
-      'texty-time/emoticons.png',
-      'texty-time/favorites.png',
-      'texty-time/last-2-weeks.png',
       'texty-time/main.png',
+      'texty-time/all-time.png',
+      'texty-time/last-2-weeks.png',
+      'texty-time/emoticons.png',
+      'texty-time/compare.png',
+      'texty-time/favorites.png',
     ],
   },
   {
