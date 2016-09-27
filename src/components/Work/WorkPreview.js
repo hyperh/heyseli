@@ -6,7 +6,7 @@ import styles from './WorkPreview.scss';
 const side = '150';
 const WorkPreview = ({ name, platform, link, previewImg }) => (
   <div className={styles.wrapper}>
-    <Link to={`work/${link}`}>
+    <Link to={`/work/${link}`}>
       <img
         width={side}
         height={side}
