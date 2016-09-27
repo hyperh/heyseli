@@ -16,11 +16,11 @@ const WorkItem = ({ params }) => {
       </div>
       <div>
         <h1>{workItem.name}</h1>
-        <p>{workItem.platforms.join(', ')}</p>
+        <p className={styles.platforms}>{workItem.platforms.join(', ')}</p>
         <a href={workItem.url}>{workItem.url}</a>
       </div>
 
-      <div>{workItem.desc}</div>
+      <div><p>{workItem.desc}</p></div>
 
       <div>
         <h2>Ingredients</h2>
