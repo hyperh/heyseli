@@ -9,7 +9,7 @@ export default [
     tech: ['Java', 'Android Studio', 'Inkscape', 'Git'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.talkalytics&hl=en',
     previewImg: 'logo.png',
-    headerImg: 'all-time.png',
+    headerImg: 'logo.png',
     imgFolder: 'texty-time',
     images: [
       'main.png',
@@ -29,7 +29,7 @@ export default [
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
     previewImg: 'logo.png',
-    headerImg: null,
+    headerImg: 'logo.png',
     imgFolder: 'fridgly',
     images: [
       'main.png',
@@ -47,7 +47,7 @@ export default [
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'Git'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.spending3',
     previewImg: 'logo.png',
-    headerImg: null,
+    headerImg: 'logo.png',
     imgFolder: 'driller',
     images: [
       'transactions_google.png',

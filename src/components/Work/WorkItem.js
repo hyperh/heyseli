@@ -9,7 +9,7 @@ import data from './data';
 const headerImg = (workItem) => {
   const headerImgPath = workItem.headerImg ?
     require(`../../assets/img/${workItem.imgFolder}/${workItem.headerImg}`) : null;
-  return workItem.headerImg ? <div><img src={headerImgPath} alt="header" /></div> : null;
+  return workItem.headerImg ? <div className={styles.header}><img src={headerImgPath} alt="header" /></div> : null;
 };
 
 const WorkItem = ({ params }) => {

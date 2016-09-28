@@ -1,24 +1,37 @@
 @import "../core/colors";
 
 .wrapper {
-  img {
-    width: 20em;
-    height: auto;
-    padding: 2em;
-  }
 }
 
 .platforms {
   color: $secondary-text-dark;
 }
 
+$headerImgSide: 15em;
+.header {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: $headerImgSide;
+    height: $headerImgSide;
+  }
+}
+
+$imgSide: 20em;
 .images {
   display: flex;
   flex-wrap: wrap;
-}
 
-.imgWrapper {
-  width: 20em;
-  height: 20em;
-  overflow: hidden;
+  .imgWrapper {
+    width: $imgSide;
+    height: $imgSide;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+  }  
 }
