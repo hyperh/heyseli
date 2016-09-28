@@ -22,6 +22,7 @@ $imgSide: 20em;
 .images {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   .imgWrapper {
     width: $imgSide;
