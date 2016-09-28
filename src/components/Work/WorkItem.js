@@ -7,7 +7,6 @@ import data from './data';
 
 /* eslint-disable global-require */
 const headerImg = (workItem) => {
-  console.log(`../../assets/img/${workItem.imgFolder}/${workItem.headerImg}`);
   const headerImgPath = workItem.headerImg ?
     require(`../../assets/img/${workItem.imgFolder}/${workItem.headerImg}`) : null;
   return workItem.headerImg ?
