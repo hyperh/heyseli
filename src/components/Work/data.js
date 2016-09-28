@@ -105,9 +105,11 @@ export default [
     tech: ['Javascript', 'React', 'Webpack', 'Sketch'],
     url: 'http://www.reactforge.com/',
     imgFolder: 'react-forge',
-    previewImg: null,
-    headerImg: null,
-    images: [],
+    previewImg: 'logo.png',
+    headerImg: 'logo.png',
+    images: [
+      'all.png',
+    ],
   },
   {
     name: 'Decide-o-Tron',
