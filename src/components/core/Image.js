@@ -1,9 +1,14 @@
 import React, { PropTypes } from 'react';
 
+import styles from './Image.scss';
+
 /* eslint-disable global-require */
 const Image = ({ params }) => (
-  <div>
-    <img src={require(`../../assets/img/${params.link}/${params.image}.png`)} alt="" />
+  <div className={styles.wrapper}>
+    <img
+      src={require(`../../assets/img/${params.link}/${params.image}.png`)}
+      alt=""
+    />
   </div>
 );
 
