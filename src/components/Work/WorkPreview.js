@@ -13,7 +13,7 @@ const WorkPreview = ({ name, platform, link, previewImg }) => (
         />
       </div>
     </Link>
-    <div>{name}</div>
+    <div className={styles.name}>{name}</div>
     <div>{platform}</div>
   </div>
 );
