@@ -73,6 +73,7 @@ module.exports = {
         test: /\.(png|jpg|svg|gif)/,
         loaders: [
           'url?limit=10000&hash=sha512&digest=hex&name=public/img/[name]_[hash].[ext]',
+          'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "50-75", speed: 4}}',
         ],
         include: path.join(__dirname, 'src'),
       },
