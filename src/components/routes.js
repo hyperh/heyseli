@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './core/App';
 import Work from './Work';
@@ -9,7 +9,7 @@ import Publications from './Publications';
 import Image from './core/Image';
 
 const Routes = () => (
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Work} />
       <Route path="work" component={Work} />
