@@ -18,7 +18,7 @@ export default [
         author: 'Li, Heyse and Bissonnette, Jean-Pierre and Purdie, Tom and Chan, Timothy CY',
         journal: 'Medical Physics',
         volume: '42',
-        number: '8"',
+        number: '8',
         pages: '4863-4871',
         year: '2015',
       },
