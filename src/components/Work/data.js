@@ -93,9 +93,11 @@ export default [
     tech: ['Javascript', 'React', 'Sketch'],
     url: 'http://www.getolis.com/',
     imgFolder: 'olis-landing',
-    previewImg: null,
-    headerImg: null,
-    images: [],
+    previewImg: 'logo.png',
+    headerImg: 'logo.png',
+    images: [
+      'all.png',
+    ],
   },
   {
     name: 'ReactForge',
@@ -119,8 +121,12 @@ export default [
     tech: ['Javascript', 'React', 'Webpack', 'MobX', 'Sketch', 'Digital Ocean', 'Git'],
     url: 'http://decideotron.xyz',
     imgFolder: 'decide-o-tron',
-    previewImg: null,
-    headerImg: null,
-    images: [],
+    previewImg: 'logo.png',
+    headerImg: 'logo.png',
+    images: [
+      'input.png',
+      'vote.png',
+      'winner.png',
+    ],
   },
 ];
