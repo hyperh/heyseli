@@ -7,7 +7,11 @@ import data from './data';
 /* eslint-disable max-len */
 const Publications = () => (
   <div className={styles.wrapper}>
-    <p>I used to be in academia. Here are the papers I published during my time there.</p>
+    <p>
+      I used to be in academia.
+      Here are the papers I published during my time there.
+      If you would like a copy, please contact me.
+    </p>
     {data.map(datum => <div key={datum.type}>
       <h1>{datum.type}</h1>
       <ol>
