@@ -5,8 +5,9 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src",
-    "build": "webpack",
-    "build:prod": "NODE_ENV=production webpack -p",
+    "clean": "rm -r ./dist/public",
+    "build": "npm run clean && webpack",
+    "build:prod": "npm run clean && NODE_ENV=production webpack -p",
     "test": "karma start",
     "watch:test": "npm test -- --auto-watch --no-single-run"
   },
