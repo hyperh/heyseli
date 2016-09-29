@@ -15,6 +15,7 @@ const getCiteChicago = bibtex => {
       {conference ? <i>{`${conference} `}</i> : null}
       ({year})
       {pages ? `: ${pages}` : null}
+      .
     </li>
   );
 };
