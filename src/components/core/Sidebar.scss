@@ -15,11 +15,7 @@
   }
 }
 
-.openBtn {
-  display: none;
-}
-
-.closeBtn {
+.btn {
   display: none;
 }
 
@@ -44,6 +40,8 @@
   .btn {
     display: block;
     position: fixed;
+    top: 0;
+    left: 0;
     width: $btnSide;
     height: $btnSide;
     padding: 1em;    

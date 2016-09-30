@@ -31,8 +31,7 @@ class Sidebar extends Component {
         <OpenBtn className={styles.btn} onClick={this.onClick} />
 
         <div className={myClass}>
-          <CloseBtn className={styles.btn} onClick={this.onClick} />
-
+          {this.state.open ? <CloseBtn className={styles.btn} onClick={this.onClick} /> : null}
           <div className={styles.name}>Heyse Li</div>
           <div className={styles.links}>
             <div className={styles.item} onClick={this.onClick}>
