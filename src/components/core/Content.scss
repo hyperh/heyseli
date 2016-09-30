@@ -1,5 +1,11 @@
 .wrapper {
-  width: 80%;
+  width: 50em;
   height: 100%;
   padding: 3em;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
 }
