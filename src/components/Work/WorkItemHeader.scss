@@ -1,7 +1,11 @@
 @import "../core/colors";
 
 .wrapper {
+  display: flex;
+}
 
+.text {
+  padding-left: 2em;
 }
 
 .platforms {

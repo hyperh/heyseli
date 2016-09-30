@@ -13,7 +13,7 @@ const getHeaderImg = (imgFolder, headerImg) => {
 const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
   <div className={styles.wrapper}>
     {getHeaderImg(imgFolder, headerImg)}
-    <div>
+    <div className={styles.text}>
       <h1>{name}</h1>
       <p className={styles.platforms}>{platforms.join(', ')}</p>
       <a href={url}>Link</a>
