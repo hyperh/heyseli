@@ -1,4 +1,6 @@
 import React from 'react';
+import sortBy from 'lodash/fp/sortBy';
+import reverse from 'lodash/fp/reverse';
 
 import CitationChicago from './CitationChicago';
 import Tags from './Tags';
@@ -6,6 +8,9 @@ import styles from './styles.scss';
 import data from './data';
 
 /* eslint-disable max-len */
+const sortByYear = sortBy(o => o.year);
+const sortByYearDesc = objs => reverse(sortByYear(objs));
+
 const Publications = () => (
   <div className={styles.wrapper}>
     <p>
@@ -16,12 +21,11 @@ const Publications = () => (
     {data.map(datum => <div key={datum.type}>
       <h1>{datum.type}</h1>
       <ol>
-        {datum.items.map(item => {
+        {sortByYearDesc(datum.items).map(item => {
           const { author, title, journal, conference, number, pages, year, tags } = item;
           return (
-            <div>
+            <div key={title}>
               <CitationChicago
-                key={title}
                 author={author}
                 title={title}
                 journal={journal}
