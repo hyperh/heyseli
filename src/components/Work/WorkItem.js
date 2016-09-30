@@ -31,7 +31,7 @@ const WorkItem = ({ params }) => {
 
       <div>
         <h2>Made With</h2>
-        <p>{workItem.tech.join(', ')}</p>
+        <p>{workItem.tech.sort().join(', ')}</p>
       </div>
 
       <div className={styles.images}>
