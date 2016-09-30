@@ -1,21 +1,4 @@
-@import "../core/colors";
-
 .wrapper {
-}
-
-.platforms {
-  color: $secondary-text-dark;
-}
-
-$headerImgSide: 10em;
-.header {
-  display: flex;
-  justify-content: center;
-
-  img {
-    width: $headerImgSide;
-    height: $headerImgSide;
-  }
 }
 
 $imgSide: 20em;
