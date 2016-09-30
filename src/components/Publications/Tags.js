@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 const Tags = ({ tags }) => (
   <p>
-    Tags: {tags.sort().join(', ')}
+    <i>Tags: </i>{tags.sort().join(', ')}
   </p>
 );
 
