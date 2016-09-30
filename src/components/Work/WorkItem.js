@@ -30,7 +30,7 @@ const WorkItem = ({ params }) => {
       <div><p>{workItem.desc}</p></div>
 
       <div>
-        <h2>Ingredients</h2>
+        <h2>Made With</h2>
         <p>{workItem.tech.join(', ')}</p>
       </div>
 
