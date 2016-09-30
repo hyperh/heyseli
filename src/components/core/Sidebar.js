@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import classnames from 'classnames';
+import MenuIcon from 'react-icons/lib/md/menu';
 
 import styles from './Sidebar.scss';
 
@@ -26,7 +27,7 @@ class Sidebar extends Component {
 
     return (
       <div>
-        <button style={{ position: 'fixed' }} onClick={this.onClick}>OPEN</button>
+        <MenuIcon style={{ position: 'fixed' }} onClick={this.onClick} />
 
         <div className={myClass}>
           <button onClick={this.onClick}>CLOSE</button>
