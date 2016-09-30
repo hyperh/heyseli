@@ -22,3 +22,15 @@ $headerImgSide: 10em;
     height: $headerImgSide;
   }
 }
+
+@media (max-width: 425px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text {
+    padding-left: 0em;
+    text-align: center;
+  }
+}
