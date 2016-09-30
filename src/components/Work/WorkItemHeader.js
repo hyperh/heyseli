@@ -23,7 +23,7 @@ const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
 
 WorkItemHeader.propTypes = {
   name: PropTypes.string,
-  platforms: PropTypes.string,
+  platforms: PropTypes.array,
   url: PropTypes.string,
   imgFolder: PropTypes.string,
   headerImg: PropTypes.string,
