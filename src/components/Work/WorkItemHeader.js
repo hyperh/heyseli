@@ -7,7 +7,7 @@ const getHeaderImg = (imgFolder, headerImg) => {
   const headerImgPath = headerImg ?
     require(`../../assets/img/${imgFolder}/${headerImg}`) : null;
   return headerImg ?
-    <div className={styles.header}><img src={headerImgPath} alt="header" /></div> : null;
+    <div className={styles.imgWrapper}><img src={headerImgPath} alt="header" /></div> : null;
 };
 
 const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
