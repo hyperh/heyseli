@@ -19,6 +19,10 @@
   display: none;
 }
 
+.closeBtn {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .wrapper {
     position: fixed;
@@ -36,11 +40,12 @@
     left: -100vw;
   }
 
-  .openBtn {
+  $btnSide: 4em;
+  .btn {
     display: block;
     position: fixed;
-    width: 4em;
-    height: 4em;
-    padding: 1em;
+    width: $btnSide;
+    height: $btnSide;
+    padding: 1em;    
   }
 }
