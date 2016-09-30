@@ -27,7 +27,7 @@ class Sidebar extends Component {
 
     return (
       <div>
-        <MenuIcon style={{ position: 'fixed' }} onClick={this.onClick} />
+        <MenuIcon className={styles.openBtn} onClick={this.onClick} />
 
         <div className={myClass}>
           <button onClick={this.onClick}>CLOSE</button>
