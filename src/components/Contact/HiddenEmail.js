@@ -9,17 +9,18 @@ class HiddenEmail extends Component {
     };
   }
 
-  showEmail() {
+  showEmail(e) {
     this.setState({
       email: atob(this.props.email),
     });
+    e.preventDefault();
   }
 
   render() {
     return (
-      <span ref={x => { this.text = x; }} onClick={this.showEmail}>
+      <a href="" ref={x => { this.text = x; }} onClick={this.showEmail}>
         {this.state.email}
-      </span>
+      </a>
     );
   }
 }
