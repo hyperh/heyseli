@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react';
 import find from 'lodash/fp/find';
 import { Link } from 'react-router';
-import Lightbox from 'react-images';
 
 import styles from './WorkItem.scss';
 import WorkItemHeader from './WorkItemHeader';
+import Gallery from './Gallery';
 import data from './data';
 
 /* eslint-disable global-require */
@@ -48,7 +48,7 @@ const WorkItem = ({ params }) => {
         })}
       </div>
 
-      <Lightbox images={lightboxImgs} isOpen={true} />
+      <Gallery images={lightboxImgs} />
     </div>
   );
 };
