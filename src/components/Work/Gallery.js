@@ -50,7 +50,12 @@ class Gallery extends Component {
       <div>
         <div className={styles.thumbs}>
           {images.map((image, index) => (
-            <GalleryThumb src={image.src} index={index} onClick={this.onClickGalleryThumb} />
+            <GalleryThumb
+              key={image.src}
+              src={image.src}
+              index={index}
+              onClick={this.onClickGalleryThumb}
+            />
           ))}
         </div>
         <Lightbox
