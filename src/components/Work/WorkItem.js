@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import find from 'lodash/fp/find';
-import { Link } from 'react-router';
 
 import styles from './WorkItem.scss';
 import WorkItemHeader from './WorkItemHeader';
@@ -12,11 +11,9 @@ const WorkItem = ({ params }) => {
   const findLink = find(item => item.link === params.link);
   const workItem = findLink(data);
   const { name, platforms, url, imgFolder, headerImg, images } = workItem;
-  const lightboxImgs = images.map(image => {
-    return {
-      src: require(`../../assets/img/${imgFolder}/${image}`),
-    };
-  });
+  const lightboxImgs = images.map(image => (
+    { src: require(`../../assets/img/${imgFolder}/${image}`) }
+  ));
 
   return (
     <div className={styles.wrapper}>
