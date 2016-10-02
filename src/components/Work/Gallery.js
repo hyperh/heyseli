@@ -9,6 +9,7 @@ class Gallery extends Component {
   constructor(props) {
     super(props);
     this.onClickThumb = this.onClickThumb.bind(this);
+    this.onClose = this.onClose.bind(this);
     this.state = {
       isOpen: false,
       currentImage: 0,
@@ -19,6 +20,12 @@ class Gallery extends Component {
     this.setState({
       isOpen: true,
       currentImage: index,
+    });
+  }
+
+  onClose() {
+    this.setState({
+      isOpen: false,
     });
   }
 
@@ -36,6 +43,7 @@ class Gallery extends Component {
           images={images}
           isOpen={isOpen}
           currentImage={currentImage}
+          onClose={this.onClose}
           showThumbnails
         />
       </div>
