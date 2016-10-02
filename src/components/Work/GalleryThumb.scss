@@ -1,0 +1,12 @@
+$imgSide: 20em;
+.wrapper {
+  width: $imgSide;
+  height: $imgSide;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+  }
+}

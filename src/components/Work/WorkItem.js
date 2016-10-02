@@ -34,20 +34,6 @@ const WorkItem = ({ params }) => {
         <p>{workItem.tech.sort().join(', ')}</p>
       </div>
 
-      <div className={styles.images}>
-        {images.map(image => {
-          const imgPath = require(`../../assets/img/${imgFolder}/${image}`);
-          const imgNoExt = image.replace('.png', '');
-          return (
-            <div className={styles.imgWrapper} key={image}>
-              <Link to={`/work/${workItem.imgFolder}/${imgNoExt}`}>
-                <img src={imgPath} alt="" />
-              </Link>
-            </div>
-          );
-        })}
-      </div>
-
       <Gallery images={lightboxImgs} />
     </div>
   );

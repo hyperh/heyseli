@@ -1,12 +1,20 @@
 import React, { Component, PropTypes } from 'react';
 import Lightbox from 'react-images';
 
+import GalleryThumb from './GalleryThumb';
+import styles from './Gallery.scss';
+
 // eslint-disable-next-line react/prefer-stateless-function
 class Gallery extends Component {
   render() {
     const { images } = this.props;
     return (
-      <Lightbox images={images} isOpen={true} />
+      <div>
+        <div className={styles.thumbs}>
+          {images.map(image => <GalleryThumb src={image.src} />)}
+        </div>
+        <Lightbox images={images} isOpen={true} />
+      </div>
     );
   }
 }
