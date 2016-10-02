@@ -1,8 +1,10 @@
+@import '../core/fonts.scss';
+
 .wrapper {
   width: 100%;
 
   p {
-    font-family: 'Raleway', sans-serif;
+    font-family: $textFont;
     font-weight: 300;
   }
 }

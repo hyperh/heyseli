@@ -1,4 +1,6 @@
+@import '../core/fonts.scss';
+
 .made, .desc {
-  font-family: 'Raleway', sans-serif;
+  font-family: $textFont;
   font-weight: 300;
 }
