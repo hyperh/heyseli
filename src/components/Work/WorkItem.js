@@ -24,11 +24,11 @@ const WorkItem = ({ params }) => {
         imgFolder={imgFolder}
         headerImg={headerImg}
       />
-      <div><p>{workItem.desc}</p></div>
+      <div className={styles.desc}><p>{workItem.desc}</p></div>
 
       <div>
         <h2>Made With</h2>
-        <p>{workItem.tech.sort().join(', ')}</p>
+        <p className={styles.made}>{workItem.tech.sort().join(', ')}</p>
       </div>
 
       <Gallery images={lightboxImgs} />
