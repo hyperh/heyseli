@@ -6,17 +6,37 @@ import styles from './Gallery.scss';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Gallery extends Component {
+  constructor(props) {
+    super(props);
+    this.onClickThumb = this.onClickThumb.bind(this);
+    this.state = {
+      isOpen: false,
+      currentImage: 0,
+    };
+  }
+
+  onClickThumb(index) {
+    this.setState({
+      isOpen: true,
+      currentImage: index,
+    });
+  }
+
   render() {
     const { images } = this.props;
+    const { isOpen, currentImage } = this.state;
     return (
       <div>
         <div className={styles.thumbs}>
-          {images.map(image => <GalleryThumb src={image.src} />)}
+          {images.map((image, index) => (
+            <GalleryThumb src={image.src} index={index} onClick={this.onClickThumb} />
+          ))}
         </div>
         <Lightbox
           images={images}
-          isOpen={true}
-          showThumbnails={true}
+          isOpen={isOpen}
+          currentImage={currentImage}
+          showThumbnails
         />
       </div>
     );
