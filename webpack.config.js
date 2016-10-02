@@ -57,7 +57,10 @@ module.exports = {
           'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
           'postcss',
         ],
-        include: path.join(__dirname, 'src'),
+        include: [
+          path.join(__dirname, 'src'),
+          path.join(__dirname, 'node_modules/react-photoswipe/lib'),
+        ],
       },
       {
         test: /\.scss$/,
@@ -75,7 +78,10 @@ module.exports = {
           'url?limit=10000&hash=sha512&digest=hex&name=public/img/[name]_[hash].[ext]',
           'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "50-75", speed: 4}}',
         ],
-        include: path.join(__dirname, 'src'),
+        include: [
+          path.join(__dirname, 'src'),
+          path.join(__dirname, 'node_modules/react-photoswipe/lib'),
+        ],
       },
       {
         test: /\.(eot|ttf|woff|woff2|otf)$/,
