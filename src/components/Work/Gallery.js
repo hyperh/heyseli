@@ -13,7 +13,11 @@ class Gallery extends Component {
         <div className={styles.thumbs}>
           {images.map(image => <GalleryThumb src={image.src} />)}
         </div>
-        <Lightbox images={images} isOpen={true} showThumbnails={true} />
+        <Lightbox
+          images={images}
+          isOpen={true}
+          showThumbnails={true}
+        />
       </div>
     );
   }
