@@ -1,16 +1,19 @@
 import React, { PropTypes } from 'react';
 import find from 'lodash/fp/find';
-import { Link } from 'react-router';
 
 import styles from './WorkItem.scss';
 import WorkItemHeader from './WorkItemHeader';
+import Gallery from './Gallery';
 import data from './data';
 
 /* eslint-disable global-require */
 const WorkItem = ({ params }) => {
   const findLink = find(item => item.link === params.link);
   const workItem = findLink(data);
-  const { name, platforms, url, imgFolder, headerImg } = workItem;
+  const { name, platforms, url, imgFolder, headerImg, images } = workItem;
+  const lightboxImgs = images.map(image => (
+    { src: require(`../../assets/img/${imgFolder}/${image}`) }
+  ));
 
   return (
     <div className={styles.wrapper}>
@@ -28,19 +31,7 @@ const WorkItem = ({ params }) => {
         <p>{workItem.tech.sort().join(', ')}</p>
       </div>
 
-      <div className={styles.images}>
-        {workItem.images.map(image => {
-          const imgPath = require(`../../assets/img/${workItem.imgFolder}/${image}`);
-          const imgNoExt = image.replace('.png', '');
-          return (
-            <div className={styles.imgWrapper} key={image}>
-              <Link to={`/work/${workItem.imgFolder}/${imgNoExt}`}>
-                <img src={imgPath} alt="" />
-              </Link>
-            </div>
-          );
-        })}
-      </div>
+      <Gallery images={lightboxImgs} />
     </div>
   );
 };
