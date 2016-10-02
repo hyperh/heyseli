@@ -10,7 +10,7 @@ import data from './data';
 const WorkItem = ({ params }) => {
   const findLink = find(item => item.link === params.link);
   const workItem = findLink(data);
-  const { name, platforms, url, imgFolder, headerImg } = workItem;
+  const { name, platforms, url, imgFolder, headerImg, images } = workItem;
 
   return (
     <div className={styles.wrapper}>
@@ -29,8 +29,8 @@ const WorkItem = ({ params }) => {
       </div>
 
       <div className={styles.images}>
-        {workItem.images.map(image => {
-          const imgPath = require(`../../assets/img/${workItem.imgFolder}/${image}`);
+        {images.map(image => {
+          const imgPath = require(`../../assets/img/${imgFolder}/${image}`);
           const imgNoExt = image.replace('.png', '');
           return (
             <div className={styles.imgWrapper} key={image}>
