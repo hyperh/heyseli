@@ -11,6 +11,8 @@ class Gallery extends Component {
     this.onClickGalleryThumb = this.onClickGalleryThumb.bind(this);
     this.onClickNext = this.onClickNext.bind(this);
     this.onClickPrev = this.onClickPrev.bind(this);
+    this.onClickThumbnail = this.onClickThumbnail.bind(this);
+    this.onClickImage = this.onClickImage.bind(this);
     this.onClose = this.onClose.bind(this);
     this.state = {
       isOpen: false,
@@ -26,21 +28,23 @@ class Gallery extends Component {
   }
 
   onClickNext() {
-    this.setState({
-      currentImage: this.state.currentImage + 1,
-    });
+    this.setState({ currentImage: this.state.currentImage + 1 });
   }
 
   onClickPrev() {
-    this.setState({
-      currentImage: this.state.currentImage - 1,
-    });
+    this.setState({ currentImage: this.state.currentImage - 1 });
+  }
+
+  onClickThumbnail(index) {
+    this.setState({ currentImage: index });
+  }
+
+  onClickImage() {
+    this.onClickNext();
   }
 
   onClose() {
-    this.setState({
-      isOpen: false,
-    });
+    this.setState({ isOpen: false });
   }
 
   render() {
@@ -64,7 +68,9 @@ class Gallery extends Component {
           currentImage={currentImage}
           onClickNext={this.onClickNext}
           onClickPrev={this.onClickPrev}
+          onClickImage={this.onClickImage}
           onClose={this.onClose}
+          onClickThumbnail={this.onClickThumbnail}
           showThumbnails
         />
       </div>
