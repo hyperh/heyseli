@@ -8,7 +8,9 @@ import styles from './Gallery.scss';
 class Gallery extends Component {
   constructor(props) {
     super(props);
-    this.onClickThumb = this.onClickThumb.bind(this);
+    this.onClickGalleryThumb = this.onClickGalleryThumb.bind(this);
+    this.onClickNext = this.onClickNext.bind(this);
+    this.onClickPrev = this.onClickPrev.bind(this);
     this.onClose = this.onClose.bind(this);
     this.state = {
       isOpen: false,
@@ -16,10 +18,22 @@ class Gallery extends Component {
     };
   }
 
-  onClickThumb(index) {
+  onClickGalleryThumb(index) {
     this.setState({
       isOpen: true,
       currentImage: index,
+    });
+  }
+
+  onClickNext() {
+    this.setState({
+      currentImage: this.state.currentImage + 1,
+    });
+  }
+
+  onClickPrev() {
+    this.setState({
+      currentImage: this.state.currentImage - 1,
     });
   }
 
@@ -36,13 +50,15 @@ class Gallery extends Component {
       <div>
         <div className={styles.thumbs}>
           {images.map((image, index) => (
-            <GalleryThumb src={image.src} index={index} onClick={this.onClickThumb} />
+            <GalleryThumb src={image.src} index={index} onClick={this.onClickGalleryThumb} />
           ))}
         </div>
         <Lightbox
           images={images}
           isOpen={isOpen}
           currentImage={currentImage}
+          onClickNext={this.onClickNext}
+          onClickPrev={this.onClickPrev}
           onClose={this.onClose}
           showThumbnails
         />
