@@ -10,7 +10,7 @@ const { email, twitter, medium } = data;
 const Contact = () => (
   <div className={styles.wrapper}>
     <p>Hi! Thanks for visiting. I'm Heyse and I like to draw, design, do math, and program things.</p>
-    <p>If you would like to learn more about me and how I can help, you can contact me at <i><HiddenEmail email={email} /></i>.</p>
+    <p>If you would like to learn more about me and how I can help, you can contact me at <b><i><HiddenEmail email={email} /></i></b>.</p>
     <p>
       You can also follow me on <a href={twitter}>Twitter</a> and <a href={medium}>Medium</a>.
       I write about things on Medium from time to time,

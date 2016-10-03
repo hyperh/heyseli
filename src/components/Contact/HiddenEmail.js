@@ -5,22 +5,31 @@ class HiddenEmail extends Component {
     super(props);
     this.showEmail = this.showEmail.bind(this);
     this.state = {
-      email: '(Click to show)',
+      isVisible: false,
+      email: props.email,
     };
   }
 
   showEmail(e) {
     this.setState({
+      isVisible: true,
       email: atob(this.props.email),
     });
     e.preventDefault();
   }
 
   render() {
+    const { isVisible, email } = this.state;
     return (
-      <a href="" ref={x => { this.text = x; }} onClick={this.showEmail}>
-        {this.state.email}
-      </a>
+      <span>
+        {
+          isVisible ?
+            <span>{email}</span> :
+            <a href="" ref={x => { this.text = x; }} onClick={this.showEmail}>
+              (Click to show)
+            </a>
+        }
+      </span>
     );
   }
 }
