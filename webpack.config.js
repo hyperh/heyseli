@@ -21,6 +21,7 @@ const prodPlugins = [
   }),
 ];
 
+/* eslint-disable max-len */
 module.exports = {
   devtool: 'eval',
   entry: isProd ?
@@ -86,6 +87,11 @@ module.exports = {
       {
         test: /\.(eot|ttf|woff|woff2|otf)$/,
         loader: 'file?name=public/fonts/[name].[ext]',
+        include: path.join(__dirname, 'src'),
+      },
+      {
+        test: /\.(pdf)/,
+        loader: 'file?name=public/papers/[name].[ext]',
         include: path.join(__dirname, 'src'),
       },
     ],

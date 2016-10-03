@@ -19,18 +19,16 @@ const authorsWithBold = (authorStr, boldAuthor) => {
 };
 
 const CitationChicago = ({ author, title, journal, conference, number, pages, year }) => (
-  <li>
-    <p>
-      {authorsWithBold(author, 'Li, Heyse')}.&nbsp;
-      "{title}".&nbsp;
-      {journal ? <i>{journal}</i> : null}
-      {number ? ` no. ${number} ` : null}
-      {conference ? <i>{`${conference} `}</i> : null}
-      ({year})
-      {pages ? `: ${pages}` : null}
-      .
-    </p>
-  </li>
+  <p>
+    {authorsWithBold(author, 'Li, Heyse')}.&nbsp;
+    "{title}".&nbsp;
+    {journal ? <i>{journal}</i> : null}
+    {number ? ` no. ${number} ` : null}
+    {conference ? <i>{`${conference} `}</i> : null}
+    ({year})
+    {pages ? `: ${pages}` : null}
+    .
+  </p>
 );
 
 CitationChicago.propTypes = {

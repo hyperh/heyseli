@@ -19,6 +19,7 @@ export default [
           'integer programming',
           'toronto',
         ],
+        filename: 'aed.pdf',
       },
       {
         title: 'Robust PET-guided intensity-modulated radiation therapy',
@@ -72,6 +73,7 @@ export default [
           'linear programming',
           'integer programming',
         ],
+        filename: 'TranMISTA15Journal.pdf',
       },
     ],
   },
