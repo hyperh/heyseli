@@ -16,7 +16,6 @@ const Publications = () => (
     <p>
       I used to be in academia.
       Here are the papers I published during my time there.
-      If you would like a copy, please contact me.
     </p>
     {data.map(datum => <div key={datum.type}>
       <h1>{datum.type}</h1>
