@@ -38,6 +38,7 @@ export default [
           'non-small cell lung cancer',
           '4d',
         ],
+        filename: 'robust.pdf',
       },
       {
         title: 'The value of nodal information in predicting lung cancer relapse using 4DPET/4DCT',
@@ -57,11 +58,12 @@ export default [
           'non-small cell lung cancer',
           '4d',
         ],
+        filename: 'ml.pdf',
       },
     ],
   },
   {
-    type: 'Conference Proceedings',
+    type: 'Refereed Conference Articles',
     items: [
       {
         title: 'Resource-Aware Scheduling for Data Centers with Heterogenous Servers.',
@@ -73,7 +75,7 @@ export default [
           'linear programming',
           'integer programming',
         ],
-        filename: 'TranMISTA15Journal.pdf',
+        filename: 'sim.pdf',
       },
     ],
   },
