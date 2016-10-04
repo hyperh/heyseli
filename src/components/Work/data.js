@@ -62,6 +62,21 @@ export default [
     ],
   },
   {
+    name: 'TORCH',
+    link: 'torch',
+    platforms: ['Design'],
+    desc: 'TORCH is the annual operations research challenge organized at the Mechanical & Industrial Engineering Department at University of Toronto. TORCH is a one-day contest where teams of 3 to 4 high school students solve 5 to 10 problems related to different application areas of operations research.',
+    tech: ['Adobe Illustrator'],
+    url: 'http://orchallenge.org/',
+    imgFolder: 'torch',
+    previewImg: 'fire.png',
+    headerImg: 'fire.png',
+    images: [
+      'logo.png',
+      'TORCH_flyer_2015.png',
+    ],
+  },
+  {
     name: 'Olis',
     link: 'olis',
     platforms: ['Web', 'PC', 'OSX', 'Android', 'iOS'],
