@@ -35,8 +35,6 @@ const Resume = () => (
       <h1>Skills</h1>
       <p>{skills.join(', ')}</p>
     </div>
-
-    <a href="">Download full resume</a>
   </div>
 );
 
