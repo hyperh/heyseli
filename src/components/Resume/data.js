@@ -6,7 +6,7 @@ export default {
       time: '2016',
     },
     {
-      title: 'Teacher',
+      title: 'Programming Teacher',
       company: 'Capstone Prep',
       time: '2016',
     },
