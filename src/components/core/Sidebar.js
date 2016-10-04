@@ -43,6 +43,9 @@ class Sidebar extends Component {
             <div className={styles.item} onClick={this.onClick}>
               <Link to="/publications">Publications</Link>
             </div>
+            <div className={styles.item} onClick={this.onClick}>
+              <Link to="/resume">Resume</Link>
+            </div>
           </div>
         </div>
       </div>
