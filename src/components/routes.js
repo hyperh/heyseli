@@ -6,6 +6,7 @@ import Work from './Work';
 import WorkItem from './Work/WorkItem';
 import Contact from './Contact';
 import Publications from './Publications';
+import Resume from './Resume';
 
 const Routes = () => (
   <Router history={hashHistory}>
@@ -15,6 +16,7 @@ const Routes = () => (
       <Route path="work/:link" component={WorkItem} />
       <Route path="contact" component={Contact} />
       <Route path="publications" component={Publications} />
+      <Route path="resume" component={Resume} />
     </Route>
   </Router>
 );
