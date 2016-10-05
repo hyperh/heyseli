@@ -34,16 +34,16 @@ class Sidebar extends Component {
           {this.state.open ? <CloseBtn className={styles.btn} onClick={this.onClick} /> : null}
           <div className={styles.name}>heyse li</div>
           <div className={styles.links}>
-            <div className={styles.item} onClick={this.onClick}>
+            <div className={styles.item}>
               <Link to="/contact">contact</Link>
             </div>
-            <div className={styles.item} onClick={this.onClick}>
+            <div className={styles.item}>
               <Link to="/work">work</Link>
             </div>
-            <div className={styles.item} onClick={this.onClick}>
+            <div className={styles.item}>
               <Link to="/publications">publications</Link>
             </div>
-            <div className={styles.item} onClick={this.onClick}>
+            <div className={styles.item}>
               <Link to="/resume">resume</Link>
             </div>
           </div>
