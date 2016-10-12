@@ -5,7 +5,8 @@ export default [
     link: 'texty-time',
     platforms: ['Android'],
     desc: 'An app that helps you understand your textual relationships with others.' +
-    ' It computes statistics about your texting habits with other people.',
+    ' It computes statistics about your texting habits with other people.' +
+    ' I worked in a team of two and I was responsible for design, front-end development, SQLite integration, and app store publication.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Git'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.talkalytics&hl=en',
     imgFolder: 'texty-time',
@@ -25,7 +26,8 @@ export default [
     link: 'fridgly',
     platforms: ['Android'],
     desc: 'An app that helps you keep track of your food expiration dates.' +
-    ' It syncs with your Google Calendar to help remind you of when things are going to expire and when you should finish eating them.',
+    ' It syncs with your Google Calendar to help remind you of when things are going to expire and when you should finish eating them.' +
+    ' I was responsible for all aspects of the app, including design, front-end development, SQLite integration, API calls, and app store publication.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
     imgFolder: 'fridgly',
@@ -43,7 +45,8 @@ export default [
     link: 'driller',
     platforms: ['Android'],
     desc: 'An app that helps you keep track of your expenses.' +
-    ' It provides detailed statistics about your spending habits to help you drill down into the areas in which you spend the most money.',
+    ' It provides detailed statistics about your spending habits to help you drill down into the areas in which you spend the most money.' +
+    ' I was responsible for all aspects of the app, including design, front-end development, SQLite integration, API calls, and app store publication.',
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'Git'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.spending3',
     imgFolder: 'driller',
@@ -66,7 +69,8 @@ export default [
     link: 'torch',
     platforms: ['Design'],
     desc: '"TORCH is the annual operations research challenge organized at the Mechanical & Industrial Engineering Department at University of Toronto.' +
-    ' TORCH is a one-day contest where teams of 3 to 4 high school students solve 5 to 10 problems related to different application areas of operations research."',
+    ' TORCH is a one-day contest where teams of 3 to 4 high school students solve 5 to 10 problems related to different application areas of operations research." - TORCH website' +
+    ' I was responsible for the design of the logo and flyers.',
     tech: ['Adobe Illustrator'],
     url: 'http://orchallenge.org/',
     imgFolder: 'torch',
@@ -95,7 +99,8 @@ export default [
     name: 'Olis',
     link: 'olis',
     platforms: ['Web', 'PC', 'OSX', 'Android', 'iOS'],
-    desc: 'A business communication tool designed to help you keep the most important information visible.',
+    desc: 'A business communication tool designed to help you keep the most important information visible.' +
+    ' I worked in a team of three and I was responsible for design, front-end development and back-end development.',
     tech: ['Javascript', 'React', 'Meteor', 'MongoDB', 'Electron', 'React Native', 'Digital Ocean', 'Sketch', 'Git'],
     url: 'https://www.olisapp.com/',
     imgFolder: 'olis',
@@ -119,7 +124,8 @@ export default [
     name: 'Olis Landing Page',
     link: 'olis-landing',
     platforms: ['Web'],
-    desc: 'A landing page for Olis.',
+    desc: 'A landing page for Olis.' +
+    ' I worked in a team of three and I was responsible for design and front-end development.',
     tech: ['Javascript', 'React', 'Sketch'],
     url: 'http://www.getolis.com/',
     imgFolder: 'olis-landing',
@@ -133,7 +139,8 @@ export default [
     name: 'ReactForge',
     link: 'react-forge',
     platforms: ['Web'],
-    desc: 'A landing page for ReactForge, a React-based web development agency.',
+    desc: 'A landing page for ReactForge, a React-based web development agency.' +
+    ' I worked in a team of three and I was responsible for design and front-end development.',
     tech: ['Javascript', 'React', 'Webpack', 'Sketch'],
     url: 'http://www.reactforge.com/',
     imgFolder: 'react-forge',
@@ -147,7 +154,8 @@ export default [
     name: 'Decide-o-Tron',
     link: 'decide-o-tron',
     platforms: ['Web'],
-    desc: 'A tool to help you make hard decisions.',
+    desc: 'A tool to help you make hard decisions.' +
+    ' I was responsible for all aspects of the app, including design and front-end development.',
     tech: ['Javascript', 'React', 'Webpack', 'MobX', 'Sketch', 'Digital Ocean', 'Git'],
     url: 'http://decideotron.xyz',
     imgFolder: 'decide-o-tron',
