@@ -3,7 +3,7 @@ import React from 'react';
 import data from './data';
 import styles from './styles.scss';
 
-const { experience, education, skills } = data;
+const { experience, education } = data;
 
 const Resume = () => (
   <div className={styles.wrapper}>
@@ -29,11 +29,6 @@ const Resume = () => (
           </p>);
         })
       }
-    </div>
-
-    <div>
-      <h1>Skills</h1>
-      <p>{skills.join(', ')}</p>
     </div>
   </div>
 );
