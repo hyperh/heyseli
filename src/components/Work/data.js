@@ -102,7 +102,7 @@ export default [
     desc: 'A business communication tool designed to help you keep the most important information visible.' +
     ' I worked in a team of three and I was responsible for design, front-end development and back-end development.',
     tech: ['Javascript', 'React', 'Meteor', 'MongoDB', 'Electron', 'React Native', 'Digital Ocean', 'Sketch', 'Git'],
-    url: '188.166.180.161',
+    url: 'http://188.166.180.161',
     imgFolder: 'olis',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
