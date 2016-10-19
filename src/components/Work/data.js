@@ -142,7 +142,7 @@ export default [
     desc: 'A landing page for ReactForge, a React-based web development agency.' +
     ' I worked in a team of three and I was responsible for design and front-end development.',
     tech: ['Javascript', 'React', 'Webpack', 'Sketch'],
-    url: 'http://www.reactforge.com/',
+    url: 'https://hyperh.github.io/react-forge-landing/',
     imgFolder: 'react-forge',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
