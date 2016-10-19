@@ -127,7 +127,7 @@ export default [
     desc: 'A landing page for Olis.' +
     ' I worked in a team of three and I was responsible for design and front-end development.',
     tech: ['Javascript', 'React', 'Sketch'],
-    url: 'http://www.getolis.com/',
+    url: 'https://hyperh.github.io/olis-website/',
     imgFolder: 'olis-landing',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
