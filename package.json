@@ -10,7 +10,7 @@
     "build:prod": "npm run clean && NODE_ENV=production webpack -p",
     "test": "karma start",
     "watch:test": "npm test -- --auto-watch --no-single-run",
-    "deploy": "npm run build:prod &&  gh-pages -d dist"
+    "deploy": "npm run build:prod && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
