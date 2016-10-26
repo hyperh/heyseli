@@ -6,6 +6,11 @@ export default {
       time: '2016',
     },
     {
+      title: 'Full Stack Developer, Designer',
+      company: 'Olis',
+      time: '2016',
+    },
+    {
       title: 'Programming Teacher',
       company: 'Capstone Prep',
       time: '2016',
