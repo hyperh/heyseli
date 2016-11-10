@@ -7,7 +7,7 @@ export default [
     desc: 'An app that helps you understand your textual relationships with others.' +
     ' It computes statistics about your texting habits with other people.' +
     ' I worked in a team of two and I was responsible for design, front-end development, SQLite integration, and app store publication.',
-    tech: ['Java', 'Android Studio', 'Inkscape', 'Git'],
+    tech: ['Java', 'Android Studio', 'Inkscape', 'Git', 'XML'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.talkalytics&hl=en',
     imgFolder: 'texty-time',
     previewImg: 'logo.png',
@@ -28,7 +28,7 @@ export default [
     desc: 'An app that helps you keep track of your food expiration dates.' +
     ' It syncs with your Google Calendar to help remind you of when things are going to expire and when you should finish eating them.' +
     ' I was responsible for all aspects of the app, including design, front-end development, SQLite integration, API calls, and app store publication.',
-    tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator'],
+    tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'XML'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
     imgFolder: 'fridgly',
     previewImg: 'logo.png',
@@ -47,7 +47,7 @@ export default [
     desc: 'An app that helps you keep track of your expenses.' +
     ' It provides detailed statistics about your spending habits to help you drill down into the areas in which you spend the most money.' +
     ' I was responsible for all aspects of the app, including design, front-end development, SQLite integration, API calls, and app store publication.',
-    tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'Git'],
+    tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'Git', 'XML'],
     url: 'https://play.google.com/store/apps/details?id=com.aheadstudios.spending3',
     imgFolder: 'driller',
     previewImg: 'logo.png',
@@ -101,7 +101,7 @@ export default [
     platforms: ['Web', 'PC', 'OSX', 'Android', 'iOS'],
     desc: 'A business communication tool designed to help you keep the most important information visible.' +
     ' I worked in a team of three and I was responsible for design, front-end development and back-end development.',
-    tech: ['Javascript', 'React', 'Meteor', 'MongoDB', 'Electron', 'React Native', 'Digital Ocean', 'Sketch', 'Git'],
+    tech: ['Javascript', 'React', 'Meteor', 'MongoDB', 'Electron', 'React Native', 'Digital Ocean', 'Sketch', 'Git', 'Jade/Pug'],
     url: 'http://188.166.180.161',
     imgFolder: 'olis',
     previewImg: 'logo.png',
@@ -126,7 +126,7 @@ export default [
     platforms: ['Web'],
     desc: 'A landing page for Olis.' +
     ' I worked in a team of three and I was responsible for design and front-end development.',
-    tech: ['Javascript', 'React', 'Sketch'],
+    tech: ['Javascript', 'React', 'Sketch', 'SCSS'],
     url: 'https://hyperh.github.io/olis-website/',
     imgFolder: 'olis-landing',
     previewImg: 'logo.png',
@@ -141,7 +141,7 @@ export default [
     platforms: ['Web'],
     desc: 'A landing page for ReactForge, a React-based web development agency.' +
     ' I worked in a team of three and I was responsible for design and front-end development.',
-    tech: ['Javascript', 'React', 'Webpack', 'Sketch'],
+    tech: ['Javascript', 'React', 'Webpack', 'Sketch', 'SCSS'],
     url: 'https://hyperh.github.io/react-forge-landing/',
     imgFolder: 'react-forge',
     previewImg: 'logo.png',
@@ -156,7 +156,7 @@ export default [
     platforms: ['Web'],
     desc: 'A tool to help you make hard decisions.' +
     ' I was responsible for all aspects of the app, including design and front-end development.',
-    tech: ['Javascript', 'React', 'Webpack', 'MobX', 'Sketch', 'Digital Ocean', 'Git'],
+    tech: ['Javascript', 'React', 'Webpack', 'MobX', 'Sketch', 'Digital Ocean', 'Git', 'SCSS'],
     url: 'http://decideotron.xyz',
     imgFolder: 'decide-o-tron',
     previewImg: 'logo.png',
