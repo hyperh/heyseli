@@ -35,16 +35,16 @@ class Sidebar extends Component {
           <div className={styles.name}>heyse li</div>
           <div className={styles.links}>
             <div className={styles.item}>
-              <Link to="/contact">contact</Link>
+              <Link to="/contact" onClick={this.onClick}>contact</Link>
             </div>
             <div className={styles.item}>
-              <Link to="/work">work</Link>
+              <Link to="/work" onClick={this.onClick}>work</Link>
             </div>
             <div className={styles.item}>
-              <Link to="/publications">publications</Link>
+              <Link to="/publications" onClick={this.onClick}>publications</Link>
             </div>
             <div className={styles.item}>
-              <Link to="/resume">resume</Link>
+              <Link to="/resume" onClick={this.onClick}>resume</Link>
             </div>
           </div>
         </div>
