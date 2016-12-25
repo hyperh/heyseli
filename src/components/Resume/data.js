@@ -13,7 +13,7 @@ export default {
     {
       title: 'Full Stack Developer, Designer',
       company: 'Olis',
-      time: '2015 Nov - Jun',
+      time: '2015 Nov - 2016 Jun',
     },
     {
       title: 'Programming Teacher',
