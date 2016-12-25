@@ -42,7 +42,7 @@ export default {
     },
     {
       title: 'Business Analyst',
-      company: 'Canadian Imperial Bank of Commerce - Process Optimization',
+      company: 'Canadian Imperial Bank of Commerce (CIBC) - Process Optimization',
       time: '2009 Jun - 2010 Sep',
     },
   ],
