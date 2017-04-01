@@ -11,7 +11,7 @@ import Resume from './Resume';
 const Routes = () => (
   <Router history={hashHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={Work} />
+      <IndexRoute component={Contact} />
       <Route path="work" component={Work} />
       <Route path="work/:link" component={WorkItem} />
       <Route path="contact" component={Contact} />
