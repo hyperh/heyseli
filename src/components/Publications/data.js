@@ -60,6 +60,21 @@ export default [
         ],
         filename: 'ml.pdf',
       },
+      {
+        title: 'Multi-stage resource-aware scheduling for data centers with heterogeneous servers',
+        author: 'Tran, Tony T. and Padmanabhan, Meghana and Zhang, Peter Yun and Li, Heyse and Down, Douglas G. and Beck, J. Christopher',
+        journal: 'Journal of Scheduling',
+        volume: '',
+        number: '',
+        pages: '',
+        year: '2017',
+        publisher: '',
+        tags: [
+          'discrete event simulation',
+          'linear programming',
+          'integer programming',
+        ],
+      },
     ],
   },
   {
