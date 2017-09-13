@@ -74,6 +74,7 @@ export default [
           'linear programming',
           'integer programming',
         ],
+        filename: 'sched.pdf',
       },
     ],
   },
