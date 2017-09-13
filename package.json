@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src",
-    "clean": "rm -r ./dist/public",
+    "clean": "rimraf ./dist",
     "build": "npm run clean && webpack",
     "build:prod": "npm run clean && NODE_ENV=production webpack -p",
     "test": "karma start",
@@ -52,6 +52,7 @@
     "postcss-loader": "^0.9.1",
     "react-hot-loader": "^3.0.0-beta.1",
     "resolve-url-loader": "^1.6.0",
+    "rimraf": "^2.6.2",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
