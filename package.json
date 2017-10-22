@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A webpack skeleton.",
   "scripts": {
-    "start": "node server.js",
+    "start": "PORT=3000 node server.js",
     "lint": "eslint src",
     "clean": "rimraf ./dist",
     "prettier:fix": "prettier --write 'src/**/*.js'",
