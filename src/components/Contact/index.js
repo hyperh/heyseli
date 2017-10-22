@@ -1,4 +1,7 @@
 import React from 'react';
+import Github from 'react-icons/lib/fa/github-square';
+import Medium from 'react-icons/lib/fa/medium';
+import Twitter from 'react-icons/lib/fa/twitter-square';
 import { Link } from 'react-router';
 import styles from './styles.scss';
 import data from './data';
@@ -25,6 +28,11 @@ const Contact = () => (
     <p>
       You check out my portfolio <Link to="/work">here</Link>.
     </p>
+    <div>
+      <Github className={styles.socialIcon} />
+      <Medium className={styles.socialIcon} />
+      <Twitter className={styles.socialIcon} />
+    </div>
     <p>
       You can also follow me on <a href={twitter}>Twitter</a> and{' '}
       <a href={medium}>Medium</a>. I write about things on Medium from time to
