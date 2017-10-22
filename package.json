@@ -9,7 +9,6 @@
     "build": "npm run clean && webpack",
     "build:prod": "npm run clean && NODE_ENV=production webpack -p && npm run copy",
     "copy": "cp index.prod.html dist/index.html && cp CNAME dist/CNAME",
-    "test": "karma start",
     "watch:test": "npm test -- --auto-watch --no-single-run",
     "deploy": "npm run build:prod && gh-pages -d dist"
   },
@@ -62,7 +61,11 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-prettier": "^2.3.1",
     "lodash": "^4.13.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.7.4",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-icons": "^2.2.1",
