@@ -2,11 +2,12 @@ import React from 'react';
 import Github from 'react-icons/lib/fa/github-square';
 import Medium from 'react-icons/lib/fa/medium';
 import Twitter from 'react-icons/lib/fa/twitter-square';
-import { Link } from 'react-router';
+import PortfolioIcon from 'react-icons/lib/ti/folder-open';
 import styles from './styles.scss';
 import data from './data';
 import HiddenEmail from './HiddenEmail';
 import SocialIcon from './SocialIcon';
+import Portfolio from './Portfolio';
 
 /* eslint-disable max-len */
 const { email, twitter, medium, github } = data;
@@ -23,13 +24,16 @@ const Contact = () => (
         <i>
           <HiddenEmail email={email} />
         </i>
-      </b>.
+      </b>
     </p>
 
-    <p>
-      You check out my portfolio <Link to="/work">here</Link>.
-    </p>
     <div>
+      <Portfolio
+        Icon={PortfolioIcon}
+        header="Portfolio"
+        desc="My work"
+        url="/work"
+      />
       <SocialIcon
         Icon={Github}
         header="Github"
