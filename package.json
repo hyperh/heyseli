@@ -6,11 +6,12 @@
     "start": "node server.js",
     "lint": "eslint src",
     "clean": "rimraf ./dist",
+    "prettier:fix": "prettier --write 'src/**/*.js'",
     "build": "npm run clean && webpack",
     "build:prod": "npm run clean && NODE_ENV=production webpack -p && npm run copy",
     "copy": "cp index.prod.html dist/index.html && cp CNAME dist/CNAME",
     "watch:test": "npm test -- --auto-watch --no-single-run",
-    "deploy": "npm run build:prod && gh-pages -d dist"
+    "deploy": "npm run build:prod && gh-pages -d dist",
   },
   "repository": {
     "type": "git",
