@@ -1,6 +1,10 @@
 export default {
   experience: [
     {
+      title: 'Freelance Developer',
+      time: '2017-Present',
+    },
+    {
       title: 'Full Stack Developer',
       company: 'Brain.fm',
       time: '2016 Nov - Present',
