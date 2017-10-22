@@ -1,7 +1,7 @@
 export default {
   experience: [
     {
-      title: 'Freelance Developer',
+      title: 'Freelance Developer TEST',
       company: 'Self-employed',
       time: '2017-Present'
     },
