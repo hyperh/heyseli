@@ -4,10 +4,4 @@ node_js:
 script:
   - yarn run test
   - yarn
-  - yarn run build:prod
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  on:
-    branch: master
+  - yarn run deploy
