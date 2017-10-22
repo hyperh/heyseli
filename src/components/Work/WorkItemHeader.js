@@ -4,10 +4,14 @@ import styles from './WorkItemHeader.scss';
 
 /* eslint-disable global-require */
 const getHeaderImg = (imgFolder, headerImg) => {
-  const headerImgPath = headerImg ?
-    require(`../../assets/img/${imgFolder}/${headerImg}`) : null;
-  return headerImg ?
-    <div className={styles.imgWrapper}><img src={headerImgPath} alt="header" /></div> : null;
+  const headerImgPath = headerImg
+    ? require(`../../assets/img/${imgFolder}/${headerImg}`)
+    : null;
+  return headerImg ? (
+    <div className={styles.imgWrapper}>
+      <img src={headerImgPath} alt="header" />
+    </div>
+  ) : null;
 };
 
 const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
@@ -26,7 +30,7 @@ WorkItemHeader.propTypes = {
   platforms: PropTypes.array,
   url: PropTypes.string,
   imgFolder: PropTypes.string,
-  headerImg: PropTypes.string,
+  headerImg: PropTypes.string
 };
 
 export default WorkItemHeader;

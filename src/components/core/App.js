@@ -7,14 +7,12 @@ import Content from './Content';
 const App = ({ children }) => (
   <div className={styles.app}>
     <Sidebar />
-    <Content>
-      {children}
-    </Content>
+    <Content>{children}</Content>
   </div>
 );
 
 App.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.object
 };
 
 export default App;

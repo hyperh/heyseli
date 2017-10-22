@@ -7,7 +7,7 @@ import data from './data';
 
 const Work = () => (
   <div className={styles.wrapper}>
-    {data.map(item =>
+    {data.map(item => (
       <WorkPreview
         key={item.name}
         name={item.name}
@@ -15,7 +15,7 @@ const Work = () => (
         link={item.link}
         previewImg={item.previewImg}
       />
-    )}
+    ))}
   </div>
 );
 

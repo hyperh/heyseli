@@ -9,26 +9,26 @@ const Resume = () => (
   <div className={styles.wrapper}>
     <div>
       <h1>Experience</h1>
-      {
-        experience.map(x => {
-          const { title, company, time } = x;
-          return (<p key={company} className={styles.exp}>
+      {experience.map(x => {
+        const { title, company, time } = x;
+        return (
+          <p key={company} className={styles.exp}>
             <b>{title}</b>, {company}, <i>{time}</i>
-          </p>);
-        })
-      }
+          </p>
+        );
+      })}
     </div>
 
     <div>
       <h1>Education</h1>
-      {
-        education.map(x => {
-          const { school, type, faculty, gradYear } = x;
-          return (<p key={type}>
+      {education.map(x => {
+        const { school, type, faculty, gradYear } = x;
+        return (
+          <p key={type}>
             <b>{type}</b>, {school}, {faculty}, <i>{gradYear}</i>
-          </p>);
-        })
-      }
+          </p>
+        );
+      })}
     </div>
   </div>
 );

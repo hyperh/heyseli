@@ -8,7 +8,11 @@ const WorkPreview = ({ name, platform, link, previewImg }) => (
     <Link to={`/work/${link}`}>
       <div className={styles.imgWrapper}>
         <img
-          src={previewImg ? require(`../../assets/img/${link}/${previewImg}`) : null} // eslint-disable-line global-require, max-len
+          src={
+            previewImg
+              ? require(`../../assets/img/${link}/${previewImg}`)
+              : null
+          } // eslint-disable-line global-require, max-len
           alt={name}
         />
       </div>
@@ -22,7 +26,7 @@ WorkPreview.propTypes = {
   name: PropTypes.string.isRequired,
   platform: PropTypes.array,
   link: PropTypes.string,
-  previewImg: PropTypes.string,
+  previewImg: PropTypes.string
 };
 
 export default WorkPreview;

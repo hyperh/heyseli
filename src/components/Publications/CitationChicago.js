@@ -18,10 +18,17 @@ const authorsWithBold = (authorStr, boldAuthor) => {
   );
 };
 
-const CitationChicago = ({ author, title, journal, conference, number, pages, year }) => (
+const CitationChicago = ({
+  author,
+  title,
+  journal,
+  conference,
+  number,
+  pages,
+  year
+}) => (
   <p>
-    {authorsWithBold(author, 'Li, Heyse')}.&nbsp;
-    "{title}".&nbsp;
+    {authorsWithBold(author, 'Li, Heyse')}.&nbsp; "{title}".&nbsp;
     {journal ? <i>{journal}</i> : null}
     {number ? ` no. ${number}` : null}
     {conference ? <i>{` ${conference}`}</i> : null}
@@ -38,7 +45,7 @@ CitationChicago.propTypes = {
   conference: PropTypes.string,
   number: PropTypes.string,
   pages: PropTypes.string,
-  year: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired
 };
 
 export default CitationChicago;

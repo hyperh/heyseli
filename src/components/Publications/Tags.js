@@ -2,12 +2,13 @@ import React, { PropTypes } from 'react';
 
 const Tags = ({ tags }) => (
   <p>
-    <i>Tags: </i>{tags.sort().join(', ')}
+    <i>Tags: </i>
+    {tags.sort().join(', ')}
   </p>
 );
 
 Tags.propTypes = {
-  tags: PropTypes.array.isRequired,
+  tags: PropTypes.array.isRequired
 };
 
 export default Tags;

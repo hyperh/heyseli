@@ -16,14 +16,14 @@ class Gallery extends Component {
     this.onClose = this.onClose.bind(this);
     this.state = {
       isOpen: false,
-      currentImage: 0,
+      currentImage: 0
     };
   }
 
   onClickGalleryThumb(index) {
     this.setState({
       isOpen: true,
-      currentImage: index,
+      currentImage: index
     });
   }
 
@@ -79,7 +79,7 @@ class Gallery extends Component {
 }
 
 Gallery.propTypes = {
-  images: PropTypes.array.isRequired,
+  images: PropTypes.array.isRequired
 };
 
 export default Gallery;

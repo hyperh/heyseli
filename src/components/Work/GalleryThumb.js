@@ -27,7 +27,7 @@ class GalleryThumb extends Component {
 GalleryThumb.propTypes = {
   src: PropTypes.string.isRequired,
   index: PropTypes.number,
-  onClick: PropTypes.func,
+  onClick: PropTypes.func
 };
 
 export default GalleryThumb;

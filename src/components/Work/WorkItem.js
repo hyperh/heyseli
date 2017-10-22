@@ -11,9 +11,9 @@ const WorkItem = ({ params }) => {
   const findLink = find(item => item.link === params.link);
   const workItem = findLink(data);
   const { name, platforms, url, imgFolder, headerImg, images } = workItem;
-  const lightboxImgs = images.map(image => (
-    { src: require(`../../assets/img/${imgFolder}/${image}`) }
-  ));
+  const lightboxImgs = images.map(image => ({
+    src: require(`../../assets/img/${imgFolder}/${image}`)
+  }));
 
   return (
     <div className={styles.wrapper}>
@@ -24,7 +24,9 @@ const WorkItem = ({ params }) => {
         imgFolder={imgFolder}
         headerImg={headerImg}
       />
-      <div className={styles.desc}><p>{workItem.desc}</p></div>
+      <div className={styles.desc}>
+        <p>{workItem.desc}</p>
+      </div>
 
       <div>
         <h2>Made With</h2>
@@ -37,7 +39,7 @@ const WorkItem = ({ params }) => {
 };
 
 WorkItem.propTypes = {
-  params: PropTypes.object,
+  params: PropTypes.object
 };
 
 export default WorkItem;
