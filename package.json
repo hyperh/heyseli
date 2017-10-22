@@ -15,7 +15,8 @@
     "deploy": "npm run build:prod && gh-pages -d dist"
   },
   "pre-commit": [
-    "prettier:pre-commit"
+    "prettier:pre-commit",
+    "lint"
   ],
   "repository": {
     "type": "git",
