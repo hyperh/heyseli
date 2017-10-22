@@ -12,7 +12,7 @@
     "build:prod": "npm run clean && NODE_ENV=production webpack -p && npm run copy",
     "copy": "cp index.prod.html dist/index.html && cp CNAME dist/CNAME",
     "watch:test": "npm test -- --auto-watch --no-single-run",
-    "deploy": "npm run build:prod && gh-pages -d dist",
+    "deploy": "npm run build:prod && gh-pages -d dist --repo https://$GITHUB_TOKEN@github.com/hyperh/hyperh.git",
     "test": "yarn run lint"
   },
   "pre-commit": [
