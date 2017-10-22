@@ -6,6 +6,7 @@ import { Link } from 'react-router';
 import styles from './styles.scss';
 import data from './data';
 import HiddenEmail from './HiddenEmail';
+import SocialIcon from './SocialIcon';
 
 /* eslint-disable max-len */
 const { email, twitter, medium, github } = data;
@@ -29,21 +30,27 @@ const Contact = () => (
       You check out my portfolio <Link to="/work">here</Link>.
     </p>
     <div>
-      <Github className={styles.socialIcon} />
-      <Medium className={styles.socialIcon} />
-      <Twitter className={styles.socialIcon} />
+      <SocialIcon
+        Icon={Github}
+        header="Github"
+        desc="Samples of my code and the contributions I've made to the open source
+      community."
+        url={github}
+      />
+      <SocialIcon
+        Icon={Medium}
+        header="Medium"
+        desc="I write mostly about issues that I encounter when programming and how I
+      solved it."
+        url={medium}
+      />
+      <SocialIcon
+        Icon={Twitter}
+        header="Twitter"
+        desc="I occasionally tweet."
+        url={twitter}
+      />
     </div>
-    <p>
-      You can also follow me on <a href={twitter}>Twitter</a> and{' '}
-      <a href={medium}>Medium</a>. I write about things on Medium from time to
-      time, mostly about issues that I encounter when programming and how I
-      solved it.
-    </p>
-    <p>
-      I also have a <a href={github}>Github</a> account, where you can view
-      samples of my code and the contributions I have made to the open source
-      community.
-    </p>
   </div>
 );
 
