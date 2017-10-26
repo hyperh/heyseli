@@ -175,7 +175,7 @@ export default [
       'Git',
       'SCSS'
     ],
-    url: 'http://decideotron.xyz',
+    url: 'https://decide-o-tron.herokuapp.com',
     imgFolder: 'decide-o-tron',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
