@@ -1,9 +1,9 @@
 export default {
   experience: [
     {
-      title: 'Freelance Developer',
-      company: 'Self-employed',
-      time: '2017-Present'
+      title: 'Full Stack Developer',
+      company: 'bZx',
+      time: '2018 Feb - 2018 Jun'
     },
     {
       title: 'Full Stack Developer',
