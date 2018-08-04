@@ -1,3 +1,5 @@
+import React from 'react';
+
 /* eslint-disable max-len */
 export default [
   {
@@ -191,27 +193,63 @@ export default [
     year: 2016.3
   },
   {
-    name: 'Brain.fm Website and App',
-    link: 'decide-o-tron', // 'brainfm-web',
+    name: 'Brain.fm (Web)',
+    link: 'brainfm-web',
     platforms: ['Web'],
-    desc:
-      'A tool to help you make hard decisions.' +
-      ' I was responsible for all aspects of the app, including design and front-end development.',
+    desc: (
+      <p>
+        <p>
+          A web app that streamed music. I was responsible for the rewriting of
+          the entre website. I replaced old JQuery and Handlebars code with a
+          modern ES6, React frontend architecture. I also rewrote the
+          server-side Express code, replicating all the functionality of the
+          original.
+        </p>
+
+        <p>
+          The new codebase was significantly more maintainable and easier to add
+          functionality to, allowing the company to iterate faster and deliver
+          more features to users in less time. Working with a team of 1 other
+          developer and 1 infrastructure engineer, the new website was
+          successfully relaunched and deployed to over 50,000 active users. It
+          streamed over 80TB of music a month.
+        </p>
+        <p>
+          After its release we brought on more developers to help maintain the
+          website. I worked in a team of 4 to help maintain the website moving
+          forward.
+        </p>
+      </p>
+    ),
     tech: [
       'Javascript',
       'React',
+      'Redux',
+      'Redux Sagas',
+      'CSS Next',
+      'Express',
+      'MySQL',
       'Webpack',
-      'MobX',
-      'Sketch',
-      'Digital Ocean',
-      'Git',
-      'SCSS'
+      'Travis',
+      'Jenkins',
+      'Git'
     ],
-    url: 'https://decide-o-tron.herokuapp.com',
-    imgFolder: 'decide-o-tron',
+    url: 'https://brain.fm',
+    imgFolder: 'brainfm-web',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
-    images: ['input.png', 'vote.png', 'winner.png'],
+    images: [
+      'landing-page.png',
+      'landing-page-responsive.png',
+      'about.png',
+      'science.png',
+      'press.png',
+      'pricing.png',
+      'faq.png',
+      'app.png',
+      'explore.png',
+      'learn.png'
+    ],
     year: 2017
   }
 ];
