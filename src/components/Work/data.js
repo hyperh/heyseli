@@ -16,10 +16,14 @@ export default [
     name: 'Texty Time',
     link: 'texty-time',
     platforms: ['Android'],
-    desc:
-      'An app that helps you understand your textual relationships with others.' +
-      ' It computes statistics about your texting habits with other people.' +
-      ' I worked in a team of two and I was responsible for design, front-end development, SQLite integration, and app store publication.',
+    desc: (
+      <p>
+        An app that helps you understand your textual relationships with others.
+        It computes statistics about your texting habits with other people. I
+        worked in a team of two and I was responsible for design, front-end
+        development, SQLite integration, and app store publication.
+      </p>
+    ),
     tech: ['Java', 'Android Studio', 'Inkscape', 'Git', 'XML'],
     url:
       'https://play.google.com/store/apps/details?id=com.aheadstudios.talkalytics&hl=en',
@@ -40,10 +44,16 @@ export default [
     name: 'Fridgly',
     link: 'fridgly',
     platforms: ['Android'],
-    desc:
-      'An app that helps you keep track of your food expiration dates.' +
-      ' It syncs with your Google Calendar to help remind you of when things are going to expire and when you should finish eating them.' +
-      ' I was responsible for all aspects of the app, including design, front-end development, SQLite integration, API calls, and app store publication.',
+    desc: (
+      <p>
+        An app that helps you keep track of your food expiration dates. It syncs
+        with your Google Calendar to help remind you of when things are going to
+        expire and when you should finish eating them. I was responsible for all
+        aspects of the app, including design, front-end development, SQLite
+        integration, API calls, and app store publication.
+      </p>
+    ),
+
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'XML'],
     url:
       'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
@@ -57,10 +67,15 @@ export default [
     name: 'Driller',
     link: 'driller',
     platforms: ['Android'],
-    desc:
-      'An app that helps you keep track of your expenses.' +
-      ' It provides detailed statistics about your spending habits to help you drill down into the areas in which you spend the most money.' +
-      ' I was responsible for all aspects of the app, including design, front-end development, SQLite integration, API calls, and app store publication.',
+    desc: (
+      <p>
+        An app that helps you keep track of your expenses. It provides detailed
+        statistics about your spending habits to help you drill down into the
+        areas in which you spend the most money. I was responsible for all
+        aspects of the app, including design, front-end development, SQLite
+        integration, API calls, and app store publication.
+      </p>
+    ),
     tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'Git', 'XML'],
     url:
       'https://play.google.com/store/apps/details?id=com.aheadstudios.spending3',
@@ -84,10 +99,19 @@ export default [
     name: 'TORCH',
     link: 'torch',
     platforms: ['Design'],
-    desc:
-      '"TORCH is the annual operations research challenge organized at the Mechanical & Industrial Engineering Department at University of Toronto.' +
-      ' TORCH is a one-day contest where teams of 3 to 4 high school students solve 5 to 10 problems related to different application areas of operations research." - TORCH website.' +
-      ' I was responsible for the design of the logo and flyers.',
+    desc: (
+      <p>
+        <p>
+          "TORCH is the annual operations research challenge organized at the
+          Mechanical & Industrial Engineering Department at University of
+          Toronto. TORCH is a one-day contest where teams of 3 to 4 high school
+          students solve 5 to 10 problems related to different application areas
+          of operations research." - TORCH website.
+        </p>
+        <p>I was responsible for the design of the logo and flyers.</p>
+      </p>
+    ),
+
     tech: ['Adobe Illustrator'],
     url: 'http://orchallenge.org/',
     imgFolder: 'torch',
@@ -100,9 +124,13 @@ export default [
     name: 'MIE Banner Contest',
     link: 'mie-banner',
     platforms: ['Design'],
-    desc:
-      'The faculty of Mechanical and Industrial Engineering (MIE), wanted to replace a really old banner on the outside of a building, so they held a contest.' +
-      ' This was my winning entry.',
+    desc: (
+      <p>
+        The faculty of Mechanical and Industrial Engineering (MIE), wanted to
+        replace a really old banner on the outside of a building, so they held a
+        contest. This was my winning entry.
+      </p>
+    ),
     tech: ['Adobe Illustrator'],
     imgFolder: 'mie-banner',
     previewImg: 'logo.png',
@@ -114,9 +142,13 @@ export default [
     name: 'Olis',
     link: 'olis',
     platforms: ['Web', 'PC', 'OSX', 'Android', 'iOS'],
-    desc:
-      'A business communication tool designed to help you keep the most important information visible.' +
-      ' I worked in a team of three and I was responsible for design, front-end development and back-end development.',
+    desc: (
+      <p>
+        A business communication tool designed to help you keep the most
+        important information visible. I worked in a team of three and I was
+        responsible for design, front-end development and back-end development.
+      </p>
+    ),
     tech: [
       'Javascript',
       'React',
@@ -152,9 +184,12 @@ export default [
     name: 'Olis Landing Page',
     link: 'olis-landing',
     platforms: ['Web'],
-    desc:
-      'A landing page for Olis.' +
-      ' I worked in a team of three and I was responsible for design and front-end development.',
+    desc: (
+      <p>
+        A landing page for Olis. I worked in a team of three and I was
+        responsible for design and front-end development.
+      </p>
+    ),
     tech: ['Javascript', 'React', 'Sketch', 'SCSS'],
     url: 'https://hyperh.github.io/olis-website/',
     imgFolder: 'olis-landing',
@@ -167,9 +202,13 @@ export default [
     name: 'ReactForge',
     link: 'react-forge',
     platforms: ['Web'],
-    desc:
-      'A landing page for ReactForge, a React-based web development agency.' +
-      ' I worked in a team of three and I was responsible for design and front-end development.',
+    desc: (
+      <p>
+        A landing page for ReactForge, a React-based web development agency. I
+        worked in a team of three and I was responsible for design and front-end
+        development.
+      </p>
+    ),
     tech: ['Javascript', 'React', 'Webpack', 'Sketch', 'SCSS'],
     url: 'https://hyperh.github.io/react-forge-landing/',
     imgFolder: 'react-forge',
@@ -182,9 +221,12 @@ export default [
     name: 'Decide-o-Tron',
     link: 'decide-o-tron',
     platforms: ['Web'],
-    desc:
-      'A tool to help you make hard decisions.' +
-      ' I was responsible for all aspects of the app, including design and front-end development.',
+    desc: (
+      <p>
+        A tool to help you make hard decisions. I was responsible for all
+        aspects of the app, including design and front-end development.
+      </p>
+    ),
     tech: [
       'Javascript',
       'React',
@@ -209,7 +251,7 @@ export default [
     desc: (
       <p>
         <p>
-          A web app that streamed music. I was responsible for the rewriting of
+          A web app that streams music. I was responsible for the rewriting of
           the entre website. I replaced old JQuery and Handlebars code with a
           modern ES6, React frontend architecture. I also rewrote the
           server-side Express code, replicating all the functionality of the
@@ -219,8 +261,8 @@ export default [
         <p>
           The new codebase was significantly more maintainable and easier to add
           functionality to, allowing the company to iterate faster and deliver
-          more features to users in less time. Working with a team of 1 other
-          developer and 1 infrastructure engineer, the new website was
+          more features to users in less time. Working with a team of one other
+          developer and one infrastructure engineer, the new website was
           successfully relaunched and deployed to over 50,000 active users. It
           streamed over 80TB of music a month.
         </p>
@@ -265,10 +307,10 @@ export default [
     desc: (
       <p>
         <p>
-          A mobile app that streamed music. It used React Native to support both
-          the Android and iOS platforms. I worked in a team of 3 to stabilize
-          the mobile apps after a large number of bugs were being reported by
-          users.
+          A mobile app that streams music. It used React Native to support both
+          the Android and iOS platforms. I worked in a team of three to
+          stabilize the mobile apps after a large number of bugs were being
+          reported by users.
         </p>
 
         <p>
