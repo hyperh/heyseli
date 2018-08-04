@@ -134,7 +134,7 @@ export default [
       'new-chat.png',
       'search.png'
     ],
-    year: 2016
+    year: 2016.0
   },
   {
     name: 'Olis Landing Page',
@@ -149,7 +149,7 @@ export default [
     previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: ['all.png'],
-    year: 2016
+    year: 2016.1
   },
   {
     name: 'ReactForge',
@@ -164,7 +164,7 @@ export default [
     previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: ['all.png'],
-    year: 2016
+    year: 2016.2
   },
   {
     name: 'Decide-o-Tron',
@@ -188,6 +188,30 @@ export default [
     previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: ['input.png', 'vote.png', 'winner.png'],
-    year: 2016
+    year: 2016.3
+  },
+  {
+    name: 'Brain.fm Website and App',
+    link: 'decide-o-tron', // 'brainfm-web',
+    platforms: ['Web'],
+    desc:
+      'A tool to help you make hard decisions.' +
+      ' I was responsible for all aspects of the app, including design and front-end development.',
+    tech: [
+      'Javascript',
+      'React',
+      'Webpack',
+      'MobX',
+      'Sketch',
+      'Digital Ocean',
+      'Git',
+      'SCSS'
+    ],
+    url: 'https://decide-o-tron.herokuapp.com',
+    imgFolder: 'decide-o-tron',
+    previewImg: 'logo.png',
+    headerImg: 'logo.png',
+    images: ['input.png', 'vote.png', 'winner.png'],
+    year: 2017
   }
 ];
