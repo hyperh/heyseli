@@ -317,7 +317,15 @@ export default [
           After the apps were successfully stabilized I worked to implement new
           features as requested by product.
         </p>
+
         {bfmTechLead}
+
+        <p>
+          Later, I was responsible for rearchitecting the mobile apps as the
+          orginal mobile app codebase had become too bloated and fragmented to
+          work with to fulfill the requirements from product in a reasonable
+          timeframe.
+        </p>
       </div>
     ),
     tech: [
