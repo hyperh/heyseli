@@ -1,32 +1,23 @@
 {
-  parser: 'babel-eslint',
-  extends: [
-    'airbnb',
-    'prettier',
-    'prettier/react'
-  ],
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "prettier/react"],
   "env": {
-      "browser": true,
-      "node": true,
-      "mocha": true
-  },  
-  "rules": {
-      "react/jsx-filename-extension": 0,
-      "arrow-body-style": 0,
-      "no-underscore-dangle": 0,
-      "no-plusplus": [
-        "error",
-        { "allowForLoopAfterthoughts": true }
-      ],
-      "import/prefer-default-export": 0,
-      "prettier/prettier": [
-        "error",
-        {
-          "singleQuote": true
-        }
-      ]
+    "browser": true,
+    "node": true,
+    "mocha": true
   },
-  "plugins": [
-    "prettier"
-  ]
+  "rules": {
+    "react/jsx-filename-extension": 0,
+    "arrow-body-style": 0,
+    "no-underscore-dangle": 0,
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "import/prefer-default-export": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
+    ]
+  },
+  "plugins": ["prettier"]
 }
