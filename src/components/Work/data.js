@@ -21,7 +21,8 @@ export default [
       'emoticons.png',
       'compare.png',
       'favorites.png'
-    ]
+    ],
+    year: 2013
   },
   {
     name: 'Fridgly',
@@ -37,7 +38,8 @@ export default [
     imgFolder: 'fridgly',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
-    images: ['main.png', 'meat.png', 'meat-veal.png', 'fridge.png']
+    images: ['main.png', 'meat.png', 'meat-veal.png', 'fridge.png'],
+    year: 2015
   },
   {
     name: 'Driller',
@@ -63,7 +65,8 @@ export default [
       'by_time_food_google.png',
       'currency_google.png',
       'import_google.png'
-    ]
+    ],
+    year: 2015
   },
   {
     name: 'TORCH',
@@ -78,7 +81,8 @@ export default [
     imgFolder: 'torch',
     previewImg: 'fire.png',
     headerImg: 'fire.png',
-    images: ['logo.png', 'TORCH_flyer_2015.png']
+    images: ['logo.png', 'TORCH_flyer_2015.png'],
+    year: 2015
   },
   {
     name: 'MIE Banner Contest',
@@ -91,7 +95,8 @@ export default [
     imgFolder: 'mie-banner',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
-    images: ['MIE-Banner-FINAL.png']
+    images: ['MIE-Banner-FINAL.png'],
+    year: 2015
   },
   {
     name: 'Olis',
@@ -128,7 +133,8 @@ export default [
       'invite-to-team.png',
       'new-chat.png',
       'search.png'
-    ]
+    ],
+    year: 2016
   },
   {
     name: 'Olis Landing Page',
@@ -142,7 +148,8 @@ export default [
     imgFolder: 'olis-landing',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
-    images: ['all.png']
+    images: ['all.png'],
+    year: 2016
   },
   {
     name: 'ReactForge',
@@ -156,7 +163,8 @@ export default [
     imgFolder: 'react-forge',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
-    images: ['all.png']
+    images: ['all.png'],
+    year: 2016
   },
   {
     name: 'Decide-o-Tron',
@@ -179,6 +187,7 @@ export default [
     imgFolder: 'decide-o-tron',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
-    images: ['input.png', 'vote.png', 'winner.png']
+    images: ['input.png', 'vote.png', 'winner.png'],
+    year: 2016
   }
 ];
