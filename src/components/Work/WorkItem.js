@@ -24,9 +24,7 @@ const WorkItem = ({ params }) => {
         imgFolder={imgFolder}
         headerImg={headerImg}
       />
-      <div className={styles.desc}>
-        <p>{workItem.desc}</p>
-      </div>
+      <div className={styles.desc}>{workItem.desc}</div>
 
       <div>
         <h2>Made With</h2>

@@ -249,7 +249,7 @@ export default [
     link: 'brainfm-web',
     platforms: ['Web'],
     desc: (
-      <p>
+      <div>
         <p>
           A web app that streams music. I was responsible for the rewriting of
           the entre website. I replaced old JQuery and Handlebars code with a
@@ -267,7 +267,7 @@ export default [
           streamed over 80TB of music a month.
         </p>
         {bfmTechLead}
-      </p>
+      </div>
     ),
     tech: [
       'Javascript',
@@ -305,7 +305,7 @@ export default [
     link: 'brainfm-mobile',
     platforms: ['Android', 'iOS'],
     desc: (
-      <p>
+      <div>
         <p>
           A mobile app that streams music. It used React Native to support both
           the Android and iOS platforms. I worked in a team of three to
@@ -318,7 +318,7 @@ export default [
           features as requested by product.
         </p>
         {bfmTechLead}
-      </p>
+      </div>
     ),
     tech: [
       'Javascript',
@@ -382,6 +382,6 @@ export default [
     previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: ['gen_order_screen.png', 'balances_screen.png'],
-    year: 2017
+    year: 2018
   }
 ];
