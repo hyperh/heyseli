@@ -3,7 +3,7 @@ export default {
     {
       title: 'Full Stack Developer',
       company: 'bZx',
-      time: '2018 Feb - 2018 Jun'
+      time: '2018 Feb - Jun'
     },
     {
       title: 'Full Stack Developer',
