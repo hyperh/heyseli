@@ -1,5 +1,15 @@
 import React from 'react';
 
+const bfmTechLead = (
+  <p>
+    Later on, I was involved in the hiring process to bring on more developers
+    to help maintain all the app platforms (web and mobile apps). I worked in a
+    team of 4 to moving forward. I eventually took on the role of Tech Lead and
+    was involved with architecting new codebases and mentoring junior
+    developers.
+  </p>
+);
+
 /* eslint-disable max-len */
 export default [
   {
@@ -214,11 +224,7 @@ export default [
           successfully relaunched and deployed to over 50,000 active users. It
           streamed over 80TB of music a month.
         </p>
-        <p>
-          After its release we brought on more developers to help maintain the
-          website. I worked in a team of 4 to help maintain the website moving
-          forward.
-        </p>
+        {bfmTechLead}
       </p>
     ),
     tech: [
@@ -249,6 +255,62 @@ export default [
       'app.png',
       'explore.png',
       'learn.png'
+    ],
+    year: 2017
+  },
+  {
+    name: 'Brain.fm (Mobile)',
+    link: 'brainfm-mobile',
+    platforms: ['Android', 'iOS'],
+    desc: (
+      <p>
+        <p>
+          A mobile app that streamed music. It used React Native to support both
+          the Android and iOS platforms. I worked in a team of 3 to stabilize
+          the mobile apps after a large number of bugs were being reported by
+          users.
+        </p>
+
+        <p>
+          After the apps were successfully stabilized I worked to implement new
+          features as requested by product.
+        </p>
+        {bfmTechLead}
+      </p>
+    ),
+    tech: [
+      'Javascript',
+      'React',
+      'React Native',
+      'Travis',
+      'Jenkins',
+      'Git',
+      'Java'
+    ],
+    url: [
+      {
+        name: 'Android',
+        value:
+          'https://play.google.com/store/apps/details?id=com.brainfm.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+      },
+      {
+        name: 'iOS',
+        value:
+          'https://itunes.apple.com/vn/app/brain.fm-music-for-focus-meditation/id1110684238?mt=8'
+      }
+    ],
+    imgFolder: 'brainfm-mobile',
+    previewImg: 'logo.png',
+    headerImg: 'logo.png',
+    images: [
+      'launch.png',
+      'focus.png',
+      'signup.png',
+      'home.png',
+      'explore.png',
+      'player.png',
+      'settings.png',
+      'drawer.png'
     ],
     year: 2017
   }

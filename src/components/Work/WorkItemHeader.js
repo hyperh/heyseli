@@ -20,7 +20,13 @@ const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
     <div className={styles.text}>
       <h1>{name}</h1>
       <p className={styles.platforms}>{platforms.join(', ')}</p>
-      <a href={url}>Link</a>
+      {typeof url === 'string' && <a href={url}>Link</a>}
+      {Array.isArray(url) &&
+        url.map(u => (
+          <p>
+            <a href={u.value}>{u.name}</a>
+          </p>
+        ))}
     </div>
   </div>
 );
