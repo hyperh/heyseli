@@ -161,7 +161,7 @@ export default [
       'Git',
       'Jade/Pug'
     ],
-    url: 'http://188.166.180.161',
+    url: [{ name: 'Github', value: 'https://github.com/hyperh/olis' }],
     imgFolder: 'olis',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
@@ -191,7 +191,10 @@ export default [
       </p>
     ),
     tech: ['Javascript', 'React', 'Sketch', 'SCSS'],
-    url: 'https://hyperh.github.io/olis-website/',
+    url: [
+      { name: 'Demo', value: 'https://hyperh.github.io/olis-website/' },
+      { name: 'Github', value: 'https://github.com/hyperh/olis-website' }
+    ],
     imgFolder: 'olis-landing',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
@@ -210,7 +213,16 @@ export default [
       </p>
     ),
     tech: ['Javascript', 'React', 'Webpack', 'Sketch', 'SCSS'],
-    url: 'https://hyperh.github.io/react-forge-landing/',
+    url: [
+      {
+        name: 'Demo',
+        value: 'https://hyperh.github.io/react-forge-landing/'
+      },
+      {
+        name: 'Github',
+        value: 'https://github.com/hyperh/react-forge-landing'
+      }
+    ],
     imgFolder: 'react-forge',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
@@ -393,7 +405,10 @@ export default [
       'web3.js',
       'Metamask'
     ],
-    url: 'https://bzx.network/',
+    url: [
+      { name: 'Website', value: 'https://bzx.network/' },
+      { name: 'Github', value: 'https://github.com/b0xNetwork/b0x.js' }
+    ],
     imgFolder: 'bzx',
     previewImg: 'logo.png',
     headerImg: 'logo.png',
