@@ -384,7 +384,15 @@ export default [
         </p>
       </div>
     ),
-    tech: ['Javascript', 'React', 'Solidity', 'Jest', 'Git'],
+    tech: [
+      'Javascript',
+      'React',
+      'Solidity',
+      'Jest',
+      'Git',
+      'web3.js',
+      'Metamask'
+    ],
     url: 'https://bzx.network/',
     imgFolder: 'bzx',
     previewImg: 'logo.png',
