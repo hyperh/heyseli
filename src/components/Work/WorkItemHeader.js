@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
-
 import styles from './WorkItemHeader.scss';
+import ExternalLink from '../core/ExternalLink';
 
 /* eslint-disable global-require */
 const getHeaderImg = (imgFolder, headerImg) => {
@@ -20,11 +20,11 @@ const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
     <div className={styles.text}>
       <h1>{name}</h1>
       <p className={styles.platforms}>{platforms.join(', ')}</p>
-      {typeof url === 'string' && <a href={url}>Link</a>}
+      {typeof url === 'string' && <ExternalLink to={url}>Link</ExternalLink>}
       {Array.isArray(url) &&
         url.map(u => (
           <p>
-            <a href={u.value}>{u.name}</a>
+            <ExternalLink to={u.value}>{u.name}</ExternalLink>
           </p>
         ))}
     </div>
