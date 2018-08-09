@@ -4,10 +4,6 @@
   display: flex;
 }
 
-.text {
-  padding-left: 2em;
-}
-
 .platforms {
   color: $secondary-text-dark;
 }
@@ -16,6 +12,7 @@ $headerImgSide: 10em;
 .imgWrapper {
   display: flex;
   justify-content: center;
+  margin-right: 2em;
 
   img {
     width: $headerImgSide;
