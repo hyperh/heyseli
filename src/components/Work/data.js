@@ -26,8 +26,8 @@ export default [
           Natural Sciences and Engineering Research Council of Canada (NSERC).
         </p>
         <p>
-          I worked in a team of 3 to develop the simulation. The research
-          eventually yielded a{' '}
+          I worked in a team of 3 to develop the simulation platform. The
+          research eventually yielded a{' '}
           <a href={simPaper}>refereed conference article in MISTA</a>.
         </p>
       </div>
