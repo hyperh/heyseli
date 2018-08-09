@@ -10,7 +10,7 @@ import data from './data';
 const WorkItem = ({ params }) => {
   const findLink = find(item => item.link === params.link);
   const workItem = findLink(data);
-  const { name, platforms, url, imgFolder, headerImg, images } = workItem;
+  const { name, platforms, url, imgFolder, headerImg, images = [] } = workItem;
   const lightboxImgs = images.map(image => ({
     src: require(`../../assets/img/${imgFolder}/${image}`)
   }));
