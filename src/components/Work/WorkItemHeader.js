@@ -23,7 +23,7 @@ const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
       {typeof url === 'string' && <ExternalLink to={url}>Link</ExternalLink>}
       {Array.isArray(url) &&
         url.map(u => (
-          <p>
+          <p key={u.name}>
             <ExternalLink to={u.value}>{u.name}</ExternalLink>
           </p>
         ))}
@@ -34,7 +34,10 @@ const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
 WorkItemHeader.propTypes = {
   name: PropTypes.string,
   platforms: PropTypes.array,
-  url: PropTypes.string,
+  url: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.object)
+  ]),
   imgFolder: PropTypes.string,
   headerImg: PropTypes.string
 };
