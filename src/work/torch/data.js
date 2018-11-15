@@ -1,5 +1,7 @@
 import React from 'react';
 import imgFire from './fire.png';
+import imgLogo from './logo.png';
+import imgFlyer from './TORCH_flyer_2015.png';
 
 export default {
   name: 'TORCH',
@@ -21,6 +23,6 @@ export default {
   url: 'http://orchallenge.org/',
   previewImg: imgFire,
   headerImg: imgFire,
-  images: ['logo.png', 'TORCH_flyer_2015.png'],
+  images: [imgLogo, imgFlyer],
   year: 2015
 };
