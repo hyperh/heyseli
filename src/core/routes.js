@@ -2,8 +2,8 @@ import React from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './App';
-import Work from '../components/Work';
-import WorkItem from '../components/Work/WorkItem';
+import Work from '../work/Work';
+import WorkItem from '../work/WorkItem';
 import Contact from '../components/Contact';
 import Publications from '../components/Publications';
 import Resume from '../components/Resume';
