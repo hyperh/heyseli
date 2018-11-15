@@ -20,7 +20,7 @@ export default {
   tech: ['Adobe Illustrator'],
   url: 'http://orchallenge.org/',
   previewImg: imgFire,
-  headerImg: 'fire.png',
+  headerImg: imgFire,
   images: ['logo.png', 'TORCH_flyer_2015.png'],
   year: 2015
 };

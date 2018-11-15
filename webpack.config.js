@@ -55,7 +55,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 10000,
+              limit: 1250,
               hash: 'sha512',
               digest: 'hex',
               name: 'public/img/[name]_[hash].[ext]'

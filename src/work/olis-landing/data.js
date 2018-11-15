@@ -18,7 +18,7 @@ export default {
   ],
   imgFolder: 'olis-landing',
   previewImg: imgLogo,
-  headerImg: 'logo.png',
+  headerImg: imgLogo,
   images: ['all.png'],
   year: 2016.1
 };

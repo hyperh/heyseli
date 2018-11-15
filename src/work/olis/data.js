@@ -27,7 +27,7 @@ export default {
   url: [{ name: 'Github', value: 'https://github.com/hyperh/olis' }],
   imgFolder: 'olis',
   previewImg: imgLogo,
-  headerImg: 'logo.png',
+  headerImg: imgLogo,
   images: [
     'login.png',
     'no-account.png',

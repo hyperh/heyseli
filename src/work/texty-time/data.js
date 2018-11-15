@@ -17,7 +17,7 @@ export default {
   url:
     'https://play.google.com/store/apps/details?id=com.aheadstudios.talkalytics&hl=en',
   previewImg: imgLogo,
-  headerImg: 'logo.png',
+  headerImg: imgLogo,
   images: [
     'main.png',
     'all-time.png',

@@ -19,7 +19,7 @@ export default {
   url:
     'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
   previewImg: imgLogo,
-  headerImg: 'logo.png',
+  headerImg: imgLogo,
   images: ['main.png', 'meat.png', 'meat-veal.png', 'fridge.png'],
   year: 2015
 };

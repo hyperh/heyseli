@@ -49,9 +49,8 @@ export default {
     'Git'
   ],
   url: 'https://brain.fm',
-  imgFolder: 'brainfm-web',
   previewImg: imgLogo,
-  headerImg: 'logo.png',
+  headerImg: imgLogo,
   images: [
     'landing-page.png',
     'landing-page-responsive.png',

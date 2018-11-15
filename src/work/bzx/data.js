@@ -32,9 +32,8 @@ export default {
     { name: 'Website', value: 'https://bzx.network/' },
     { name: 'Github', value: 'https://github.com/b0xNetwork/b0x.js' }
   ],
-  imgFolder: 'bzx',
   previewImg: imgLogo,
-  headerImg: 'logo.png',
+  headerImg: imgLogo,
   images: ['gen_order_screen.png', 'balances_screen.png'],
   year: 2018
 };

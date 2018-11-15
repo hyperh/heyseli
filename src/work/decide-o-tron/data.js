@@ -22,9 +22,8 @@ export default {
     'SCSS'
   ],
   url: 'https://decide-o-tron.herokuapp.com',
-  imgFolder: 'decide-o-tron',
   previewImg: imgLogo,
-  headerImg: 'logo.png',
+  headerImg: imgLogo,
   images: ['input.png', 'vote.png', 'winner.png'],
   year: 2016.3
 };

@@ -18,7 +18,7 @@ export default {
   url:
     'https://play.google.com/store/apps/details?id=com.aheadstudios.spending3',
   previewImg: imgLogo,
-  headerImg: 'logo.png',
+  headerImg: imgLogo,
   images: [
     'transactions_google.png',
     'add_trans_google.png',

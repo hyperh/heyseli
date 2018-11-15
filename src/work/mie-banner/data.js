@@ -15,7 +15,7 @@ export default {
   tech: ['Adobe Illustrator'],
   imgFolder: 'mie-banner',
   previewImg: imgLogo,
-  headerImg: 'logo.png',
+  headerImg: imgLogo,
   images: ['MIE-Banner-FINAL.png'],
   year: 2015
 };
