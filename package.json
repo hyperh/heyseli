@@ -14,7 +14,7 @@
     "watch:test": "npm test -- --auto-watch --no-single-run",
     "deploy":
       "npm run build:prod && gh-pages -d dist --repo https://$GITHUB_TOKEN@github.com/hyperh/heyseli.git",
-    "test": "yarn run lint"
+    "test": "yarn run eslint"
   },
   "husky": {
     "hooks": {
