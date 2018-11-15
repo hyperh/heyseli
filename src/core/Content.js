@@ -1,11 +1,18 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import styled from 'styled-components';
 
-import styles from './Content.scss';
+const Wrapper = styled.div`
+  width: 50em;
+  height: 100%;
+  padding: 3em;
 
-const Content = ({ children }) => (
-  <div className={styles.wrapper}>{children}</div>
-);
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const Content = ({ children }) => <Wrapper>{children}</Wrapper>;
 
 Content.propTypes = {
   children: PropTypes.object
