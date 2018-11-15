@@ -1,5 +1,6 @@
 import React from 'react';
 import simPaper from '../assets/papers/sim.pdf';
+import logoTextyTime from '../assets/img/texty-time/logo.png';
 
 const bfmTechLead = (
   <p>
@@ -51,7 +52,7 @@ export default [
     url:
       'https://play.google.com/store/apps/details?id=com.aheadstudios.talkalytics&hl=en',
     imgFolder: 'texty-time',
-    previewImg: 'logo.png',
+    previewImg: logoTextyTime,
     headerImg: 'logo.png',
     images: [
       'main.png',
@@ -81,7 +82,7 @@ export default [
     url:
       'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
     imgFolder: 'fridgly',
-    previewImg: 'logo.png',
+    // previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: ['main.png', 'meat.png', 'meat-veal.png', 'fridge.png'],
     year: 2015
@@ -103,7 +104,7 @@ export default [
     url:
       'https://play.google.com/store/apps/details?id=com.aheadstudios.spending3',
     imgFolder: 'driller',
-    previewImg: 'logo.png',
+    // previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: [
       'transactions_google.png',
@@ -138,7 +139,7 @@ export default [
     tech: ['Adobe Illustrator'],
     url: 'http://orchallenge.org/',
     imgFolder: 'torch',
-    previewImg: 'fire.png',
+    // previewImg: 'fire.png',
     headerImg: 'fire.png',
     images: ['logo.png', 'TORCH_flyer_2015.png'],
     year: 2015
@@ -156,7 +157,7 @@ export default [
     ),
     tech: ['Adobe Illustrator'],
     imgFolder: 'mie-banner',
-    previewImg: 'logo.png',
+    // previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: ['MIE-Banner-FINAL.png'],
     year: 2015
@@ -186,7 +187,7 @@ export default [
     ],
     url: [{ name: 'Github', value: 'https://github.com/hyperh/olis' }],
     imgFolder: 'olis',
-    previewImg: 'logo.png',
+    // previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: [
       'login.png',
@@ -219,7 +220,7 @@ export default [
       { name: 'Github', value: 'https://github.com/hyperh/olis-website' }
     ],
     imgFolder: 'olis-landing',
-    previewImg: 'logo.png',
+    // previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: ['all.png'],
     year: 2016.1
@@ -247,7 +248,7 @@ export default [
       }
     ],
     imgFolder: 'react-forge',
-    previewImg: 'logo.png',
+    // previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: ['all.png'],
     year: 2016.2
@@ -274,7 +275,7 @@ export default [
     ],
     url: 'https://decide-o-tron.herokuapp.com',
     imgFolder: 'decide-o-tron',
-    previewImg: 'logo.png',
+    // previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: ['input.png', 'vote.png', 'winner.png'],
     year: 2016.3
@@ -319,7 +320,7 @@ export default [
     ],
     url: 'https://brain.fm',
     imgFolder: 'brainfm-web',
-    previewImg: 'logo.png',
+    // previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: [
       'landing-page.png',
@@ -385,7 +386,7 @@ export default [
       }
     ],
     imgFolder: 'brainfm-mobile',
-    previewImg: 'logo.png',
+    // previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: [
       'launch.png',
@@ -433,7 +434,7 @@ export default [
       { name: 'Github', value: 'https://github.com/b0xNetwork/b0x.js' }
     ],
     imgFolder: 'bzx',
-    previewImg: 'logo.png',
+    // previewImg: 'logo.png',
     headerImg: 'logo.png',
     images: ['gen_order_screen.png', 'balances_screen.png'],
     year: 2018

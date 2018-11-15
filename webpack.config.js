@@ -53,7 +53,7 @@ module.exports = {
         test: /\.(png|jpg|svg|gif)/,
         use: [
           {
-            loader: 'url',
+            loader: 'url-loader',
             options: {
               limit: 10000,
               hash: 'sha512',
