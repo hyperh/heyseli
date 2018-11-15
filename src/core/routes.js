@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './App';
 import Work from '../work/Work';
 import WorkItem from '../work/WorkItem';
-import Contact from '../components/Contact';
+import Contact from '../contact/Contact';
 import Publications from '../components/Publications';
 import Resume from '../components/Resume';
 
