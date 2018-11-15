@@ -12,7 +12,7 @@ const WorkItem = ({ params }) => {
   const workItem = findLink(data);
   const { name, platforms, url, imgFolder, headerImg, images = [] } = workItem;
   const lightboxImgs = images.map(image => ({
-    src: require(`../../assets/img/${imgFolder}/${image}`)
+    src: require(`../assets/img/${imgFolder}/${image}`)
   }));
 
   return (

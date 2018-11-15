@@ -5,7 +5,7 @@ import ExternalLink from '../core/ExternalLink';
 /* eslint-disable global-require */
 const getHeaderImg = (imgFolder, headerImg) => {
   const headerImgPath = headerImg
-    ? require(`../../assets/img/${imgFolder}/${headerImg}`)
+    ? require(`../assets/img/${imgFolder}/${headerImg}`)
     : null;
   return headerImg ? (
     <div className={styles.imgWrapper}>

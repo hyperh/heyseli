@@ -13,7 +13,7 @@ const WorkPreview = ({ name, platform, link, previewImg }) => (
         {previewImg && (
           <img
             src={// eslint-disable-next-line global-require, max-len
-            require(`../../assets/img/${link}/${previewImg}`)}
+            require(`../assets/img/${link}/${previewImg}`)}
             alt={name}
           />
         )}
