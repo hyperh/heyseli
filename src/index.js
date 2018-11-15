@@ -11,7 +11,7 @@ render(
 );
 
 if (module.hot) {
-  module.hot.accept('./components/routes', () => {
+  module.hot.accept('./core/routes', () => {
     const NextRoutes = require('./core/routes').default; // eslint-disable-line global-require
     render(
       <AppContainer>
