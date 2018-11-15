@@ -1,23 +1,43 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import styles from './SocialIcon.scss';
-import ExternalLink from '../core/ExternalLink';
+import styled from 'styled-components';
+import { headerFont } from '../core/fonts';
+import IconWrapper from './IconWrapper';
 
-const SocialIcon = ({ Icon, header, desc, url }) => (
-  <ExternalLink to={url} className={styles.wrapper}>
-    <Icon className={styles.icon} />
-    <div className={styles.text}>
-      <div className={styles.header}>{header}</div>
+const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
+`;
+
+const Header = styled.div`
+  font-family: ${headerFont};
+  font-weight: bold;
+`;
+
+const SocialIcon = ({ Icon, header, desc, url, Link }) => (
+  <Link to={url}>
+    <IconWrapper>
+      <Icon />
+    </IconWrapper>
+    <Text>
+      <Header>{header}</Header>
       <div>{desc}</div>
-    </div>
-  </ExternalLink>
+    </Text>
+  </Link>
 );
 
 SocialIcon.propTypes = {
+  Link: PropTypes.func,
   Icon: PropTypes.func,
   header: PropTypes.string,
   desc: PropTypes.string,
-  url: PropTypes.string
+  url: PropTypes.string,
+  external: PropTypes.bool
 };
 
 export default SocialIcon;
