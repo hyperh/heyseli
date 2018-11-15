@@ -2,7 +2,6 @@ const path = require('path');
 
 /* eslint-disable max-len */
 module.exports = {
-  mode: 'development',
   devtool: 'eval',
   entry: './src/index',
   output: {

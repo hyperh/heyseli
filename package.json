@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "A webpack skeleton.",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js",
     "eslint": "eslint src",
     "clean": "rimraf ./dist",
     "prettier:fix": "prettier --write 'src/**/*.js'",
-    "build": "webpack --mode production",
     "copy": "cp index.prod.html dist/index.html && cp CNAME dist/CNAME",
     "watch:test": "npm test -- --auto-watch --no-single-run",
     "deploy": "npm run build:prod && gh-pages -d dist --repo https://$GITHUB_TOKEN@github.com/hyperh/heyseli.git",
@@ -72,7 +72,8 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
   },
   "dependencies": {
     "classnames": "^2.2.5",
