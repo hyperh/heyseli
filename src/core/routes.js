@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Sidebar from './Sidebar';
 // import App from './App';
 // import Work from '../work/Work';
 // import WorkItem from '../work/WorkItem';
@@ -11,7 +12,10 @@ const MyTest = () => <div>hello</div>;
 
 const Routes = () => (
   <Router>
-    <Route component={MyTest} />
+    <div>
+      <Sidebar />
+      <Route component={MyTest} />
+    </div>
     {/* <IndexRoute component={Contact} />
       <Route path="work" component={Work} />
       <Route path="work/:link" component={WorkItem} />

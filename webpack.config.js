@@ -48,6 +48,30 @@ module.exports = {
           { loader: 'sass-loader', options: { sourceMap: true } }
         ],
         include: path.join(__dirname, 'src')
+      },
+      {
+        test: /\.(png|jpg|svg|gif)/,
+        use: [
+          {
+            loader: 'url',
+            options: {
+              limit: 10000,
+              hash: 'sha512',
+              digest: 'hex',
+              name: 'public/img/[name]_[hash].[ext]'
+            }
+          },
+          { loader: 'image-webpack-loader' }
+        ],
+        include: [path.join(__dirname, 'src')]
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2|otf)$/,
+        use: {
+          loader: 'file-loader',
+          options: { name: 'public/fonts/[name].[ext]' }
+        },
+        include: path.join(__dirname, 'src')
       }
     ]
   }

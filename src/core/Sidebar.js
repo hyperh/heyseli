@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import classnames from 'classnames';
-import OpenBtn from 'react-icons/lib/md/menu';
-import CloseBtn from 'react-icons/lib/md/close';
+import { MdMenu as OpenBtn, MdClose as CloseBtn } from 'react-icons/md';
 
 import styles from './Sidebar.scss';
 
