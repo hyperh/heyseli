@@ -1,9 +1,51 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import classnames from 'classnames';
 import { MdMenu as OpenBtn, MdClose as CloseBtn } from 'react-icons/md';
+import styled from 'styled-components';
 
-import styles from './Sidebar.scss';
+const Content = styled.div`
+  width: 17em;
+  height: 100vh;
+  padding: 3em;
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    transition: left 0.3s;
+    left: ${props => (props.open ? '0' : '-100vw')};
+  }
+`;
+
+const btnSide = '4em';
+const btnStyle = `
+display: none;
+@media (max-width: 768px) {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: ${btnSide};
+  height: ${btnSide};
+  padding: 1em;
+}
+`;
+const OpenBtnStyled = styled(OpenBtn)`
+  ${btnStyle};
+`;
+const CloseBtnStyled = styled(CloseBtn)`
+  ${btnStyle};
+`;
+
+const Name = styled.div`
+  font-size: 2em;
+  padding: 0.5em;
+`;
+
+const Item = styled.div`
+  padding: 1em;
+`;
 
 class Sidebar extends Component {
   constructor(props) {
@@ -19,44 +61,38 @@ class Sidebar extends Component {
   }
 
   render() {
-    const myClass = classnames({
-      [styles.wrapper]: true,
-      [styles.open]: this.state.open,
-      [styles.closed]: !this.state.open
-    });
+    const { open } = this.state;
 
     return (
       <div>
-        <OpenBtn className={styles.btn} onClick={this.onClick} />
+        <OpenBtnStyled onClick={this.onClick} />
 
-        <div className={myClass}>
-          {this.state.open ? (
-            <CloseBtn className={styles.btn} onClick={this.onClick} />
-          ) : null}
-          <div className={styles.name}>heyse li</div>
-          <div className={styles.links}>
-            <div className={styles.item}>
+        <Content open={open}>
+          {open ? <CloseBtnStyled onClick={this.onClick} /> : null}
+          <Name>heyse li</Name>
+          <div>
+            <Item>
               <Link to="/contact" onClick={this.onClick}>
                 contact
               </Link>
-            </div>
-            <div className={styles.item}>
+            </Item>
+            <Item>
               <Link to="/work" onClick={this.onClick}>
                 work
               </Link>
-            </div>
-            <div className={styles.item}>
+            </Item>
+            <Item>
               <Link to="/publications" onClick={this.onClick}>
                 publications
               </Link>
-            </div>
-            <div className={styles.item}>
+            </Item>
+            <Item>
               <Link to="/resume" onClick={this.onClick}>
                 resume
               </Link>
-            </div>
+            </Item>
           </div>
-        </div>
+        </Content>
       </div>
     );
   }
