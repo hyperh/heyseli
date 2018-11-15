@@ -1,8 +1,10 @@
 import React from 'react';
-import Github from 'react-icons/lib/fa/github-square';
-import Medium from 'react-icons/lib/fa/medium';
-import Twitter from 'react-icons/lib/fa/twitter-square';
-import PortfolioIcon from 'react-icons/lib/ti/folder-open';
+import {
+  FaGithub as Github,
+  FaMedium as Medium,
+  FaTwitter as Twitter
+} from 'react-icons/fa';
+import { TiFolderOpen as PortfolioIcon } from 'react-icons/ti';
 import styles from './styles.scss';
 import data from './data';
 import HiddenEmail from './HiddenEmail';
