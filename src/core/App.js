@@ -5,6 +5,7 @@ import Sidebar from './Sidebar';
 import Content from './Content';
 import Contact from '../contact/Contact';
 import Resume from '../resume/Resume';
+import Publications from '../publications/Publications';
 
 const App = () => (
   <div className={styles.app}>
@@ -13,6 +14,7 @@ const App = () => (
       <Route path="/" component={Contact} exact />
       <Route path="/contact" component={Contact} exact />
       <Route path="/resume" component={Resume} exact />
+      <Route path="/publications" component={Publications} exact />
     </Content>
   </div>
 );

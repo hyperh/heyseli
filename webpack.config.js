@@ -72,6 +72,16 @@ module.exports = {
           options: { name: 'public/fonts/[name].[ext]' }
         },
         include: path.join(__dirname, 'src')
+      },
+      {
+        test: /\.(pdf)/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'public/papers/[name].[ext]'
+          }
+        },
+        include: path.join(__dirname, 'src')
       }
     ]
   }
