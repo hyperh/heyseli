@@ -1,22 +1,57 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import classNames from 'classnames';
+import styled from 'styled-components';
 
-import styles from './WorkPreview.scss';
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  width: 12em;
+  height: 12em;
+
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
+
+const noImg = `
+border: 2px solid gray;
+border-radius: 20px;
+`;
+
+const Image = styled.div`
+  width: 7em;
+  height: 7em;
+  overflow: hidden;
+
+  // prettier-ignore
+  ${props => (props.previewImg ? '' : noImg)}
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+const Name = styled.div`
+  padding: 1em;
+  text-align: center;
+`;
 
 const WorkPreview = ({ name, platform, link, previewImg }) => (
-  <div className={styles.wrapper}>
+  <Wrapper>
     <Link to={`/work/${link}`}>
-      <div
-        className={classNames(styles.imgWrapper, !previewImg && styles.noImg)}
-      >
+      <Image previewImg={previewImg}>
         {previewImg && <img src={previewImg} alt={name} />}
-      </div>
+      </Image>
     </Link>
-    <div className={styles.name}>{name}</div>
+    <Name>{name}</Name>
     <div>{platform}</div>
-  </div>
+  </Wrapper>
 );
 
 WorkPreview.propTypes = {
