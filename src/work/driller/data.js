@@ -1,5 +1,14 @@
 import React from 'react';
 import imgLogo from './logo.png';
+import imgTxs from './transactions_google.png';
+import imgAddTx from './add_trans_google.png';
+import imgCategory from './by_category_google.png';
+import imgFood from './by_category_food_google.png';
+import imgTimeframe from './by_category_timeframe_google.png';
+import imgTimeAll from './by_time_all_google.png';
+import imgTimeFood from './by_time_food_google.png';
+import imgCurrency from './currency_google.png';
+import imgImport from './import_google.png';
 
 export default {
   name: 'Driller',
@@ -20,15 +29,15 @@ export default {
   previewImg: imgLogo,
   headerImg: imgLogo,
   images: [
-    'transactions_google.png',
-    'add_trans_google.png',
-    'by_category_google.png',
-    'by_category_food_google.png',
-    'by_category_timeframe_google.png',
-    'by_time_all_google.png',
-    'by_time_food_google.png',
-    'currency_google.png',
-    'import_google.png'
+    imgTxs,
+    imgAddTx,
+    imgCategory,
+    imgFood,
+    imgTimeframe,
+    imgTimeAll,
+    imgTimeFood,
+    imgCurrency,
+    imgImport
   ],
   year: 2015
 };

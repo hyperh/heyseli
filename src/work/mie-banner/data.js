@@ -1,5 +1,6 @@
 import React from 'react';
 import imgLogo from './logo.png';
+import imgBanner from './MIE-Banner-FINAL.png';
 
 export default {
   name: 'MIE Banner Contest',
@@ -16,6 +17,6 @@ export default {
   imgFolder: 'mie-banner',
   previewImg: imgLogo,
   headerImg: imgLogo,
-  images: ['MIE-Banner-FINAL.png'],
+  images: [imgBanner],
   year: 2015
 };

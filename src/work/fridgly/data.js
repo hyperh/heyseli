@@ -1,5 +1,9 @@
 import React from 'react';
 import imgLogo from './logo.png';
+import imgMain from './main.png';
+import imgMeat from './meat.png';
+import imgVeal from './meat-veal.png';
+import imgFridge from './fridge.png';
 
 export default {
   name: 'Fridgly',
@@ -20,6 +24,6 @@ export default {
     'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
   previewImg: imgLogo,
   headerImg: imgLogo,
-  images: ['main.png', 'meat.png', 'meat-veal.png', 'fridge.png'],
+  images: [imgMain, imgMeat, imgVeal, imgFridge],
   year: 2015
 };

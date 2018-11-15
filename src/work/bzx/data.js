@@ -1,5 +1,7 @@
 import React from 'react';
 import imgLogo from './logo.png';
+import imgGen from './gen_order_screen.png';
+import imgBalances from './balances_screen.png';
 
 export default {
   name: 'bZx',
@@ -34,6 +36,6 @@ export default {
   ],
   previewImg: imgLogo,
   headerImg: imgLogo,
-  images: ['gen_order_screen.png', 'balances_screen.png'],
+  images: [imgGen, imgBalances],
   year: 2018
 };

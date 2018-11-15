@@ -1,5 +1,11 @@
 import React from 'react';
 import imgLogo from './logo.png';
+import imgMain from './main.png';
+import imgAllTime from './all-time.png';
+import imgLast2Weeks from './last-2-weeks.png';
+import imgEmoticons from './emoticons.png';
+import imgCompare from './compare.png';
+import imgFavorites from './favorites.png';
 
 export default {
   name: 'Texty Time',
@@ -19,12 +25,12 @@ export default {
   previewImg: imgLogo,
   headerImg: imgLogo,
   images: [
-    'main.png',
-    'all-time.png',
-    'last-2-weeks.png',
-    'emoticons.png',
-    'compare.png',
-    'favorites.png'
+    imgMain,
+    imgAllTime,
+    imgLast2Weeks,
+    imgEmoticons,
+    imgCompare,
+    imgFavorites
   ],
   year: 2013
 };

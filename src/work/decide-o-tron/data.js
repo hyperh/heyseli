@@ -1,5 +1,8 @@
 import React from 'react';
 import imgLogo from './logo.png';
+import imgInput from './input.png';
+import imgVote from './vote.png';
+import imgWinner from './winner.png';
 
 export default {
   name: 'Decide-o-Tron',
@@ -24,6 +27,6 @@ export default {
   url: 'https://decide-o-tron.herokuapp.com',
   previewImg: imgLogo,
   headerImg: imgLogo,
-  images: ['input.png', 'vote.png', 'winner.png'],
+  images: [imgInput, imgVote, imgWinner],
   year: 2016.3
 };

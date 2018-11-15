@@ -1,6 +1,14 @@
 import React from 'react';
 import imgLogo from './logo.png';
 import { bfmTechLead } from '../brainfm-web/data';
+import imgLaunch from './launch.png';
+import imgFocus from './focus.png';
+import imgSignup from './signup.png';
+import imgHome from './home.png';
+import imgExplore from './explore.png';
+import imgPlayer from './player.png';
+import imgSettings from './settings.png';
+import imgDrawer from './drawer.png';
 
 export default {
   name: 'Brain.fm (Mobile)',
@@ -54,14 +62,14 @@ export default {
   previewImg: imgLogo,
   headerImg: imgLogo,
   images: [
-    'launch.png',
-    'focus.png',
-    'signup.png',
-    'home.png',
-    'explore.png',
-    'player.png',
-    'settings.png',
-    'drawer.png'
+    imgLaunch,
+    imgFocus,
+    imgSignup,
+    imgHome,
+    imgExplore,
+    imgPlayer,
+    imgSettings,
+    imgDrawer
   ],
   year: 2017
 };

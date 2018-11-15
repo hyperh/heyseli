@@ -1,5 +1,15 @@
 import React from 'react';
 import imgLogo from './logo.png';
+import imgLanding from './landing-page.png';
+import imgLandingResponsive from './landing-page-responsive.png';
+import imgAbout from './about.png';
+import imgScience from './science.png';
+import imgPress from './press.png';
+import imgPricing from './pricing.png';
+import imgFaq from './faq.png';
+import imgApp from './app.png';
+import imgExplore from './explore.png';
+import imgLearn from './learn.png';
 
 export const bfmTechLead = (
   <p>
@@ -52,16 +62,16 @@ export default {
   previewImg: imgLogo,
   headerImg: imgLogo,
   images: [
-    'landing-page.png',
-    'landing-page-responsive.png',
-    'about.png',
-    'science.png',
-    'press.png',
-    'pricing.png',
-    'faq.png',
-    'app.png',
-    'explore.png',
-    'learn.png'
+    imgLanding,
+    imgLandingResponsive,
+    imgAbout,
+    imgScience,
+    imgPress,
+    imgPricing,
+    imgFaq,
+    imgApp,
+    imgExplore,
+    imgLearn
   ],
   year: 2017
 };

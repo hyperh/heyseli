@@ -1,5 +1,16 @@
 import React from 'react';
 import imgLogo from './logo.png';
+import imgLogin from './login.png';
+import imgNoAccount from './no-account.png';
+import imgCreateAccount from './create-account.png';
+import imgForgotPwd from './forgot-password.png';
+import imgTextEditor from './text-editor.png';
+import imgChat from './chat.png';
+import imgTeamDirectory from './team-directory.png';
+import imgTeamInfo from './team-info.png';
+import imgInvite from './invite-to-team.png';
+import imgNew from './new-chat.png';
+import imgSearch from './search.png';
 
 export default {
   name: 'Olis',
@@ -29,17 +40,17 @@ export default {
   previewImg: imgLogo,
   headerImg: imgLogo,
   images: [
-    'login.png',
-    'no-account.png',
-    'create-account.png',
-    'forgot-password.png',
-    'text-editor.png',
-    'chat.png',
-    'team-directory.png',
-    'team-info.png',
-    'invite-to-team.png',
-    'new-chat.png',
-    'search.png'
+    imgLogin,
+    imgNoAccount,
+    imgCreateAccount,
+    imgForgotPwd,
+    imgTextEditor,
+    imgChat,
+    imgTeamDirectory,
+    imgTeamInfo,
+    imgInvite,
+    imgNew,
+    imgSearch
   ],
   year: 2016.0
 };

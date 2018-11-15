@@ -1,5 +1,6 @@
 import React from 'react';
 import imgLogo from './logo.png';
+import imgAll from './all.png';
 
 export default {
   name: 'Olis Landing Page',
@@ -19,6 +20,6 @@ export default {
   imgFolder: 'olis-landing',
   previewImg: imgLogo,
   headerImg: imgLogo,
-  images: ['all.png'],
+  images: [imgAll],
   year: 2016.1
 };
