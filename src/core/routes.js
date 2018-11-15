@@ -6,7 +6,7 @@ import Work from '../work/Work';
 import WorkItem from '../work/WorkItem';
 import Contact from '../contact/Contact';
 import Publications from '../publications/Publications';
-import Resume from '../components/Resume';
+import Resume from '../resume/Resume';
 
 const Routes = () => (
   <Router history={hashHistory}>
