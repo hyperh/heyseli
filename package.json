@@ -4,21 +4,29 @@
   "description": "A webpack skeleton.",
   "scripts": {
     "start": "PORT=3000 node server.js",
-    "lint": "eslint src",
+    "eslint": "eslint src",
     "clean": "rimraf ./dist",
     "prettier:fix": "prettier --write 'src/**/*.js'",
-    "prettier:pre-commit": "./pre-commit-prettier.sh",
     "build": "npm run clean && webpack",
-    "build:prod": "npm run clean && NODE_ENV=production webpack -p && npm run copy",
+    "build:prod":
+      "npm run clean && NODE_ENV=production webpack -p && npm run copy",
     "copy": "cp index.prod.html dist/index.html && cp CNAME dist/CNAME",
     "watch:test": "npm test -- --auto-watch --no-single-run",
-    "deploy": "npm run build:prod && gh-pages -d dist --repo https://$GITHUB_TOKEN@github.com/hyperh/heyseli.git",
+    "deploy":
+      "npm run build:prod && gh-pages -d dist --repo https://$GITHUB_TOKEN@github.com/hyperh/heyseli.git",
     "test": "yarn run lint"
   },
-  "pre-commit": [
-    "prettier:pre-commit",
-    "lint"
-  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": ["prettier --write", "eslint", "git add"]
+    }
+  },
+  "pre-commit": ["prettier:pre-commit", "lint"],
   "repository": {
     "type": "git",
     "url": "https://github.com/hyperh/webpack-skeleton.git"
@@ -62,8 +70,9 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.4",
     "lodash": "^4.13.1",
-    "pre-commit": "^1.2.2",
     "prettier": "^1.7.4",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
