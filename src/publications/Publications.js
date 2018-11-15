@@ -47,9 +47,7 @@ const Publications = () => (
                   />
                   <Tags tags={tags} />
                   {filename ? (
-                    <a href={require(`../assets/papers/${filename}`)}>
-                      Download PDF
-                    </a>
+                    <a href={require(`./assets/${filename}`)}>Download PDF</a>
                   ) : null}
                 </li>
               </div>

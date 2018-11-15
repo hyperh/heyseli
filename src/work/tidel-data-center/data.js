@@ -1,5 +1,5 @@
 import React from 'react';
-import simPaper from '../../assets/papers/sim.pdf';
+import simPaper from '../../publications/assets/sim.pdf';
 
 export default {
   name: 'Data Center Simulation',
