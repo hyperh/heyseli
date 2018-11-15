@@ -8,6 +8,7 @@ import mieBanner from './mie-banner/data';
 import olis from './olis/data';
 import olisLanding from './olis-landing/data';
 import reactForge from './react-forge/data';
+import decideotron from './decide-o-tron/data';
 
 const bfmTechLead = (
   <p>
@@ -51,33 +52,7 @@ export default [
   olis,
   olisLanding,
   reactForge,
-  {
-    name: 'Decide-o-Tron',
-    link: 'decide-o-tron',
-    platforms: ['Web'],
-    desc: (
-      <p>
-        A tool to help you make hard decisions. I was responsible for all
-        aspects of the app, including design and front-end development.
-      </p>
-    ),
-    tech: [
-      'Javascript',
-      'React',
-      'Webpack',
-      'MobX',
-      'Sketch',
-      'Digital Ocean',
-      'Git',
-      'SCSS'
-    ],
-    url: 'https://decide-o-tron.herokuapp.com',
-    imgFolder: 'decide-o-tron',
-    // previewImg: 'logo.png',
-    headerImg: 'logo.png',
-    images: ['input.png', 'vote.png', 'winner.png'],
-    year: 2016.3
-  },
+  decideotron,
   {
     name: 'Brain.fm (Web)',
     link: 'brainfm-web',
