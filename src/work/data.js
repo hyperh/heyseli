@@ -4,6 +4,7 @@ import textyTime from './texty-time/data';
 import fridgly from './fridgly/data';
 import driller from './driller/data';
 import torch from './torch/data';
+import mieBanner from './mie-banner/data';
 
 const bfmTechLead = (
   <p>
@@ -44,24 +45,7 @@ export default [
   driller,
   torch,
 
-  {
-    name: 'MIE Banner Contest',
-    link: 'mie-banner',
-    platforms: ['Design'],
-    desc: (
-      <p>
-        The faculty of Mechanical and Industrial Engineering (MIE), wanted to
-        replace a really old banner on the outside of a building, so they held a
-        contest. This was my winning entry.
-      </p>
-    ),
-    tech: ['Adobe Illustrator'],
-    imgFolder: 'mie-banner',
-    // previewImg: 'logo.png',
-    headerImg: 'logo.png',
-    images: ['MIE-Banner-FINAL.png'],
-    year: 2015
-  },
+  mieBanner,
   {
     name: 'Olis',
     link: 'olis',
