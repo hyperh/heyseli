@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 
 import styles from './App.scss';
-import Sidebar from './Sidebar';
+// import Sidebar from './Sidebar';
 import Content from './Content';
 
 const App = ({ children }) => (
   <div className={styles.app}>
-    <Sidebar />
+    {/* <Sidebar /> */}
     <Content>{children}</Content>
   </div>
 );

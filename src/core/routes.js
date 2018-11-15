@@ -1,6 +1,5 @@
 import React from 'react';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import App from './App';
 // import Work from '../work/Work';
 // import WorkItem from '../work/WorkItem';
@@ -11,9 +10,9 @@ import App from './App';
 const MyTest = () => <div>hello</div>;
 
 const Routes = () => (
-  <Router history={hashHistory}>
+  <Router>
     <Route path="/" component={App}>
-      <IndexRoute component={MyTest} />
+      <Route component={MyTest} />
       {/* <IndexRoute component={Contact} />
       <Route path="work" component={Work} />
       <Route path="work/:link" component={WorkItem} />
