@@ -1,6 +1,9 @@
 import React from 'react';
 import simPaper from '../assets/papers/sim.pdf';
 import textyTime from './texty-time/data';
+import fridgly from './fridgly/data';
+import driller from './driller/data';
+import torch from './torch/data';
 
 const bfmTechLead = (
   <p>
@@ -37,86 +40,10 @@ export default [
     year: 2011
   },
   textyTime,
-  {
-    name: 'Fridgly',
-    link: 'fridgly',
-    platforms: ['Android'],
-    desc: (
-      <p>
-        An app that helps you keep track of your food expiration dates. It syncs
-        with your Google Calendar to help remind you of when things are going to
-        expire and when you should finish eating them. I was responsible for all
-        aspects of the app, including design, front-end development, SQLite
-        integration, API calls, and app store publication.
-      </p>
-    ),
+  fridgly,
+  driller,
+  torch,
 
-    tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'XML'],
-    url:
-      'https://play.google.com/store/apps/details?id=com.aheadstudios.foodcalendar',
-    imgFolder: 'fridgly',
-    // previewImg: 'logo.png',
-    headerImg: 'logo.png',
-    images: ['main.png', 'meat.png', 'meat-veal.png', 'fridge.png'],
-    year: 2015
-  },
-  {
-    name: 'Driller',
-    link: 'driller',
-    platforms: ['Android'],
-    desc: (
-      <p>
-        An app that helps you keep track of your expenses. It provides detailed
-        statistics about your spending habits to help you drill down into the
-        areas in which you spend the most money. I was responsible for all
-        aspects of the app, including design, front-end development, SQLite
-        integration, API calls, and app store publication.
-      </p>
-    ),
-    tech: ['Java', 'Android Studio', 'Inkscape', 'Pixelmator', 'Git', 'XML'],
-    url:
-      'https://play.google.com/store/apps/details?id=com.aheadstudios.spending3',
-    imgFolder: 'driller',
-    // previewImg: 'logo.png',
-    headerImg: 'logo.png',
-    images: [
-      'transactions_google.png',
-      'add_trans_google.png',
-      'by_category_google.png',
-      'by_category_food_google.png',
-      'by_category_timeframe_google.png',
-      'by_time_all_google.png',
-      'by_time_food_google.png',
-      'currency_google.png',
-      'import_google.png'
-    ],
-    year: 2015
-  },
-  {
-    name: 'TORCH',
-    link: 'torch',
-    platforms: ['Design'],
-    desc: (
-      <p>
-        <p>
-          "TORCH is the annual operations research challenge organized at the
-          Mechanical & Industrial Engineering Department at University of
-          Toronto. TORCH is a one-day contest where teams of 3 to 4 high school
-          students solve 5 to 10 problems related to different application areas
-          of operations research." - TORCH website.
-        </p>
-        <p>I was responsible for the design of the logo and flyers.</p>
-      </p>
-    ),
-
-    tech: ['Adobe Illustrator'],
-    url: 'http://orchallenge.org/',
-    imgFolder: 'torch',
-    // previewImg: 'fire.png',
-    headerImg: 'fire.png',
-    images: ['logo.png', 'TORCH_flyer_2015.png'],
-    year: 2015
-  },
   {
     name: 'MIE Banner Contest',
     link: 'mie-banner',

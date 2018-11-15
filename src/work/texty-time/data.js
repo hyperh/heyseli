@@ -1,5 +1,5 @@
 import React from 'react';
-import logoTextyTime from './logo.png';
+import imgLogo from './logo.png';
 
 export default {
   name: 'Texty Time',
@@ -16,8 +16,7 @@ export default {
   tech: ['Java', 'Android Studio', 'Inkscape', 'Git', 'XML'],
   url:
     'https://play.google.com/store/apps/details?id=com.aheadstudios.talkalytics&hl=en',
-  imgFolder: 'texty-time',
-  previewImg: logoTextyTime,
+  previewImg: imgLogo,
   headerImg: 'logo.png',
   images: [
     'main.png',
