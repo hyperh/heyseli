@@ -1,19 +1,28 @@
 import React from 'react';
 import sortBy from 'lodash/fp/sortBy';
 import reverse from 'lodash/fp/reverse';
-
+import styled from 'styled-components';
 import CitationChicago from './CitationChicago';
 import Tags from './Tags';
-import styles from './styles.scss';
 import data from './data';
 import ExternalLink from '../core/ExternalLink';
+import { textFont } from '../core/fonts';
 
 /* eslint-disable max-len, global-require */
 const sortByYear = sortBy(o => o.year);
 const sortByYearDesc = objs => reverse(sortByYear(objs));
 
+const Wrapper = styled.div`
+  width: 100%;
+
+  p {
+    font-family: ${textFont};
+    font-weight: 300;
+  }
+`;
+
 const Publications = () => (
-  <div className={styles.wrapper}>
+  <Wrapper>
     <p>
       I used to be in academia. Here are the papers I published during my time
       there.
@@ -59,7 +68,7 @@ const Publications = () => (
         </ol>
       </div>
     ))}
-  </div>
+  </Wrapper>
 );
 
 export default Publications;
