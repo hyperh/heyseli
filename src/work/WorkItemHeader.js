@@ -32,7 +32,7 @@ const HeaderImg = styled.div`
 const getHeaderImg = headerImg =>
   headerImg ? (
     <HeaderImg>
-      <img src={`/${headerImg}`} alt="header" />
+      <img src={headerImg} alt="header" />
     </HeaderImg>
   ) : null;
 

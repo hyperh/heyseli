@@ -23,7 +23,7 @@ const WorkItem = ({ match: { params } }) => {
   const workItem = findLink(data);
   const { name, platforms, url, imgFolder, headerImg, images = [] } = workItem;
   const lightboxImgs = images.map(image => ({
-    src: `/${image}`
+    src: image
   }));
 
   return (
