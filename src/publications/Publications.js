@@ -6,6 +6,7 @@ import CitationChicago from './CitationChicago';
 import Tags from './Tags';
 import styles from './styles.scss';
 import data from './data';
+import ExternalLink from '../core/ExternalLink';
 
 /* eslint-disable max-len, global-require */
 const sortByYear = sortBy(o => o.year);
@@ -47,7 +48,9 @@ const Publications = () => (
                   />
                   <Tags tags={tags} />
                   {filename ? (
-                    <a href={require(`./assets/${filename}`)}>Download PDF</a>
+                    <ExternalLink to={require(`./assets/${filename}`)}>
+                      Download PDF
+                    </ExternalLink>
                   ) : null}
                 </li>
               </div>
