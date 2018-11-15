@@ -7,6 +7,7 @@ import torch from './torch/data';
 import mieBanner from './mie-banner/data';
 import olis from './olis/data';
 import olisLanding from './olis-landing/data';
+import reactForge from './react-forge/data';
 
 const bfmTechLead = (
   <p>
@@ -49,34 +50,7 @@ export default [
   mieBanner,
   olis,
   olisLanding,
-  {
-    name: 'ReactForge',
-    link: 'react-forge',
-    platforms: ['Web'],
-    desc: (
-      <p>
-        A landing page for ReactForge, a React-based web development agency. I
-        worked in a team of three and I was responsible for design and front-end
-        development.
-      </p>
-    ),
-    tech: ['Javascript', 'React', 'Webpack', 'Sketch', 'SCSS'],
-    url: [
-      {
-        name: 'Demo',
-        value: 'https://hyperh.github.io/react-forge-landing/'
-      },
-      {
-        name: 'Github',
-        value: 'https://github.com/hyperh/react-forge-landing'
-      }
-    ],
-    imgFolder: 'react-forge',
-    // previewImg: 'logo.png',
-    headerImg: 'logo.png',
-    images: ['all.png'],
-    year: 2016.2
-  },
+  reactForge,
   {
     name: 'Decide-o-Tron',
     link: 'decide-o-tron',
