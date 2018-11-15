@@ -1,5 +1,5 @@
 import React from 'react';
-import simPaper from '../../assets/papers/sim.pdf';
+import simPaper from '../assets/papers/sim.pdf';
 
 const bfmTechLead = (
   <p>

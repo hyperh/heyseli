@@ -1,12 +1,12 @@
 import React from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
-import App from './core/App';
-import Work from './Work';
-import WorkItem from './Work/WorkItem';
-import Contact from './Contact';
-import Publications from './Publications';
-import Resume from './Resume';
+import App from './App';
+import Work from '../work/Work';
+import WorkItem from '../work/WorkItem';
+import Contact from '../contact/Contact';
+import Publications from '../publications/Publications';
+import Resume from '../resume/Resume';
 
 const Routes = () => (
   <Router history={hashHistory}>
