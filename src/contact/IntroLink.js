@@ -19,7 +19,7 @@ const Header = styled.div`
   font-weight: bold;
 `;
 
-const SocialIcon = ({ Icon, header, desc, url, Link }) => (
+const IntroLink = ({ Icon, header, desc, url, Link }) => (
   <Link to={url}>
     <IconWrapper>
       <Icon />
@@ -31,7 +31,7 @@ const SocialIcon = ({ Icon, header, desc, url, Link }) => (
   </Link>
 );
 
-SocialIcon.propTypes = {
+IntroLink.propTypes = {
   Link: PropTypes.func,
   Icon: PropTypes.func,
   header: PropTypes.string,
@@ -40,4 +40,4 @@ SocialIcon.propTypes = {
   external: PropTypes.bool
 };
 
-export default SocialIcon;
+export default IntroLink;

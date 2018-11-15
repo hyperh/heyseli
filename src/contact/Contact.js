@@ -10,7 +10,7 @@ import styled from 'styled-components';
 import ExternalLinkBase from '../core/ExternalLink';
 import data from './data';
 import HiddenEmail from './HiddenEmail';
-import SocialIcon from './SocialIcon';
+import IntroLink from './IntroLink';
 import { textFont } from '../core/fonts';
 
 const linkStyle = `
@@ -56,14 +56,14 @@ const Contact = () => (
     </p>
 
     <div>
-      <SocialIcon
+      <IntroLink
         Icon={PortfolioIcon}
         Link={Link}
         header="Portfolio"
         desc="My work"
         url="/work"
       />
-      <SocialIcon
+      <IntroLink
         Icon={Github}
         Link={ExternalLink}
         header="Github"
@@ -71,7 +71,7 @@ const Contact = () => (
       community."
         url={github}
       />
-      <SocialIcon
+      <IntroLink
         Icon={Medium}
         Link={ExternalLink}
         header="Medium"
@@ -79,7 +79,7 @@ const Contact = () => (
       solved it."
         url={medium}
       />
-      <SocialIcon
+      <IntroLink
         Icon={Twitter}
         Link={ExternalLink}
         header="Twitter"
