@@ -11,8 +11,9 @@ const Resume = () => (
       <h1>Experience</h1>
       {experience.map(x => {
         const { title, company, time } = x;
+        const key = `${company}-${title}`;
         return (
-          <p key={company} className={styles.exp}>
+          <p key={key} className={styles.exp}>
             <b>{title}</b>, {company}, <i>{time}</i>
           </p>
         );
