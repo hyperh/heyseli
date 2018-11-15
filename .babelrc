@@ -1,19 +1,9 @@
 {
-  "presets": [
-    "es2015",
-    "react",
-    "stage-1"
-  ],
-  "plugins": [
-    "react-hot-loader/babel",
-    "transform-decorators-legacy",
-    "babel-plugin-styled-components"
-  ],
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": ["react-hot-loader/babel", "babel-plugin-styled-components"],
   "env": {
     "test": {
-      "plugins": [
-        ["__coverage__", {"ignore": "*.test.*"}]
-      ]
+      "plugins": [["__coverage__", { "ignore": "*.test.*" }]]
     }
   }
 }
