@@ -5,7 +5,7 @@ import App from './App';
 import Work from '../work/Work';
 import WorkItem from '../work/WorkItem';
 import Contact from '../contact/Contact';
-import Publications from '../components/Publications';
+import Publications from '../publications/Publications';
 import Resume from '../components/Resume';
 
 const Routes = () => (
