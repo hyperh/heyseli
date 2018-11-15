@@ -8,12 +8,10 @@
     "clean": "rimraf ./dist",
     "prettier:fix": "prettier --write 'src/**/*.js'",
     "build": "npm run clean && webpack",
-    "build:prod":
-      "npm run clean && NODE_ENV=production webpack -p && npm run copy",
+    "build:prod": "npm run clean && NODE_ENV=production webpack -p && npm run copy",
     "copy": "cp index.prod.html dist/index.html && cp CNAME dist/CNAME",
     "watch:test": "npm test -- --auto-watch --no-single-run",
-    "deploy":
-      "npm run build:prod && gh-pages -d dist --repo https://$GITHUB_TOKEN@github.com/hyperh/heyseli.git",
+    "deploy": "npm run build:prod && gh-pages -d dist --repo https://$GITHUB_TOKEN@github.com/hyperh/heyseli.git",
     "test": "yarn run eslint"
   },
   "husky": {
@@ -23,10 +21,17 @@
   },
   "lint-staged": {
     "linters": {
-      "*.js": ["prettier --write", "eslint", "git add"]
+      "*.js": [
+        "prettier --write",
+        "eslint",
+        "git add"
+      ]
     }
   },
-  "pre-commit": ["prettier:pre-commit", "lint"],
+  "pre-commit": [
+    "prettier:pre-commit",
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/hyperh/webpack-skeleton.git"
@@ -75,8 +80,8 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash": "^4.13.1",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-icons": "^2.2.1",
     "react-images": "^0.5.1",
     "react-router": "^2.8.1",
