@@ -5,6 +5,7 @@ import fridgly from './fridgly/data';
 import driller from './driller/data';
 import torch from './torch/data';
 import mieBanner from './mie-banner/data';
+import olis from './olis/data';
 
 const bfmTechLead = (
   <p>
@@ -44,50 +45,8 @@ export default [
   fridgly,
   driller,
   torch,
-
   mieBanner,
-  {
-    name: 'Olis',
-    link: 'olis',
-    platforms: ['Web', 'PC', 'OSX', 'Android', 'iOS'],
-    desc: (
-      <p>
-        A business communication tool designed to help you keep the most
-        important information visible. I worked in a team of three and I was
-        responsible for design, front-end development and back-end development.
-      </p>
-    ),
-    tech: [
-      'Javascript',
-      'React',
-      'Meteor',
-      'MongoDB',
-      'Electron',
-      'React Native',
-      'Digital Ocean',
-      'Sketch',
-      'Git',
-      'Jade/Pug'
-    ],
-    url: [{ name: 'Github', value: 'https://github.com/hyperh/olis' }],
-    imgFolder: 'olis',
-    // previewImg: 'logo.png',
-    headerImg: 'logo.png',
-    images: [
-      'login.png',
-      'no-account.png',
-      'create-account.png',
-      'forgot-password.png',
-      'text-editor.png',
-      'chat.png',
-      'team-directory.png',
-      'team-info.png',
-      'invite-to-team.png',
-      'new-chat.png',
-      'search.png'
-    ],
-    year: 2016.0
-  },
+  olis,
   {
     name: 'Olis Landing Page',
     link: 'olis-landing',
