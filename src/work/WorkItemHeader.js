@@ -3,17 +3,12 @@ import React from 'react';
 import styles from './WorkItemHeader.scss';
 import ExternalLink from '../core/ExternalLink';
 
-const getHeaderImg = (imgFolder, headerImg) => {
-  // const headerImgPath = headerImg
-  //   ? require(`../assets/img/${imgFolder}/${headerImg}`)
-  //   : null;
-  const headerImgPath = null;
-  return headerImg ? (
+const getHeaderImg = (imgFolder, headerImg) =>
+  headerImg ? (
     <div className={styles.imgWrapper}>
-      <img src={headerImgPath} alt="header" />
+      <img src={`/${headerImg}`} alt="header" />
     </div>
   ) : null;
-};
 
 const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
   <div className={styles.wrapper}>

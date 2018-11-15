@@ -51,9 +51,8 @@ export default {
         'https://itunes.apple.com/vn/app/brain.fm-music-for-focus-meditation/id1110684238?mt=8'
     }
   ],
-  imgFolder: 'brainfm-mobile',
   previewImg: imgLogo,
-  headerImg: 'logo.png',
+  headerImg: imgLogo,
   images: [
     'launch.png',
     'focus.png',
