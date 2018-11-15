@@ -62,7 +62,7 @@
     "husky": "^1.1.4",
     "image-webpack-loader": "^4.5.0",
     "lint-staged": "^8.0.4",
-    "node-sass": "^3.8.0",
+    "node-sass": "^4.10.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.7.4",
     "resolve-url-loader": "^1.6.0",

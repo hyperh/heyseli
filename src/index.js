@@ -1,4 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Routes from './core/routes';
 
-ReactDOM.render(<div>Testing</div>, document.getElementById('root'));
+ReactDOM.render(<Routes />, document.getElementById('root'));
