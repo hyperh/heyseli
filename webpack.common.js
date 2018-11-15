@@ -1,4 +1,5 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 /* eslint-disable max-len */
 module.exports = {
@@ -9,6 +10,7 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: ''
   },
+  plugins: [new CleanWebpackPlugin(['dist'])],
   module: {
     rules: [
       {

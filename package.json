@@ -48,6 +48,7 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-__coverage__": "^11.0.0",
     "babel-plugin-styled-components": "^1.8.0",
+    "clean-webpack-plugin": "^1.0.0",
     "eslint": "^2.12.0",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-config-prettier": "^2.6.0",
