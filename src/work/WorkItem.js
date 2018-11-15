@@ -7,14 +7,14 @@ import WorkItemHeader from './WorkItemHeader';
 import Gallery from './Gallery';
 import data from './data';
 
-/* eslint-disable global-require */
-const WorkItem = ({ params }) => {
+const WorkItem = ({ match: { params } }) => {
   const findLink = find(item => item.link === params.link);
   const workItem = findLink(data);
-  const { name, platforms, url, imgFolder, headerImg, images = [] } = workItem;
-  const lightboxImgs = images.map(image => ({
-    src: require(`../assets/img/${imgFolder}/${image}`)
-  }));
+  const { name, platforms, url, imgFolder, headerImg } = workItem;
+  // const lightboxImgs = images.map(image => ({
+  //   src: require(`../assets/img/${imgFolder}/${image}`)
+  // }));
+  const lightboxImgs = [];
 
   return (
     <div className={styles.wrapper}>
@@ -38,7 +38,7 @@ const WorkItem = ({ params }) => {
 };
 
 WorkItem.propTypes = {
-  params: PropTypes.object
+  match: PropTypes.object
 };
 
 export default WorkItem;

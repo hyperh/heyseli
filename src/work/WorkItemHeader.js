@@ -3,11 +3,11 @@ import React from 'react';
 import styles from './WorkItemHeader.scss';
 import ExternalLink from '../core/ExternalLink';
 
-/* eslint-disable global-require */
 const getHeaderImg = (imgFolder, headerImg) => {
-  const headerImgPath = headerImg
-    ? require(`../assets/img/${imgFolder}/${headerImg}`)
-    : null;
+  // const headerImgPath = headerImg
+  //   ? require(`../assets/img/${imgFolder}/${headerImg}`)
+  //   : null;
+  const headerImgPath = null;
   return headerImg ? (
     <div className={styles.imgWrapper}>
       <img src={headerImgPath} alt="header" />
