@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 import find from 'lodash/fp/find';
 
 import styles from './WorkItem.scss';
