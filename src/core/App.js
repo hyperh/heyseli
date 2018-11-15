@@ -10,6 +10,7 @@ const App = () => (
     <Sidebar />
     <Content>
       <Route path="/" component={Contact} />
+      <Route path="/contact" component={Contact} />
     </Content>
   </div>
 );
