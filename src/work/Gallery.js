@@ -29,11 +29,19 @@ class Gallery extends Component {
   }
 
   onClickNext() {
-    this.setState({ currentImage: this.state.currentImage + 1 });
+    const { images } = this.props;
+    const { currentImage } = this.state;
+    this.setState({
+      currentImage: currentImage < images.length - 1 ? currentImage + 1 : 0
+    });
   }
 
   onClickPrev() {
-    this.setState({ currentImage: this.state.currentImage - 1 });
+    const { images } = this.props;
+    const { currentImage } = this.state;
+    this.setState({
+      currentImage: currentImage > 0 ? currentImage - 1 : images.length - 1
+    });
   }
 
   onClickThumbnail(index) {
