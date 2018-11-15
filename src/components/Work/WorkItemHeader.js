@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import styles from './WorkItemHeader.scss';
-import ExternalLink from '../core/ExternalLink';
+import ExternalLink from '../../core/ExternalLink';
 
 /* eslint-disable global-require */
 const getHeaderImg = (imgFolder, headerImg) => {
