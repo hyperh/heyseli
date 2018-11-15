@@ -1,11 +1,22 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import find from 'lodash/fp/find';
-
-import styles from './WorkItem.scss';
+import styled from 'styled-components';
 import WorkItemHeader from './WorkItemHeader';
 import Gallery from './Gallery';
 import data from './data';
+import { textFont } from '../core/fonts';
+
+const fontStyle = `
+font-family: ${textFont};
+font-weight: 300;
+`;
+const Desc = styled.div`
+  ${fontStyle};
+`;
+const Made = styled.p`
+  ${fontStyle};
+`;
 
 const WorkItem = ({ match: { params } }) => {
   const findLink = find(item => item.link === params.link);
@@ -16,7 +27,7 @@ const WorkItem = ({ match: { params } }) => {
   }));
 
   return (
-    <div className={styles.wrapper}>
+    <div>
       <WorkItemHeader
         name={name}
         platforms={platforms}
@@ -24,11 +35,11 @@ const WorkItem = ({ match: { params } }) => {
         imgFolder={imgFolder}
         headerImg={headerImg}
       />
-      <div className={styles.desc}>{workItem.desc}</div>
+      <Desc>{workItem.desc}</Desc>
 
       <div>
         <h2>Made With</h2>
-        <p className={styles.made}>{workItem.tech.sort().join(', ')}</p>
+        <Made>{workItem.tech.sort().join(', ')}</Made>
       </div>
 
       <Gallery images={lightboxImgs} />

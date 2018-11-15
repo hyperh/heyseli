@@ -1,13 +1,22 @@
 import React from 'react';
-import styles from './styles.scss';
+import styled from 'styled-components';
 import WorkPreview from './WorkPreview';
 import data from './data';
 
 const yearDesc = (a, b) => b.year - a.year;
 const sorted = data.sort(yearDesc);
 
+const Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+`;
+
 const Work = () => (
-  <div className={styles.wrapper}>
+  <Wrapper>
     {sorted.map(item => (
       <WorkPreview
         key={item.name}
@@ -17,7 +26,7 @@ const Work = () => (
         previewImg={item.previewImg}
       />
     ))}
-  </div>
+  </Wrapper>
 );
 
 export default Work;
