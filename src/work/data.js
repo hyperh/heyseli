@@ -6,6 +6,7 @@ import driller from './driller/data';
 import torch from './torch/data';
 import mieBanner from './mie-banner/data';
 import olis from './olis/data';
+import olisLanding from './olis-landing/data';
 
 const bfmTechLead = (
   <p>
@@ -47,27 +48,7 @@ export default [
   torch,
   mieBanner,
   olis,
-  {
-    name: 'Olis Landing Page',
-    link: 'olis-landing',
-    platforms: ['Web'],
-    desc: (
-      <p>
-        A landing page for Olis. I worked in a team of three and I was
-        responsible for design and front-end development.
-      </p>
-    ),
-    tech: ['Javascript', 'React', 'Sketch', 'SCSS'],
-    url: [
-      { name: 'Demo', value: 'https://hyperh.github.io/olis-website/' },
-      { name: 'Github', value: 'https://github.com/hyperh/olis-website' }
-    ],
-    imgFolder: 'olis-landing',
-    // previewImg: 'logo.png',
-    headerImg: 'logo.png',
-    images: ['all.png'],
-    year: 2016.1
-  },
+  olisLanding,
   {
     name: 'ReactForge',
     link: 'react-forge',
