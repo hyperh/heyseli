@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Lightbox from 'react-images';
-
+import styled from 'styled-components';
 import GalleryThumb from './GalleryThumb';
-import styles from './Gallery.scss';
 
-// eslint-disable-next-line react/prefer-stateless-function
+const Thumbs = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
 class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -61,7 +65,7 @@ class Gallery extends Component {
     const { isOpen, currentImage } = this.state;
     return (
       <div>
-        <div className={styles.thumbs}>
+        <Thumbs>
           {images.map((image, index) => (
             <GalleryThumb
               key={image.src}
@@ -70,7 +74,7 @@ class Gallery extends Component {
               onClick={this.onClickGalleryThumb}
             />
           ))}
-        </div>
+        </Thumbs>
         <Lightbox
           images={images}
           isOpen={isOpen}

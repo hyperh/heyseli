@@ -1,9 +1,21 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
-import styles from './GalleryThumb.scss';
+const imgSide = '20em';
+const Wrapper = styled.div`
+  width: ${imgSide};
+  height: ${imgSide};
+  overflow: hidden;
 
-// eslint-disable-next-line react/prefer-stateless-function
+  img {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    cursor: pointer;
+  }
+`;
+
 class GalleryThumb extends Component {
   constructor(props) {
     super(props);
@@ -18,9 +30,9 @@ class GalleryThumb extends Component {
   render() {
     const { src } = this.props;
     return (
-      <div className={styles.wrapper} key={src}>
+      <Wrapper key={src}>
         <img src={src} alt="" onClick={this.onClick} />
-      </div>
+      </Wrapper>
     );
   }
 }
