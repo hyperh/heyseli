@@ -10,7 +10,8 @@
     "prettier:fix": "prettier --write 'src/**/*.js'",
     "copy": "cp index.prod.html dist/index.html && cp CNAME dist/CNAME",
     "watch:test": "npm test -- --auto-watch --no-single-run",
-    "deploy": "npm run build:prod && gh-pages -d dist --repo https://$GITHUB_TOKEN@github.com/hyperh/heyseli.git",
+    "deploy":
+      "npm run build:prod && npm run copy && gh-pages -d dist --repo https://$GITHUB_TOKEN@github.com/hyperh/heyseli.git",
     "test": "yarn run eslint"
   },
   "husky": {
