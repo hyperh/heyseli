@@ -1,25 +1,47 @@
-import React, { PropTypes } from 'react';
-import styles from './WorkItemHeader.scss';
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled from 'styled-components';
 import ExternalLink from '../core/ExternalLink';
+import { secondaryTextDark } from '../core/colors';
 
-/* eslint-disable global-require */
-const getHeaderImg = (imgFolder, headerImg) => {
-  const headerImgPath = headerImg
-    ? require(`../assets/img/${imgFolder}/${headerImg}`)
-    : null;
-  return headerImg ? (
-    <div className={styles.imgWrapper}>
-      <img src={headerImgPath} alt="header" />
-    </div>
+const Wrapper = styled.div`
+  display: flex;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+`;
+
+const Platforms = styled.p`
+  color: ${secondaryTextDark};
+`;
+
+const headerImgSide = '10em';
+const HeaderImg = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-right: 2em;
+
+  img {
+    width: ${headerImgSide};
+    height: ${headerImgSide};
+  }
+`;
+
+const getHeaderImg = headerImg =>
+  headerImg ? (
+    <HeaderImg>
+      <img src={headerImg} alt="header" />
+    </HeaderImg>
   ) : null;
-};
 
-const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
-  <div className={styles.wrapper}>
-    {getHeaderImg(imgFolder, headerImg)}
+const WorkItemHeader = ({ name, platforms, url, headerImg }) => (
+  <Wrapper>
+    {getHeaderImg(headerImg)}
     <div>
       <h1>{name}</h1>
-      <p className={styles.platforms}>{platforms.join(', ')}</p>
+      <Platforms>{platforms.join(', ')}</Platforms>
       {typeof url === 'string' && <ExternalLink to={url}>Link</ExternalLink>}
       {Array.isArray(url) &&
         url.map(u => (
@@ -28,7 +50,7 @@ const WorkItemHeader = ({ name, platforms, url, imgFolder, headerImg }) => (
           </p>
         ))}
     </div>
-  </div>
+  </Wrapper>
 );
 
 WorkItemHeader.propTypes = {

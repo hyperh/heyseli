@@ -1,19 +1,25 @@
 import React from 'react';
-
+import styled from 'styled-components';
 import data from './data';
-import styles from './styles.scss';
+import { textFont } from '../core/fonts';
 
 const { experience, education } = data;
 
+const Wrapper = styled.div`
+  p {
+    font-family: ${textFont};
+  }
+`;
+
 const Resume = () => (
-  <div className={styles.wrapper}>
+  <Wrapper>
     <div>
       <h1>Experience</h1>
       {experience.map(x => {
         const { title, company, time } = x;
         const key = `${company}-${title}`;
         return (
-          <p key={key} className={styles.exp}>
+          <p key={key}>
             <b>{title}</b>, {company}, <i>{time}</i>
           </p>
         );
@@ -31,7 +37,7 @@ const Resume = () => (
         );
       })}
     </div>
-  </div>
+  </Wrapper>
 );
 
 export default Resume;

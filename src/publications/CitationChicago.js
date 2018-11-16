@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 // Bibtex formatted author: Last, First M and Last2, First2 M2
 const authorsWithBold = (authorStr, boldAuthor) => {

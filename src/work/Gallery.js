@@ -1,10 +1,15 @@
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import Lightbox from 'react-images';
-
+import styled from 'styled-components';
 import GalleryThumb from './GalleryThumb';
-import styles from './Gallery.scss';
 
-// eslint-disable-next-line react/prefer-stateless-function
+const Thumbs = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
 class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -28,11 +33,19 @@ class Gallery extends Component {
   }
 
   onClickNext() {
-    this.setState({ currentImage: this.state.currentImage + 1 });
+    const { images } = this.props;
+    const { currentImage } = this.state;
+    this.setState({
+      currentImage: currentImage < images.length - 1 ? currentImage + 1 : 0
+    });
   }
 
   onClickPrev() {
-    this.setState({ currentImage: this.state.currentImage - 1 });
+    const { images } = this.props;
+    const { currentImage } = this.state;
+    this.setState({
+      currentImage: currentImage > 0 ? currentImage - 1 : images.length - 1
+    });
   }
 
   onClickThumbnail(index) {
@@ -52,7 +65,7 @@ class Gallery extends Component {
     const { isOpen, currentImage } = this.state;
     return (
       <div>
-        <div className={styles.thumbs}>
+        <Thumbs>
           {images.map((image, index) => (
             <GalleryThumb
               key={image.src}
@@ -61,7 +74,7 @@ class Gallery extends Component {
               onClick={this.onClickGalleryThumb}
             />
           ))}
-        </div>
+        </Thumbs>
         <Lightbox
           images={images}
           isOpen={isOpen}

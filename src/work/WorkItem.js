@@ -1,22 +1,33 @@
-import React, { PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 import find from 'lodash/fp/find';
-
-import styles from './WorkItem.scss';
+import styled from 'styled-components';
 import WorkItemHeader from './WorkItemHeader';
 import Gallery from './Gallery';
 import data from './data';
+import { textFont } from '../core/fonts';
 
-/* eslint-disable global-require */
-const WorkItem = ({ params }) => {
+const fontStyle = `
+font-family: ${textFont};
+font-weight: 300;
+`;
+const Desc = styled.div`
+  ${fontStyle};
+`;
+const Made = styled.p`
+  ${fontStyle};
+`;
+
+const WorkItem = ({ match: { params } }) => {
   const findLink = find(item => item.link === params.link);
   const workItem = findLink(data);
   const { name, platforms, url, imgFolder, headerImg, images = [] } = workItem;
   const lightboxImgs = images.map(image => ({
-    src: require(`../assets/img/${imgFolder}/${image}`)
+    src: image
   }));
 
   return (
-    <div className={styles.wrapper}>
+    <div>
       <WorkItemHeader
         name={name}
         platforms={platforms}
@@ -24,11 +35,11 @@ const WorkItem = ({ params }) => {
         imgFolder={imgFolder}
         headerImg={headerImg}
       />
-      <div className={styles.desc}>{workItem.desc}</div>
+      <Desc>{workItem.desc}</Desc>
 
       <div>
         <h2>Made With</h2>
-        <p className={styles.made}>{workItem.tech.sort().join(', ')}</p>
+        <Made>{workItem.tech.sort().join(', ')}</Made>
       </div>
 
       <Gallery images={lightboxImgs} />
@@ -37,7 +48,7 @@ const WorkItem = ({ params }) => {
 };
 
 WorkItem.propTypes = {
-  params: PropTypes.object
+  match: PropTypes.object
 };
 
 export default WorkItem;
