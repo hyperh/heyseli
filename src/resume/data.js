@@ -13,7 +13,7 @@ export default {
     {
       title: 'Senior Full Stack Developer',
       company: 'Brain.fm',
-      time: '2017 Sept - Present'
+      time: '2017 Sept - 2018 Dec'
     },
     {
       title: 'Full Stack Developer',
