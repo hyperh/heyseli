@@ -13,6 +13,7 @@ import bzx from './bzx/data';
 import tidelDataCenter from './tidel-data-center/data';
 import ganache from './ganache/data';
 import drizzle from './drizzle/data';
+import truffleTeams from './truffle-teams/data';
 
 /* eslint-disable max-len */
 export default [
@@ -30,5 +31,6 @@ export default [
   bfmMobile,
   bzx,
   ganache,
-  drizzle
+  drizzle,
+  truffleTeams
 ];
