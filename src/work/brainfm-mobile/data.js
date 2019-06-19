@@ -36,6 +36,11 @@ export default {
         work with to fulfill the requirements from product in a reasonable
         timeframe.
       </p>
+
+      <p>
+        The iOS app had more than 100,000 installations and the Android app had
+        more than 45,000 installations.
+      </p>
     </div>
   ),
   tech: [

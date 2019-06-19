@@ -42,6 +42,11 @@ export default {
         successfully relaunched and deployed to over 50,000 active users. It
         streamed over 80TB of music a month.
       </p>
+
+      <p>
+        The website grew to more than 70,000 active users and 800,000 pageviews
+        per month.
+      </p>
       {bfmTechLead}
     </div>
   ),
