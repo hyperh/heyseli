@@ -11,6 +11,7 @@ import bfmWeb from './brainfm-web/data';
 import bfmMobile from './brainfm-mobile/data';
 import bzx from './bzx/data';
 import tidelDataCenter from './tidel-data-center/data';
+import ganache from './ganache/data';
 
 /* eslint-disable max-len */
 export default [
@@ -26,5 +27,6 @@ export default [
   decideotron,
   bfmWeb,
   bfmMobile,
-  bzx
+  bzx,
+  ganache
 ];
