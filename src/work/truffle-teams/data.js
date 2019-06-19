@@ -13,7 +13,7 @@ export default {
     </p>
   ),
   tech: [
-    'Javascript',
+    'Typescript',
     'React',
     'React Hooks',
     'Redux',
