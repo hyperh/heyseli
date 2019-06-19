@@ -11,5 +11,8 @@ export default {
   previewImg: imgLogo,
   headerImg: imgLogo,
   year: 2018.12,
-  url: 'https://www.trufflesuite.com/ganache'
+  url: [
+    { name: 'Website', value: 'https://www.trufflesuite.com/ganache' },
+    { name: 'Github', value: 'https://github.com/trufflesuite/ganache' }
+  ]
 };
