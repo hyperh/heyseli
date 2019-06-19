@@ -61,7 +61,7 @@ export default {
     {
       name: 'iOS',
       value:
-        'https://itunes.apple.com/vn/app/brain.fm-music-for-focus-meditation/id1110684238?mt=8'
+        'https://apps.apple.com/app/brain-fm-music-for-focus-meditation/id1110684238'
     }
   ],
   previewImg: imgLogo,
