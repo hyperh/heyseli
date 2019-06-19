@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 `;
 
 /* eslint-disable max-len */
-const { email, twitter, medium, github } = data;
+const { email, twitter, medium, github, github2 } = data;
 const Contact = () => (
   <Wrapper>
     <p>
@@ -67,9 +67,16 @@ const Contact = () => (
         Icon={Github}
         Link={ExternalLink}
         header="Github"
-        desc="Samples of my code and the contributions I've made to the open source
+        desc="Examples of my code and the contributions I've made to the open source
       community."
         url={github}
+      />
+      <IntroLink
+        Icon={Github}
+        Link={ExternalLink}
+        header="Github"
+        desc="Even more code examples."
+        url={github2}
       />
       <IntroLink
         Icon={Medium}
