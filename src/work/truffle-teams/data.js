@@ -5,7 +5,13 @@ export default {
   name: 'Truffle Teams',
   link: 'truffle-teams',
   platforms: ['Web'],
-  desc: <p>tbd</p>,
+  desc: (
+    <p>
+      a web based service that improved the work flow for blockchain development
+      teams. spanning the building, monitoring, and deployment of smart
+      contracts. led the front end development
+    </p>
+  ),
   tech: [
     'Javascript',
     'React',
@@ -15,7 +21,9 @@ export default {
     'Apollo',
     'GraphQL',
     'Express',
-    'Storybook'
+    'Storybook',
+    'Web3',
+    'Infura'
   ],
   imgFolder: 'truffle-teams',
   previewImg: imgLogo,

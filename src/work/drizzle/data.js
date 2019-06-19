@@ -5,8 +5,29 @@ export default {
   name: 'Drizzle',
   link: 'drizzle',
   platforms: ['Web', 'React Native'],
-  desc: <p>tbd</p>,
-  tech: ['Javascript', 'React Native', 'React', 'Redux', 'Redux Sagas', 'RxJS'],
+  desc: (
+    <div>
+      <p>
+        tools to help dapp development, make interacting with the blockchain
+        easier for dapp developers
+      </p>
+      <p>worked in a team of 4</p>
+      <p>
+        interacted with the community, reviewed PR, provided feedback, requested
+        changes
+      </p>
+      <p>Added react native support</p>
+    </div>
+  ),
+  tech: [
+    'Javascript',
+    'React Native',
+    'React',
+    'Redux',
+    'Redux Sagas',
+    'RxJS',
+    'Web3'
+  ],
   imgFolder: 'drizzle',
   previewImg: imgLogo,
   headerImg: imgLogo,
