@@ -5,8 +5,21 @@ export default {
   name: 'Ganache',
   link: 'ganache',
   platforms: ['Electron'],
-  desc: <p>tbd</p>,
-  tech: ['Javascript', 'Electron', 'React', 'Redux', 'Redux Thunks', 'Jest'],
+  desc: (
+    <p>
+      a personal development blockchain and blockchain explorer, worked in a
+      team of 3, fixed bugs, reviewed PRs
+    </p>
+  ),
+  tech: [
+    'Javascript',
+    'Electron',
+    'React',
+    'Redux',
+    'Redux Thunks',
+    'Jest',
+    'Web3'
+  ],
   imgFolder: 'ganache',
   previewImg: imgLogo,
   headerImg: imgLogo,
