@@ -12,6 +12,7 @@ import bfmMobile from './brainfm-mobile/data';
 import bzx from './bzx/data';
 import tidelDataCenter from './tidel-data-center/data';
 import ganache from './ganache/data';
+import drizzle from './drizzle/data';
 
 /* eslint-disable max-len */
 export default [
@@ -28,5 +29,6 @@ export default [
   bfmWeb,
   bfmMobile,
   bzx,
-  ganache
+  ganache,
+  drizzle
 ];
