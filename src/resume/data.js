@@ -1,7 +1,7 @@
 export default {
   experience: [
     {
-      title: 'Software Engineer, Front End',
+      title: 'Blockchain Tools Engineer, Software Engineer - Front End',
       company: 'Consensys - Truffle',
       time: '2018 Dec - present'
     },
