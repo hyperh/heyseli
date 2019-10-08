@@ -2,8 +2,13 @@ export default {
   experience: [
     {
       title: 'Blockchain Tools Engineer, Software Engineer - Front End',
+      company: 'Truffle Blockchain Group',
+      time: '2019 Mar - present'
+    },
+    {
+      title: 'Blockchain Tools Engineer, Software Engineer - Front End',
       company: 'Consensys - Truffle',
-      time: '2018 Dec - present'
+      time: '2018 Dec - 2019 Mar'
     },
     {
       title: 'Full Stack Developer',
