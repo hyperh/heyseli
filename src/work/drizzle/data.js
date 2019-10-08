@@ -8,15 +8,13 @@ export default {
   desc: (
     <div>
       <p>
-        tools to help dapp development, make interacting with the blockchain
-        easier for dapp developers
+        Tools to help front-end dapp development and to make interacting with
+        the blockchain easier for dapp developers.
       </p>
-      <p>worked in a team of 4</p>
       <p>
-        interacted with the community, reviewed PR, provided feedback, requested
-        changes
+        I worked in a team of 4. I interacted with our open-source community,
+        reviewed PRs, implemented new features, and fixed bugs.
       </p>
-      <p>Added react native support</p>
     </div>
   ),
   tech: [

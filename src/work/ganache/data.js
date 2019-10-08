@@ -7,7 +7,7 @@ export default {
   platforms: ['Electron'],
   desc: (
     <p>
-      a personal development blockchain and blockchain explorer, worked in a
+      A local blockchain and blockchain explorer for developers. I worked in a
       team of 3, fixed bugs, reviewed PRs
     </p>
   ),
