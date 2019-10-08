@@ -22,6 +22,7 @@ export default {
     </div>
   ),
   tech: [
+    'Metamask',
     'Typescript',
     'React',
     'React Hooks',
