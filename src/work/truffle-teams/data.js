@@ -6,12 +6,20 @@ export default {
   link: 'truffle-teams',
   platforms: ['Web'],
   desc: (
-    <p>
-      a web based service that improved the work flow for blockchain development
-      teams. spanning the building, monitoring, and deployment of smart
-      contracts. led the front end development. Setup storybook, unit tests,
-      snapshot based integration tests
-    </p>
+    <div>
+      <p>
+        A web-based service that spans the building, deployment, and monitoring
+        of smart contracts and dapps for software development teams. I worked in
+        a team of 6.
+      </p>
+      <p>
+        I led the development of the front-end client. In order to streamline
+        development, I setup Storybook, unit tests, and snapshot-based
+        integration tests. I also interacted with the product manager and
+        designer to gather requirements and to clarify feature requests for
+        development purposes.
+      </p>
+    </div>
   ),
   tech: [
     'Typescript',
