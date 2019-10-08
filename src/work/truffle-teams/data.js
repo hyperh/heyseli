@@ -9,7 +9,8 @@ export default {
     <p>
       a web based service that improved the work flow for blockchain development
       teams. spanning the building, monitoring, and deployment of smart
-      contracts. led the front end development
+      contracts. led the front end development. Setup storybook, unit tests,
+      snapshot based integration tests
     </p>
   ),
   tech: [
