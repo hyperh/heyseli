@@ -64,13 +64,13 @@ class Sidebar extends Component {
     const { open } = this.state;
 
     return (
-      <div>
+      <header>
         <OpenBtnStyled onClick={this.onClick} />
 
         <Content open={open}>
           {open ? <CloseBtnStyled onClick={this.onClick} /> : null}
           <Name>heyse li</Name>
-          <div>
+          <nav>
             <Item>
               <Link to="/contact" onClick={this.onClick}>
                 contact
@@ -91,9 +91,9 @@ class Sidebar extends Component {
                 resume
               </Link>
             </Item>
-          </div>
+          </nav>
         </Content>
-      </div>
+      </header>
     );
   }
 }
