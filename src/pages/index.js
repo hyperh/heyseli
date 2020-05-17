@@ -1,3 +1,3 @@
-import React from 'react';
+import App from '../core/App';
 
-export default () => <div>Hello world!</div>;
+export default App;

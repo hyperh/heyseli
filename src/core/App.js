@@ -1,13 +1,7 @@
 import React from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 import Sidebar from './Sidebar';
 import Content from './Content';
-import Contact from '../contact/Contact';
-import Resume from '../resume/Resume';
-import Publications from '../publications/Publications';
-import Work from '../work/Work';
-import WorkItem from '../work/WorkItem';
 import { headerFont } from './fonts';
 
 const GlobalStyle = createGlobalStyle`
@@ -44,22 +38,13 @@ const Wrapper = styled.div`
 `;
 
 const App = () => (
-  <React.Fragment>
+  <>
     <GlobalStyle />
-    <Router>
-      <Wrapper>
-        <Sidebar />
-        <Content>
-          <Route path="/" component={Contact} exact />
-          <Route path="/contact" component={Contact} exact />
-          <Route path="/resume" component={Resume} exact />
-          <Route path="/publications" component={Publications} exact />
-          <Route path="/work" component={Work} exact />
-          <Route path="/work/:link" component={WorkItem} exact />
-        </Content>
-      </Wrapper>
-    </Router>
-  </React.Fragment>
+    <Wrapper>
+      <Sidebar />
+      <Content>hello heyse</Content>
+    </Wrapper>
+  </>
 );
 
 export default App;
