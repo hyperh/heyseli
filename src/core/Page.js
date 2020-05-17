@@ -50,7 +50,7 @@ const Page = ({ children }) => (
 );
 
 Page.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.node,
 };
 
 export default Page;

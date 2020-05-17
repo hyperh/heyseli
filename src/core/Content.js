@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 const Content = ({ children }) => <Wrapper>{children}</Wrapper>;
 
 Content.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.node,
 };
 
 export default Content;
