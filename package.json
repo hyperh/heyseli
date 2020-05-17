@@ -1,7 +1,7 @@
 {
   "name": "heyseli",
   "version": "0.0.1",
-  "description": "A webpack skeleton.",
+  "description": "My personal website",
   "scripts": {
     "develop": "gatsby develop",
     "start": "webpack-dev-server --open --config webpack.dev.js",
