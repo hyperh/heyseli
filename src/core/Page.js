@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import Sidebar from './Sidebar';
 import Content from './Content';
@@ -18,15 +19,16 @@ body {
   font-weight: 300;
 }
 
-// To make sure padding doesn't change size of elements
+/* To make sure padding doesn't change size of elements */
+/* https://css-tricks.com/box-sizing/ */
 html {
-  box-sizing: border-box; // https://css-tricks.com/box-sizing/
+  box-sizing: border-box; 
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
-// end
+/* // end */
 `;
 
 const Wrapper = styled.div`
@@ -37,14 +39,18 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-const App = () => (
+const Page = ({ children }) => (
   <>
     <GlobalStyle />
     <Wrapper>
       <Sidebar />
-      <Content>hello heyse</Content>
+      <Content>{children}</Content>
     </Wrapper>
   </>
 );
 
-export default App;
+Page.propTypes = {
+  children: PropTypes.element,
+};
+
+export default Page;

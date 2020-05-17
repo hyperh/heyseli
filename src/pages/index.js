@@ -1,3 +1,6 @@
-import App from '../core/App';
+import React from 'react';
+import Page from '../core/Page';
 
-export default App;
+const Home = () => <Page>hello </Page>;
+
+export default Home;
