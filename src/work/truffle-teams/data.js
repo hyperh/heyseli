@@ -17,8 +17,11 @@ export default {
         development, I setup Storybook, unit tests, and snapshot-based
         integration tests. I also interacted with the product manager and
         designer to gather requirements and to clarify feature requests for
-        development purposes.
+        development purposes. Automated deployments of Storybook to improve team
+        communication
       </p>
+
+      <p>Docker stuff, reduced build times from 10+ min to 12 seconds</p>
     </div>
   ),
   tech: [
@@ -33,7 +36,8 @@ export default {
     'Express',
     'Storybook',
     'Web3',
-    'Infura'
+    'Infura',
+    'Github Actions'
   ],
   imgFolder: 'truffle-teams',
   previewImg: imgLogo,
