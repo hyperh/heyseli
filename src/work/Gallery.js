@@ -13,18 +13,19 @@ const Thumbs = styled.div`
 class Gallery extends Component {
   state = {
     isOpen: false,
-    currentImage: 0,
+    currentIndex: 0,
   };
 
-  toggleModal = () => {
+  toggleModal = (index) => {
     this.setState((prevState) => ({
       isOpen: !prevState.isOpen,
+      currentIndex: index,
     }));
   };
 
   render() {
     const { images } = this.props;
-    const { isOpen } = this.state;
+    const { isOpen, currentIndex } = this.state;
     return (
       <div>
         <Thumbs>
@@ -33,7 +34,7 @@ class Gallery extends Component {
               key={image.source}
               src={image.source}
               index={index}
-              onClick={this.toggleModal}
+              onClick={() => this.toggleModal(index)}
             />
           ))}
         </Thumbs>
@@ -41,7 +42,7 @@ class Gallery extends Component {
         <ModalGateway>
           {isOpen && (
             <Modal onClose={this.toggleModal}>
-              <Carousel views={images} />
+              <Carousel views={images} currentIndex={currentIndex} />
             </Modal>
           )}
         </ModalGateway>
