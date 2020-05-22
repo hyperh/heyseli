@@ -1,6 +1,5 @@
-import React from 'react';
-import Page from '../core/Page';
+import Contact from './contact';
 
-const HomePage = () => <Page>hello </Page>;
+const HomePage = Contact;
 
 export default HomePage;
