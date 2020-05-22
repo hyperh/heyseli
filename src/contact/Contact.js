@@ -80,7 +80,7 @@ const Contact = () => (
       />
       <IntroLink
         Icon={Medium}
-        Link={ExternalLink}
+        Link={StyledExternalLink}
         header="Medium"
         desc="I write mostly about issues that I encounter when programming and how I
       solved it."
@@ -88,7 +88,7 @@ const Contact = () => (
       />
       <IntroLink
         Icon={Twitter}
-        Link={ExternalLink}
+        Link={StyledExternalLink}
         header="Twitter"
         desc="I occasionally tweet."
         url={twitter}
