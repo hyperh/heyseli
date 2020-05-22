@@ -11,9 +11,6 @@ import bfmWeb from './brainfm-web/data';
 import bfmMobile from './brainfm-mobile/data';
 import bzx from './bzx/data';
 import tidelDataCenter from './tidel-data-center/data';
-import ganache from './ganache/data';
-import drizzle from './drizzle/data';
-import truffleTeams from './truffle-teams/data';
 
 /* eslint-disable max-len */
 export default [
@@ -30,7 +27,4 @@ export default [
   bfmWeb,
   bfmMobile,
   bzx,
-  ganache,
-  drizzle,
-  truffleTeams
 ];
