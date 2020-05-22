@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import styled from 'styled-components';
 import GalleryThumb from './GalleryThumb';
+import View from './View';
 
 const Thumbs = styled.div`
   display: flex;
@@ -15,6 +16,10 @@ const customStyles = {
     ...base,
     height: '100vh',
   }),
+};
+
+const components = {
+  View,
 };
 
 class Gallery extends Component {
@@ -54,6 +59,7 @@ class Gallery extends Component {
                 views={images}
                 currentIndex={currentIndex}
                 modalProps={{ preventScroll: false }}
+                components={components}
               />
             </Modal>
           )}
