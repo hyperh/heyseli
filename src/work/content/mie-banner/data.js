@@ -18,5 +18,5 @@ export default {
   previewImg: imgLogo,
   headerImg: imgLogo,
   images: [imgBanner],
-  year: 2015
+  year: 2015,
 };

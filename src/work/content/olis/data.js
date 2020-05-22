@@ -33,7 +33,7 @@ export default {
     'Digital Ocean',
     'Sketch',
     'Git',
-    'Jade/Pug'
+    'Jade/Pug',
   ],
   url: [{ name: 'Github', value: 'https://github.com/hyperh/olis' }],
   imgFolder: 'olis',
@@ -50,7 +50,7 @@ export default {
     imgTeamInfo,
     imgInvite,
     imgNew,
-    imgSearch
+    imgSearch,
   ],
-  year: 2016.0
+  year: 2016.0,
 };

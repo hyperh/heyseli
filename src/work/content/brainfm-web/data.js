@@ -61,7 +61,7 @@ export default {
     'Webpack',
     'Travis',
     'Jenkins',
-    'Git'
+    'Git',
   ],
   url: 'https://brain.fm',
   previewImg: imgLogo,
@@ -76,7 +76,7 @@ export default {
     imgFaq,
     imgApp,
     imgExplore,
-    imgLearn
+    imgLearn,
   ],
-  year: 2017
+  year: 2017,
 };

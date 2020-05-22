@@ -22,11 +22,11 @@ export default {
     'Sketch',
     'Digital Ocean',
     'Git',
-    'SCSS'
+    'SCSS',
   ],
   url: 'https://decide-o-tron.herokuapp.com',
   previewImg: imgLogo,
   headerImg: imgLogo,
   images: [imgInput, imgVote, imgWinner],
-  year: 2016.3
+  year: 2016.3,
 };

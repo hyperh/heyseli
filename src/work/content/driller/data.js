@@ -37,7 +37,7 @@ export default {
     imgTimeAll,
     imgTimeFood,
     imgCurrency,
-    imgImport
+    imgImport,
   ],
-  year: 2015
+  year: 2015,
 };

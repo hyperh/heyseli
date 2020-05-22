@@ -28,14 +28,14 @@ export default {
     'Jest',
     'Git',
     'web3.js',
-    'Metamask'
+    'Metamask',
   ],
   url: [
     { name: 'Website', value: 'https://bzx.network/' },
-    { name: 'Github', value: 'https://github.com/b0xNetwork/b0x.js' }
+    { name: 'Github', value: 'https://github.com/b0xNetwork/b0x.js' },
   ],
   previewImg: imgLogo,
   headerImg: imgLogo,
   images: [imgGen, imgBalances],
-  year: 2018
+  year: 2018,
 };

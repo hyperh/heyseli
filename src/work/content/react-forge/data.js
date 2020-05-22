@@ -17,16 +17,16 @@ export default {
   url: [
     {
       name: 'Demo',
-      value: 'https://hyperh.github.io/react-forge-landing/'
+      value: 'https://hyperh.github.io/react-forge-landing/',
     },
     {
       name: 'Github',
-      value: 'https://github.com/hyperh/react-forge-landing'
-    }
+      value: 'https://github.com/hyperh/react-forge-landing',
+    },
   ],
   imgFolder: 'react-forge',
   previewImg: imgLogo,
   headerImg: imgLogo,
   images: [imgAll],
-  year: 2016.2
+  year: 2016.2,
 };

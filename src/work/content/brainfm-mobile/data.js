@@ -50,19 +50,19 @@ export default {
     'Travis',
     'Jenkins',
     'Git',
-    'Java'
+    'Java',
   ],
   url: [
     {
       name: 'Android',
       value:
-        'https://play.google.com/store/apps/details?id=com.brainfm.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+        'https://play.google.com/store/apps/details?id=com.brainfm.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
     },
     {
       name: 'iOS',
       value:
-        'https://apps.apple.com/app/brain-fm-music-for-focus-meditation/id1110684238'
-    }
+        'https://apps.apple.com/app/brain-fm-music-for-focus-meditation/id1110684238',
+    },
   ],
   previewImg: imgLogo,
   headerImg: imgLogo,
@@ -74,7 +74,7 @@ export default {
     imgExplore,
     imgPlayer,
     imgSettings,
-    imgDrawer
+    imgDrawer,
   ],
-  year: 2017
+  year: 2017,
 };

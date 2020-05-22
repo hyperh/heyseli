@@ -1,5 +1,5 @@
 import React from 'react';
-import simPaper from '../../publications/assets/sim.pdf';
+import simPaper from '../../../publications/assets/sim.pdf';
 
 export default {
   name: 'Data Center Simulation',
@@ -21,5 +21,5 @@ export default {
     </div>
   ),
   tech: ['C++', 'SVN'],
-  year: 2011
+  year: 2011,
 };

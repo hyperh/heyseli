@@ -10,11 +10,11 @@ export default {
   desc: (
     <p>
       <p>
-        "TORCH is the annual operations research challenge organized at the
+        TORCH is the annual operations research challenge organized at the
         Mechanical & Industrial Engineering Department at University of Toronto.
         TORCH is a one-day contest where teams of 3 to 4 high school students
         solve 5 to 10 problems related to different application areas of
-        operations research." - TORCH website.
+        operations research. - TORCH website.
       </p>
       <p>I was responsible for the design of the logo and flyers.</p>
     </p>
@@ -24,5 +24,5 @@ export default {
   previewImg: imgFire,
   headerImg: imgFire,
   images: [imgLogo, imgFlyer],
-  year: 2015
+  year: 2015,
 };

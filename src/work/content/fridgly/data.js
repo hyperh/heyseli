@@ -25,5 +25,5 @@ export default {
   previewImg: imgLogo,
   headerImg: imgLogo,
   images: [imgMain, imgMeat, imgVeal, imgFridge],
-  year: 2015
+  year: 2015,
 };

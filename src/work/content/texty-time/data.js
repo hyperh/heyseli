@@ -30,7 +30,7 @@ export default {
     imgLast2Weeks,
     imgEmoticons,
     imgCompare,
-    imgFavorites
+    imgFavorites,
   ],
-  year: 2013
+  year: 2013,
 };
