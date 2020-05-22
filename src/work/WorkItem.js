@@ -24,8 +24,8 @@ const WorkItem = ({ pageContext: { folderName } }) => {
   const workItem = findLink(data);
 
   const { name, platforms, url, imgFolder, headerImg, images = [] } = workItem;
-  const lightboxImgs = images.map((image) => ({
-    src: image,
+  const carouselImages = images.map((image) => ({
+    source: image,
   }));
 
   return (
@@ -44,7 +44,7 @@ const WorkItem = ({ pageContext: { folderName } }) => {
           <h2>Made With</h2>
           <Made>{workItem.tech.sort().join(', ')}</Made>
         </div>
-        <Gallery images={lightboxImgs} />
+        <Gallery images={carouselImages} />
       </div>
     </Page>
   );
