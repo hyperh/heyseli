@@ -10,6 +10,13 @@ const Thumbs = styled.div`
   justify-content: center;
 `;
 
+const customStyles = {
+  view: (base) => ({
+    ...base,
+    height: '100vh',
+  }),
+};
+
 class Gallery extends Component {
   state = {
     isOpen: false,
@@ -42,7 +49,12 @@ class Gallery extends Component {
         <ModalGateway>
           {isOpen && (
             <Modal onClose={this.toggleModal}>
-              <Carousel views={images} currentIndex={currentIndex} />
+              <Carousel
+                styles={customStyles}
+                views={images}
+                currentIndex={currentIndex}
+                modalProps={{ preventScroll: false }}
+              />
             </Modal>
           )}
         </ModalGateway>
