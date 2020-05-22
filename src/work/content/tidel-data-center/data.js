@@ -3,7 +3,7 @@ import simPaper from '../../../publications/assets/sim.pdf';
 
 export default {
   name: 'Data Center Simulation',
-  link: 'data-center',
+  link: 'tidel-data-center',
   platforms: ['Desktop'],
   desc: (
     <div>

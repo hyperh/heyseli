@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import Lightbox from 'react-images';
+import Carousel from 'react-images';
 import styled from 'styled-components';
 import GalleryThumb from './GalleryThumb';
 
@@ -21,14 +21,14 @@ class Gallery extends Component {
     this.onClose = this.onClose.bind(this);
     this.state = {
       isOpen: false,
-      currentImage: 0
+      currentImage: 0,
     };
   }
 
   onClickGalleryThumb(index) {
     this.setState({
       isOpen: true,
-      currentImage: index
+      currentImage: index,
     });
   }
 
@@ -36,7 +36,7 @@ class Gallery extends Component {
     const { images } = this.props;
     const { currentImage } = this.state;
     this.setState({
-      currentImage: currentImage < images.length - 1 ? currentImage + 1 : 0
+      currentImage: currentImage < images.length - 1 ? currentImage + 1 : 0,
     });
   }
 
@@ -44,7 +44,7 @@ class Gallery extends Component {
     const { images } = this.props;
     const { currentImage } = this.state;
     this.setState({
-      currentImage: currentImage > 0 ? currentImage - 1 : images.length - 1
+      currentImage: currentImage > 0 ? currentImage - 1 : images.length - 1,
     });
   }
 
@@ -75,8 +75,8 @@ class Gallery extends Component {
             />
           ))}
         </Thumbs>
-        <Lightbox
-          images={images}
+        <Carousel
+          views={images}
           isOpen={isOpen}
           currentImage={currentImage}
           onClickNext={this.onClickNext}
@@ -92,7 +92,7 @@ class Gallery extends Component {
 }
 
 Gallery.propTypes = {
-  images: PropTypes.array.isRequired
+  images: PropTypes.array.isRequired,
 };
 
 export default Gallery;

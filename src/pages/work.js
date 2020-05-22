@@ -1,6 +1,6 @@
 import React from 'react';
-import Work from '../../work/Work';
-import Page from '../../core/Page';
+import Work from '../work/Work';
+import Page from '../core/Page';
 
 const WorkPage = () => (
   <Page>
