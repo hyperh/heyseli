@@ -6,29 +6,26 @@ import Content from './Content';
 import { headerFont } from './fonts';
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+  html,
+  body {
+    font-family: ${headerFont}, serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    color: rgba(0, 0, 0, 87);
+    font-weight: 300;
+  }
 
-html,
-body {
-  font-family: ${headerFont}, serif;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  color: rgba(0, 0, 0, 87);
-  font-weight: 300;
-}
+  /* To make sure padding doesn't change size of elements */
+  /* https://css-tricks.com/box-sizing/ */
+  html {
+    box-sizing: border-box; 
+  }
 
-/* To make sure padding doesn't change size of elements */
-/* https://css-tricks.com/box-sizing/ */
-html {
-  box-sizing: border-box; 
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-/* // end */
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /* // end */
 `;
 
 const Wrapper = styled.div`
