@@ -1,15 +1,15 @@
 import React from 'react';
-import imgLogo from './logo.png';
-import imgLanding from './landing-page.png';
-import imgLandingResponsive from './landing-page-responsive.png';
-import imgAbout from './about.png';
-import imgScience from './science.png';
-import imgPress from './press.png';
-import imgPricing from './pricing.png';
-import imgFaq from './faq.png';
-import imgApp from './app.png';
-import imgExplore from './explore.png';
-import imgLearn from './learn.png';
+import imgLogo from './assets-optimized/logo.jpg';
+import imgLanding from './assets-optimized/landing-page.jpg';
+import imgLandingResponsive from './assets-optimized/landing-page-responsive.jpg';
+import imgAbout from './assets-optimized/about.jpg';
+import imgScience from './assets-optimized/science.jpg';
+import imgPress from './assets-optimized/press.jpg';
+import imgPricing from './assets-optimized/pricing.jpg';
+import imgFaq from './assets-optimized/faq.jpg';
+import imgApp from './assets-optimized/app.jpg';
+import imgExplore from './assets-optimized/explore.jpg';
+import imgLearn from './assets-optimized/learn.jpg';
 
 export const bfmTechLead = (
   <p>

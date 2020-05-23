@@ -1,11 +1,11 @@
 import React from 'react';
-import imgLogo from './logo.png';
-import imgMain from './main.png';
-import imgAllTime from './all-time.png';
-import imgLast2Weeks from './last-2-weeks.png';
-import imgEmoticons from './emoticons.png';
-import imgCompare from './compare.png';
-import imgFavorites from './favorites.png';
+import imgLogo from './assets-optimized/logo.jpg';
+import imgMain from './assets-optimized/main.jpg';
+import imgAllTime from './assets-optimized/all-time.jpg';
+import imgLast2Weeks from './assets-optimized/last-2-weeks.jpg';
+import imgEmoticons from './assets-optimized/emoticons.jpg';
+import imgCompare from './assets-optimized/compare.jpg';
+import imgFavorites from './assets-optimized/favorites.jpg';
 
 export default {
   name: 'Texty Time',

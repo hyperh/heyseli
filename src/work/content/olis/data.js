@@ -1,16 +1,16 @@
 import React from 'react';
-import imgLogo from './logo.png';
-import imgLogin from './login.png';
-import imgNoAccount from './no-account.png';
-import imgCreateAccount from './create-account.png';
-import imgForgotPwd from './forgot-password.png';
-import imgTextEditor from './text-editor.png';
-import imgChat from './chat.png';
-import imgTeamDirectory from './team-directory.png';
-import imgTeamInfo from './team-info.png';
-import imgInvite from './invite-to-team.png';
-import imgNew from './new-chat.png';
-import imgSearch from './search.png';
+import imgLogo from './assets-optimized/logo.jpg';
+import imgLogin from './assets-optimized/login.jpg';
+import imgNoAccount from './assets-optimized/no-account.jpg';
+import imgCreateAccount from './assets-optimized/create-account.jpg';
+import imgForgotPwd from './assets-optimized/forgot-password.jpg';
+import imgTextEditor from './assets-optimized/text-editor.jpg';
+import imgChat from './assets-optimized/chat.jpg';
+import imgTeamDirectory from './assets-optimized/team-directory.jpg';
+import imgTeamInfo from './assets-optimized/team-info.jpg';
+import imgInvite from './assets-optimized/invite-to-team.jpg';
+import imgNew from './assets-optimized/new-chat.jpg';
+import imgSearch from './assets-optimized/search.jpg';
 
 export default {
   name: 'Olis',

@@ -1,14 +1,14 @@
 import React from 'react';
-import imgLogo from './logo.png';
 import { bfmTechLead } from '../brainfm-web/data';
-import imgLaunch from './launch.png';
-import imgFocus from './focus.png';
-import imgSignup from './signup.png';
-import imgHome from './home.png';
-import imgExplore from './explore.png';
-import imgPlayer from './player.png';
-import imgSettings from './settings.png';
-import imgDrawer from './drawer.png';
+import imgLogo from './assets-optimized/logo.jpg';
+import imgLaunch from './assets-optimized/launch.jpg';
+import imgFocus from './assets-optimized/focus.jpg';
+import imgSignup from './assets-optimized/signup.jpg';
+import imgHome from './assets-optimized/home.jpg';
+import imgExplore from './assets-optimized/explore.jpg';
+import imgPlayer from './assets-optimized/player.jpg';
+import imgSettings from './assets-optimized/settings.jpg';
+import imgDrawer from './assets-optimized/drawer.jpg';
 
 export default {
   name: 'Brain.fm (Mobile)',

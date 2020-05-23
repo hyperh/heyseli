@@ -1,6 +1,6 @@
 import React from 'react';
-import imgLogo from './logo.png';
-import imgAll from './all.png';
+import imgLogo from './assets-optimized/logo.jpg';
+import imgAll from './assets-optimized/all.jpg';
 
 export default {
   name: 'ReactForge',

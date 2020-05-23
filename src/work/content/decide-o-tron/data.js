@@ -1,8 +1,8 @@
 import React from 'react';
-import imgLogo from './logo.png';
-import imgInput from './input.png';
-import imgVote from './vote.png';
-import imgWinner from './winner.png';
+import imgLogo from './assets-optimized/logo.jpg';
+import imgInput from './assets-optimized/input.jpg';
+import imgVote from './assets-optimized/vote.jpg';
+import imgWinner from './assets-optimized/winner.jpg';
 
 export default {
   name: 'Decide-o-Tron',
