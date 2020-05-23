@@ -8,18 +8,10 @@ const folderRaw = 'assets-raw';
 const matches = glob.sync(`src/**/${folderRaw}/*.{png,jpg,jpeg}`);
 const MAX_WIDTH = 1400;
 const QUALITY = 30;
-const shouldProcessAll = true;
 
 Promise.all(
   matches.map(async (match) => {
     const stream = sharp(match);
-
-    if (!shouldProcessAll) {
-      const info = await stream.metadata();
-      if (info.width < MAX_WIDTH) {
-        return;
-      }
-    }
     console.log('Optimizing:', match);
 
     const optimizedName = match
@@ -34,8 +26,11 @@ Promise.all(
     }
 
     // Write optimized files
+    const info = await stream.metadata();
+    const targetWidth = info.width <= MAX_WIDTH ? info.width : MAX_WIDTH;
+
     await stream
-      .resize(MAX_WIDTH)
+      .resize(targetWidth)
       .png({ quality: QUALITY })
       .toFile(optimizedName);
 
