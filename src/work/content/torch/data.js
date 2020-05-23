@@ -1,7 +1,7 @@
 import React from 'react';
-import imgFire from './assets-optimized/fire.jpg';
-import imgLogo from './assets-optimized/logo.jpg';
-import imgFlyer from './assets-optimized/TORCH_flyer_2015.jpg';
+import imgFire from './assets-optimized/fire.png';
+import imgLogo from './assets-optimized/logo.png';
+import imgFlyer from './assets-optimized/TORCH_flyer_2015.png';
 
 export default {
   name: 'TORCH',

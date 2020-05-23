@@ -6,8 +6,8 @@ const fs = require(`fs-extra`);
 const folderOpt = 'assets-optimized';
 const folderRaw = 'assets-raw';
 const matches = glob.sync(`src/**/${folderRaw}/*.{png,jpg,jpeg}`);
-const MAX_WIDTH = 1800;
-const QUALITY = 50;
+const MAX_WIDTH = 1400;
+const QUALITY = 30;
 const shouldProcessAll = true;
 
 Promise.all(
@@ -24,7 +24,7 @@ Promise.all(
 
     const optimizedName = match
       .replace(folderRaw, folderOpt) // target optimized folder
-      .replace(/(\..+)$/, '.jpg'); // output will be jpg
+      .replace(/(\..+)$/, (match, ext) => `${ext}`);
 
     // Make folder if it doesn't exist
     const re = /.+\//g; // Find everything except file name
@@ -36,7 +36,7 @@ Promise.all(
     // Write optimized files
     await stream
       .resize(MAX_WIDTH)
-      .jpeg({ quality: QUALITY })
+      .png({ quality: QUALITY })
       .toFile(optimizedName);
 
     // Overwrite original file

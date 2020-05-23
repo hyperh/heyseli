@@ -1,7 +1,7 @@
 import React from 'react';
-import imgLogo from './assets-optimized/logo.jpg';
-import imgGen from './assets-optimized/gen_order_screen.jpg';
-import imgBalances from './assets-optimized/balances_screen.jpg';
+import imgLogo from './assets-optimized/logo.png';
+import imgGen from './assets-optimized/gen_order_screen.png';
+import imgBalances from './assets-optimized/balances_screen.png';
 
 export default {
   name: 'bZx',

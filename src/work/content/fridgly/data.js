@@ -1,9 +1,9 @@
 import React from 'react';
-import imgLogo from './assets-optimized/logo.jpg';
-import imgMain from './assets-optimized/main.jpg';
-import imgMeat from './assets-optimized/meat.jpg';
-import imgVeal from './assets-optimized/meat-veal.jpg';
-import imgFridge from './assets-optimized/fridge.jpg';
+import imgLogo from './assets-optimized/logo.png';
+import imgMain from './assets-optimized/main.png';
+import imgMeat from './assets-optimized/meat.png';
+import imgVeal from './assets-optimized/meat-veal.png';
+import imgFridge from './assets-optimized/fridge.png';
 
 export default {
   name: 'Fridgly',

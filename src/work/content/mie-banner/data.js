@@ -1,6 +1,6 @@
 import React from 'react';
-import imgLogo from './assets-optimized/logo.jpg';
-import imgBanner from './assets-optimized/MIE-Banner-FINAL.jpg';
+import imgLogo from './assets-optimized/logo.png';
+import imgBanner from './assets-optimized/MIE-Banner-FINAL.png';
 
 export default {
   name: 'MIE Banner Contest',

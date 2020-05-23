@@ -1,16 +1,16 @@
 import React from 'react';
-import imgLogo from './assets-optimized/logo.jpg';
-import imgLogin from './assets-optimized/login.jpg';
-import imgNoAccount from './assets-optimized/no-account.jpg';
-import imgCreateAccount from './assets-optimized/create-account.jpg';
-import imgForgotPwd from './assets-optimized/forgot-password.jpg';
-import imgTextEditor from './assets-optimized/text-editor.jpg';
-import imgChat from './assets-optimized/chat.jpg';
-import imgTeamDirectory from './assets-optimized/team-directory.jpg';
-import imgTeamInfo from './assets-optimized/team-info.jpg';
-import imgInvite from './assets-optimized/invite-to-team.jpg';
-import imgNew from './assets-optimized/new-chat.jpg';
-import imgSearch from './assets-optimized/search.jpg';
+import imgLogo from './assets-optimized/logo.png';
+import imgLogin from './assets-optimized/login.png';
+import imgNoAccount from './assets-optimized/no-account.png';
+import imgCreateAccount from './assets-optimized/create-account.png';
+import imgForgotPwd from './assets-optimized/forgot-password.png';
+import imgTextEditor from './assets-optimized/text-editor.png';
+import imgChat from './assets-optimized/chat.png';
+import imgTeamDirectory from './assets-optimized/team-directory.png';
+import imgTeamInfo from './assets-optimized/team-info.png';
+import imgInvite from './assets-optimized/invite-to-team.png';
+import imgNew from './assets-optimized/new-chat.png';
+import imgSearch from './assets-optimized/search.png';
 
 export default {
   name: 'Olis',

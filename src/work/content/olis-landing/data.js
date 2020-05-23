@@ -1,6 +1,6 @@
 import React from 'react';
-import imgLogo from './assets-optimized/logo.jpg';
-import imgAll from './assets-optimized/all.jpg';
+import imgLogo from './assets-optimized/logo.png';
+import imgAll from './assets-optimized/all.png';
 
 export default {
   name: 'Olis Landing Page',

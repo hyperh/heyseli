@@ -1,14 +1,14 @@
 import React from 'react';
-import imgLogo from './assets-optimized/logo.jpg';
-import imgTxs from './assets-optimized/transactions_google.jpg';
-import imgAddTx from './assets-optimized/add_trans_google.jpg';
-import imgCategory from './assets-optimized/by_category_google.jpg';
-import imgFood from './assets-optimized/by_category_food_google.jpg';
-import imgTimeframe from './assets-optimized/by_category_timeframe_google.jpg';
-import imgTimeAll from './assets-optimized/by_time_all_google.jpg';
-import imgTimeFood from './assets-optimized/by_time_food_google.jpg';
-import imgCurrency from './assets-optimized/currency_google.jpg';
-import imgImport from './assets-optimized/import_google.jpg';
+import imgLogo from './assets-optimized/logo.png';
+import imgTxs from './assets-optimized/transactions_google.png';
+import imgAddTx from './assets-optimized/add_trans_google.png';
+import imgCategory from './assets-optimized/by_category_google.png';
+import imgFood from './assets-optimized/by_category_food_google.png';
+import imgTimeframe from './assets-optimized/by_category_timeframe_google.png';
+import imgTimeAll from './assets-optimized/by_time_all_google.png';
+import imgTimeFood from './assets-optimized/by_time_food_google.png';
+import imgCurrency from './assets-optimized/currency_google.png';
+import imgImport from './assets-optimized/import_google.png';
 
 export default {
   name: 'Driller',
