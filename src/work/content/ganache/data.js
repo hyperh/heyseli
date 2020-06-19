@@ -1,5 +1,11 @@
 import React from 'react';
 import imgLogo from './assets-optimized/logo.png';
+import imgGanacheMain from './assets-optimized/ganache-main.png';
+import imgGanacheAccounts from './assets-optimized/ganache-accounts.png';
+import imgGanacheBlocks from './assets-optimized/ganache-blocks.png';
+import imgGanacheContracts from './assets-optimized/ganache-contracts.png';
+import imgGanacheLogs from './assets-optimized/ganache-logs.png';
+import imgGanacheTxs from './assets-optimized/ganache-transactions.png';
 
 export default {
   name: 'Ganache',
@@ -29,5 +35,13 @@ export default {
   url: [
     { name: 'Website', value: 'https://www.trufflesuite.com/ganache' },
     { name: 'Github', value: 'https://github.com/trufflesuite/ganache' },
+  ],
+  images: [
+    imgGanacheMain,
+    imgGanacheAccounts,
+    imgGanacheBlocks,
+    imgGanacheContracts,
+    imgGanacheLogs,
+    imgGanacheTxs,
   ],
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import imgLogo from './assets-optimized/logo.png';
+import imgDrizzle from './assets-optimized/drizzle.png';
 
 export default {
   name: 'Drizzle',
@@ -48,4 +49,5 @@ export default {
       value: 'https://github.com/trufflesuite/drizzle-utils',
     },
   ],
+  images: [imgDrizzle],
 };

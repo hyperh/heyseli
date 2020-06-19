@@ -1,5 +1,11 @@
 import React from 'react';
 import imgLogo from './logo.svg';
+import imgTeamsBuild from './assets-optimized/teams-build.png';
+import imgTeamsBuilds from './assets-optimized/teams-builds.png';
+import imgTeamsDeployments from './assets-optimized/teams-deployments.png';
+import imgTeamsLogin from './assets-optimized/teams-login.png';
+import imgTeamsMain from './assets-optimized/teams-main.png';
+import imgTeamsSandboxes from './assets-optimized/teams-sandboxes.png';
 
 export default {
   name: 'Truffle Teams',
@@ -51,4 +57,12 @@ export default {
   headerImg: imgLogo,
   year: 2019.3,
   url: 'https://www.trufflesuite.com/teams',
+  images: [
+    imgTeamsLogin,
+    imgTeamsMain,
+    imgTeamsBuilds,
+    imgTeamsBuild,
+    imgTeamsDeployments,
+    imgTeamsSandboxes,
+  ],
 };
