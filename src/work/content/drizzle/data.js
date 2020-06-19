@@ -1,5 +1,5 @@
 import React from 'react';
-import imgLogo from './logo.png';
+import imgLogo from './assets-optimized/logo.png';
 
 export default {
   name: 'Drizzle',
