@@ -46,8 +46,9 @@ const Contact = () => (
       developer and designer. I love to bring ideas to life.
     </p>
     <p>
-      I&apos;m available for freelance work. If you would like to learn more
-      about how I can help you make wonderful apps, you can contact me at{' '}
+      I&apos;m available for contract and consulting work. If you would like to
+      learn more about how I can help you make wonderful apps, you can contact
+      me at{' '}
       <b>
         <i>
           <HiddenEmail email={email} />
