@@ -29,7 +29,7 @@ const HeaderImg = styled.div`
   }
 `;
 
-const getHeaderImg = headerImg =>
+const getHeaderImg = (headerImg) =>
   headerImg ? (
     <HeaderImg>
       <img src={headerImg} alt="header" />
@@ -44,7 +44,7 @@ const WorkItemHeader = ({ name, platforms, url, headerImg }) => (
       <Platforms>{platforms.join(', ')}</Platforms>
       {typeof url === 'string' && <ExternalLink to={url}>Link</ExternalLink>}
       {Array.isArray(url) &&
-        url.map(u => (
+        url.map((u) => (
           <p key={u.name}>
             <ExternalLink to={u.value}>{u.name}</ExternalLink>
           </p>
@@ -58,10 +58,10 @@ WorkItemHeader.propTypes = {
   platforms: PropTypes.array,
   url: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.arrayOf(PropTypes.object)
+    PropTypes.arrayOf(PropTypes.object),
   ]),
   imgFolder: PropTypes.string,
-  headerImg: PropTypes.string
+  headerImg: PropTypes.string,
 };
 
 export default WorkItemHeader;

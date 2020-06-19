@@ -16,5 +16,12 @@ module.exports = {
     },
     // Need this to do styled components properly
     'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: 'UA-83610232-2',
+      },
+    },
   ],
 };
