@@ -13,7 +13,10 @@ export default {
       </p>
       <p>
         I worked in a team of 4. I interacted with our open-source community,
-        reviewed PRs, implemented new features, and fixed bugs.
+        reviewed PRs, implemented new features, and fixed bugs. I spearheaded
+        efforts to improve and modernize Drizzle React Components with latest
+        React best practices. I also contributed heavily to the RxJS-based
+        Drizzle Utils.
       </p>
     </div>
   ),
