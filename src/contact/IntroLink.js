@@ -37,7 +37,7 @@ IntroLink.propTypes = {
   header: PropTypes.string,
   desc: PropTypes.string,
   url: PropTypes.string,
-  external: PropTypes.bool
+  external: PropTypes.bool,
 };
 
 export default IntroLink;

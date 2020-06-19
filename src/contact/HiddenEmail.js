@@ -7,14 +7,14 @@ class HiddenEmail extends Component {
     this.showEmail = this.showEmail.bind(this);
     this.state = {
       isVisible: false,
-      email: props.email
+      email: props.email,
     };
   }
 
   showEmail(e) {
     this.setState({
       isVisible: true,
-      email: atob(this.props.email)
+      email: atob(this.props.email),
     });
     e.preventDefault();
   }
@@ -28,7 +28,7 @@ class HiddenEmail extends Component {
         ) : (
           <a
             href=""
-            ref={x => {
+            ref={(x) => {
               this.text = x;
             }}
             onClick={this.showEmail}
@@ -42,7 +42,7 @@ class HiddenEmail extends Component {
 }
 
 HiddenEmail.propTypes = {
-  email: PropTypes.string.isRequired
+  email: PropTypes.string.isRequired,
 };
 
 export default HiddenEmail;

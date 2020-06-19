@@ -4,7 +4,7 @@ import React from 'react';
 // Bibtex formatted author: Last, First M and Last2, First2 M2
 const authorsWithBold = (authorStr, boldAuthor) => {
   const authors = authorStr.split(' and ');
-  const boldIndex = authors.findIndex(author => author === boldAuthor);
+  const boldIndex = authors.findIndex((author) => author === boldAuthor);
   const before = authors.slice(0, boldIndex);
   const after = authors.slice(boldIndex + 1, authors.length);
 
@@ -26,16 +26,15 @@ const CitationChicago = ({
   conference,
   number,
   pages,
-  year
+  year,
 }) => (
   <p>
-    {authorsWithBold(author, 'Li, Heyse')}.&nbsp; "{title}".&nbsp;
+    {authorsWithBold(author, 'Li, Heyse')}.&nbsp; &quot;{title}&quot;.&nbsp;
     {journal ? <i>{journal}</i> : null}
     {number ? ` no. ${number}` : null}
     {conference ? <i>{` ${conference}`}</i> : null}
     {` (${year})`}
-    {pages ? `: ${pages}` : null}
-    .
+    {pages ? `: ${pages}` : null}.
   </p>
 );
 
@@ -46,7 +45,7 @@ CitationChicago.propTypes = {
   conference: PropTypes.string,
   number: PropTypes.string,
   pages: PropTypes.string,
-  year: PropTypes.string.isRequired
+  year: PropTypes.string.isRequired,
 };
 
 export default CitationChicago;

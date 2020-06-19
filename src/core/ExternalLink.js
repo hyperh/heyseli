@@ -9,7 +9,7 @@ const ExternalLink = ({ to, children, ...rest }) => (
 
 ExternalLink.propTypes = {
   to: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default ExternalLink;
