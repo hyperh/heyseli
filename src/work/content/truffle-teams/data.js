@@ -30,7 +30,7 @@ export default {
       <p>
         I also wrote typeDefs and resolvers for Apollo queries, mutations, and
         subscriptions. I setup mock servers to streamline the local development
-        experience for devs.
+        experience for the team.
       </p>
     </div>
   ),
