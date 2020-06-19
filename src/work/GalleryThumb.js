@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const imgSide = '20em';
+const imgSide = '20rem';
 const Wrapper = styled.div`
-  width: ${imgSide};
-  height: ${imgSide};
+  max-width: ${imgSide};
+  max-height: ${imgSide};
   overflow: hidden;
 
   img {
@@ -40,7 +40,7 @@ class GalleryThumb extends Component {
 GalleryThumb.propTypes = {
   src: PropTypes.string.isRequired,
   index: PropTypes.number,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 export default GalleryThumb;

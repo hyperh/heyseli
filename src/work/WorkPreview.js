@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -29,7 +29,8 @@ const Image = styled.div`
   overflow: hidden;
 
   // prettier-ignore
-  ${props => (props.previewImg ? '' : noImg)}
+  ${(props) =>
+    props.previewImg ? '' : noImg}
 
   img {
     width: 100%;
@@ -58,7 +59,7 @@ WorkPreview.propTypes = {
   name: PropTypes.string.isRequired,
   platform: PropTypes.array,
   link: PropTypes.string,
-  previewImg: PropTypes.string
+  previewImg: PropTypes.string,
 };
 
 export default WorkPreview;
