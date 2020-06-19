@@ -19,7 +19,8 @@
     "copy": "cp CNAME public/CNAME",
     "watch:test": "yarn test -- --auto-watch --no-single-run",
     "deploy": "yarn build && yarn copy && gh-pages -d public --repo https://$GITHUB_TOKEN@github.com/hyperh/heyseli.git",
-    "test": "yarn run eslint"
+    "test": "yarn run eslint",
+    "gen:imgs": "node ./scripts/optimize-images"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
