@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 import { MdMenu as OpenBtn, MdClose as CloseBtn } from 'react-icons/md';
 import styled from 'styled-components';
 
@@ -14,7 +14,7 @@ const Content = styled.div`
     background-color: white;
     width: 100vw;
     transition: left 0.3s;
-    left: ${props => (props.open ? '0' : '-100vw')};
+    left: ${(props) => (props.open ? '0' : '-100vw')};
   }
 `;
 
@@ -52,7 +52,7 @@ class Sidebar extends Component {
     super(props);
     this.onClick = this.onClick.bind(this);
     this.state = {
-      open: false
+      open: false,
     };
   }
 
