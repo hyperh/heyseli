@@ -14,6 +14,7 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    // Need this to do styled components properly
     'gatsby-plugin-styled-components',
   ],
 };
