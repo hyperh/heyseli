@@ -10,18 +10,22 @@ export default {
       <p>
         A web-based service that spans the building, deployment, and monitoring
         of smart contracts and dapps for software development teams. I worked in
-        a team of 6.
+        a team of 6+.
       </p>
       <p>
-        I led the development of the front-end client. In order to streamline
-        development, I setup Storybook, unit tests, and snapshot-based
-        integration tests. I also interacted with the product manager and
-        designer to gather requirements and to clarify feature requests for
-        development purposes. Automated deployments of Storybook to improve team
-        communication
+        I led the development of the front-end client and instituted many
+        improvements and best practices. In order to streamline development, I
+        setup Storybook, unit tests, and snapshot-based integration tests. I
+        also interacted with the product manager and designer to gather
+        requirements and to clarify feature requests for development purposes. I
+        setup automated deployments of Storybook to improve cross-team and
+        communications with management about the state of the product.
       </p>
-
-      <p>Docker stuff, reduced build times from 10+ min to 12 seconds</p>
+      <p>
+        I also wrote typeDefs and resolvers for Apollo queries, mutations, and
+        subscriptions. I setup mock servers to streamline the local development
+        experience for devs.
+      </p>
     </div>
   ),
   tech: [
@@ -38,6 +42,9 @@ export default {
     'Web3',
     'Infura',
     'Github Actions',
+    'Docker',
+    'RabbitMQ',
+    'Postgresql',
   ],
   imgFolder: 'truffle-teams',
   previewImg: imgLogo,
