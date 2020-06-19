@@ -3,5 +3,5 @@ export default {
   twitter: 'https://twitter.com/liheyse',
   medium: 'https://medium.com/@liheyse',
   github: 'https://github.com/hyperh',
-  github2: 'https://github.com/honestbonsai'
+  github2: 'https://github.com/honestbonsai',
 };

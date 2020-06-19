@@ -9,7 +9,7 @@ const Tags = ({ tags }) => (
 );
 
 Tags.propTypes = {
-  tags: PropTypes.array.isRequired
+  tags: PropTypes.array.isRequired,
 };
 
 export default Tags;

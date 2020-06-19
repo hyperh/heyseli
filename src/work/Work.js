@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 
 const Work = () => (
   <Wrapper>
-    {sorted.map(item => (
+    {sorted.map((item) => (
       <WorkPreview
         key={item.name}
         name={item.name}

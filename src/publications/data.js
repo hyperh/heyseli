@@ -19,9 +19,9 @@ export default [
           'optimization',
           'maximal covering location problem',
           'integer programming',
-          'toronto'
+          'toronto',
         ],
-        filename: 'aed.pdf'
+        filename: 'aed.pdf',
       },
       {
         title: 'Robust PET-guided intensity-modulated radiation therapy',
@@ -39,9 +39,9 @@ export default [
           'positron emission tomography',
           'intensity-modulated radiation therapy',
           'non-small cell lung cancer',
-          '4d'
+          '4d',
         ],
-        filename: 'robust.pdf'
+        filename: 'robust.pdf',
       },
       {
         title:
@@ -61,9 +61,9 @@ export default [
           'positron emission tomography',
           'intensity-modulated radiation therapy',
           'non-small cell lung cancer',
-          '4d'
+          '4d',
         ],
-        filename: 'ml.pdf'
+        filename: 'ml.pdf',
       },
       {
         title:
@@ -79,11 +79,11 @@ export default [
         tags: [
           'discrete event simulation',
           'linear programming',
-          'integer programming'
+          'integer programming',
         ],
-        filename: 'sched.pdf'
-      }
-    ]
+        filename: 'sched.pdf',
+      },
+    ],
   },
   {
     type: 'Refereed Conference Articles',
@@ -99,11 +99,11 @@ export default [
         tags: [
           'discrete event simulation',
           'linear programming',
-          'integer programming'
+          'integer programming',
         ],
-        filename: 'sim.pdf'
-      }
-    ]
+        filename: 'sim.pdf',
+      },
+    ],
   },
   {
     type: 'Presentations',
@@ -122,9 +122,9 @@ export default [
           'positron emission tomography',
           'intensity-modulated radiation therapy',
           'non-small cell lung cancer',
-          '4d'
-        ]
-      }
-    ]
-  }
+          '4d',
+        ],
+      },
+    ],
+  },
 ];
