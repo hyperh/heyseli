@@ -1,7 +1,7 @@
 export default {
   experience: [
     {
-      title: 'Blockchain Tools Engineer, Software Engineer - Front End',
+      title: 'Blockchain Tools Engineer, Front End Tech Lead',
       company: 'Truffle Blockchain Group',
       time: '2019 Mar - present',
     },
@@ -36,7 +36,7 @@ export default {
       time: '2015 Nov - 2016 Jun',
     },
     {
-      title: 'Programming Teacher',
+      title: 'Programming Instructor',
       company: 'Capstone Prep',
       time: '2016 Jun - Aug',
     },
