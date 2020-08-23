@@ -7,6 +7,7 @@ import Gallery from './Gallery';
 import { bodyFont } from '../core/fonts';
 import Page from '../core/Page';
 import data from './data';
+import SEO from '../core/SEO';
 
 const fontStyle = `
 font-family: ${bodyFont};
@@ -19,7 +20,8 @@ const Made = styled.p`
   ${fontStyle};
 `;
 
-const WorkItem = ({ pageContext: { folderName } }) => {
+// Page is dynamically generated in gatsby-node by reading the content folder
+const WorkItemPage = ({ pageContext: { folderName } }) => {
   const findLink = find((item) => item.link === folderName);
   const workItem = findLink(data);
 
@@ -30,6 +32,7 @@ const WorkItem = ({ pageContext: { folderName } }) => {
 
   return (
     <Page>
+      <SEO title={name} />
       <div>
         <WorkItemHeader
           name={name}
@@ -50,10 +53,10 @@ const WorkItem = ({ pageContext: { folderName } }) => {
   );
 };
 
-WorkItem.propTypes = {
+WorkItemPage.propTypes = {
   pageContext: PropTypes.shape({
     folderName: PropTypes.string,
   }),
 };
 
-export default WorkItem;
+export default WorkItemPage;

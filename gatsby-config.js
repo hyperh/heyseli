@@ -6,6 +6,13 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    defaultTitle: 'Heyse Li',
+    titleTemplate: 'Heyse Li | %s', // title prop will be put in %s, if no title prop, defaultTitle is used
+    defaultDescription: 'A porfolio page.',
+    siteUrl: 'https://heyseli.com',
+    twitterUsername: '@liheyse',
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -23,5 +30,6 @@ module.exports = {
         trackingId: 'UA-83610232-2',
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 };
