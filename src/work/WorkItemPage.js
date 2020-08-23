@@ -7,6 +7,7 @@ import Gallery from './Gallery';
 import { bodyFont } from '../core/fonts';
 import Page from '../core/Page';
 import data from './data';
+import SEO from '../core/SEO';
 
 const fontStyle = `
 font-family: ${bodyFont};
@@ -31,6 +32,7 @@ const WorkItemPage = ({ pageContext: { folderName } }) => {
 
   return (
     <Page>
+      <SEO title={name} />
       <div>
         <WorkItemHeader
           name={name}
