@@ -20,7 +20,7 @@ const Made = styled.p`
 `;
 
 // Page is dynamically generated in gatsby-node by reading the content folder
-const WorkPage = ({ pageContext: { folderName } }) => {
+const WorkItemPage = ({ pageContext: { folderName } }) => {
   const findLink = find((item) => item.link === folderName);
   const workItem = findLink(data);
 
@@ -51,10 +51,10 @@ const WorkPage = ({ pageContext: { folderName } }) => {
   );
 };
 
-WorkPage.propTypes = {
+WorkItemPage.propTypes = {
   pageContext: PropTypes.shape({
     folderName: PropTypes.string,
   }),
 };
 
-export default WorkPage;
+export default WorkItemPage;
