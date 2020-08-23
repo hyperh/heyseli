@@ -13,6 +13,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
+    "serve": "gatsby serve",
     "eslint": "eslint src",
     "clean": "rimraf ./public",
     "prettier:fix": "prettier --write 'src/**/*.js'",
