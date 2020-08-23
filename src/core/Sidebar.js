@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { MdMenu as OpenBtn, MdClose as CloseBtn } from 'react-icons/md';
 import styled from 'styled-components';
@@ -14,7 +14,7 @@ const Content = styled.div`
     background-color: white;
     width: 100vw;
     transition: left 0.3s;
-    left: ${(props) => (props.open ? '0' : '-100vw')};
+    left: ${(props) => (props.isOpen ? '0' : '-100vw')};
   }
 `;
 
@@ -47,55 +47,42 @@ const Item = styled.div`
   padding: 1em;
 `;
 
-class Sidebar extends Component {
-  constructor(props) {
-    super(props);
-    this.onClick = this.onClick.bind(this);
-    this.state = {
-      open: false,
-    };
-  }
+const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleOpen = () => setIsOpen(!isOpen);
 
-  onClick() {
-    this.setState({ open: !this.state.open });
-  }
+  return (
+    <header>
+      <OpenBtnStyled onClick={toggleOpen} />
 
-  render() {
-    const { open } = this.state;
-
-    return (
-      <header>
-        <OpenBtnStyled onClick={this.onClick} />
-
-        <Content open={open}>
-          {open ? <CloseBtnStyled onClick={this.onClick} /> : null}
-          <Name>heyse li</Name>
-          <nav>
-            <Item>
-              <Link to="/contact" onClick={this.onClick}>
-                contact
-              </Link>
-            </Item>
-            <Item>
-              <Link to="/work" onClick={this.onClick}>
-                work
-              </Link>
-            </Item>
-            <Item>
-              <Link to="/publications" onClick={this.onClick}>
-                publications
-              </Link>
-            </Item>
-            <Item>
-              <Link to="/resume" onClick={this.onClick}>
-                resume
-              </Link>
-            </Item>
-          </nav>
-        </Content>
-      </header>
-    );
-  }
-}
+      <Content isOpen={isOpen}>
+        {isOpen ? <CloseBtnStyled onClick={toggleOpen} /> : null}
+        <Name>heyse li</Name>
+        <nav>
+          <Item>
+            <Link to="/contact" onClick={toggleOpen}>
+              contact
+            </Link>
+          </Item>
+          <Item>
+            <Link to="/work" onClick={toggleOpen}>
+              work
+            </Link>
+          </Item>
+          <Item>
+            <Link to="/publications" onClick={toggleOpen}>
+              publications
+            </Link>
+          </Item>
+          <Item>
+            <Link to="/resume" onClick={toggleOpen}>
+              resume
+            </Link>
+          </Item>
+        </nav>
+      </Content>
+    </header>
+  );
+};
 
 export default Sidebar;
