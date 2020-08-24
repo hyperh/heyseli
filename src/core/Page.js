@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Sidebar from './Sidebar';
 import Content from './Content';
-import useDarkMode from 'use-dark-mode';
 import GlobalStyle from './GlobalStyle';
 
 const Wrapper = styled.div`
@@ -15,16 +14,12 @@ const Wrapper = styled.div`
 `;
 
 const Page = ({ children }) => {
-  const darkMode = useDarkMode(false);
-
   return (
     <>
       <GlobalStyle />
       <Wrapper>
-        <div>
-          <Sidebar />
-          <button onClick={darkMode.toggle}>Toggle</button>
-        </div>
+        <Sidebar />
+
         <Content>{children}</Content>
       </Wrapper>
     </>

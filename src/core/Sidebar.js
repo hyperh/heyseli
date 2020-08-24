@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { MdMenu as OpenBtn, MdClose as CloseBtn } from 'react-icons/md';
 import styled from 'styled-components';
+import useDarkMode from 'use-dark-mode';
 
 const Content = styled.div`
   width: 17em;
@@ -11,7 +12,7 @@ const Content = styled.div`
   @media (max-width: 768px) {
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color: var(--backgroundColor);
     width: 100vw;
     transition: left 0.3s;
     left: ${(props) => (props.isOpen ? '0' : '-100vw')};
@@ -51,6 +52,8 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => setIsOpen(!isOpen);
 
+  const darkMode = useDarkMode(false);
+
   return (
     <header>
       <OpenBtnStyled onClick={toggleOpen} />
@@ -78,6 +81,10 @@ const Sidebar = () => {
             <Link to="/resume" onClick={toggleOpen}>
               resume
             </Link>
+          </Item>
+
+          <Item>
+            <button onClick={darkMode.toggle}>Toggle</button>
           </Item>
         </nav>
       </Content>

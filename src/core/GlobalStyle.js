@@ -20,9 +20,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body.light-mode {
+    --backgroundColor: white;
     --secondaryText: ${Colors.GREY_TEXT};
 
-    background-color: white;
+    background-color: var(--backgroundColor);
     color: ${Colors.GREY_20};
 
     a {
@@ -34,9 +35,10 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   body.dark-mode {
+    --backgroundColor: ${Colors.DARK_GREY};
     --secondaryText: pink;
 
-    background-color: ${Colors.DARK_GREY};
+    background-color: var(--backgroundColor);
     color: ${Colors.GREY_60};
 
     a {
