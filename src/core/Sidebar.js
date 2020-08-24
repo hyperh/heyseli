@@ -16,6 +16,7 @@ const Content = styled.div`
     width: 100vw;
     transition: left 0.3s;
     left: ${(props) => (props.isOpen ? '0' : '-100vw')};
+    padding: 4rem 2rem;
   }
 `;
 
