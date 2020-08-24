@@ -32,5 +32,11 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-use-dark-mode',
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/core/utils/typography`,
+      },
+    },
   ],
 };
