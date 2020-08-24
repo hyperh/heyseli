@@ -1,21 +1,11 @@
 import PropTypes from 'prop-types';
 import find from 'lodash/fp/find';
 import React from 'react';
-import styled from 'styled-components';
 import WorkItemHeader from './WorkItemHeader';
 import Gallery from './Gallery';
 import Page from '../core/Page';
 import data from './data';
 import SEO from '../core/SEO';
-
-const fontStyle = `
-`;
-const Desc = styled.div`
-  ${fontStyle};
-`;
-const Made = styled.p`
-  ${fontStyle};
-`;
 
 // Page is dynamically generated in gatsby-node by reading the content folder
 const WorkItemPage = ({ pageContext: { folderName } }) => {
@@ -38,11 +28,11 @@ const WorkItemPage = ({ pageContext: { folderName } }) => {
           imgFolder={imgFolder}
           headerImg={headerImg}
         />
-        <Desc>{workItem.desc}</Desc>
+        <p>{workItem.desc}</p>
 
         <div>
           <h2>Made With</h2>
-          <Made>{workItem.tech.sort().join(', ')}</Made>
+          <p>{workItem.tech.sort().join(', ')}</p>
         </div>
         <Gallery images={carouselImages} />
       </div>
