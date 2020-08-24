@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { MdMenu as OpenBtn, MdClose as CloseBtn } from 'react-icons/md';
+import { FiMoon as DarkBtn, FiSun as LightBtn } from 'react-icons/fi';
 import styled from 'styled-components';
 import useDarkMode from 'use-dark-mode';
 
@@ -84,7 +85,11 @@ const Sidebar = () => {
           </Item>
 
           <Item>
-            <button onClick={darkMode.toggle}>Toggle</button>
+            {darkMode.value ? (
+              <LightBtn onClick={darkMode.toggle} />
+            ) : (
+              <DarkBtn onClick={darkMode.toggle} />
+            )}
           </Item>
         </nav>
       </Content>
