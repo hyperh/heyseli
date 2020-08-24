@@ -19,7 +19,7 @@ const IntroLink = ({ Icon, header, desc, url, Link }) => (
       <Icon />
     </IconWrapper>
     <Text>
-      <h1>{header}</h1>
+      <h2>{header}</h2>
       <div>{desc}</div>
     </Text>
   </Link>
