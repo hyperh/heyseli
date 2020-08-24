@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 import { headerFont } from './fonts';
 
+const Colors = {
+  DARK_GREY: '#1a1919',
+  GREY_60: '#999999', // 60 is the lightness
+  GREY_20: '#333333',
+  GREY_TEXT: 'rgba(0, 0, 0, 0.54)',
+};
+
 const GlobalStyle = createGlobalStyle`
   html,
   body {
@@ -13,13 +20,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body.light-mode {
-    --secondaryText: rgba(0, 0, 0, 0.54);
+    --secondaryText: ${Colors.GREY_TEXT};
 
-    background-color: #fff;
-    color: #333;
+    background-color: white;
+    color: ${Colors.GREY_20};
 
     a {
       color: blue;
+
       &:visited {
         color: red;
       }
@@ -28,11 +36,12 @@ const GlobalStyle = createGlobalStyle`
   body.dark-mode {
     --secondaryText: pink;
 
-    background-color: #1a1919;
-    color: #999;
+    background-color: ${Colors.DARK_GREY};
+    color: ${Colors.GREY_60};
 
     a {
       color: yellow;
+      
       &:visited {
         color: green;
       }
