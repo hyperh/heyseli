@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  body.light-mode {
+  body.light {
     --backgroundColor: white;
     --primaryText: ${Colors.GREY_20};
     --secondaryText: ${Colors.GREY_TEXT_SECONDARY};
@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
-  body.dark-mode {
+  body.dark {
     --backgroundColor: ${Colors.DARK_GREY};
     --primaryText: ${Colors.GREY_60};
     --secondaryText: ${Colors.GREY_60};
