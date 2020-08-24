@@ -2,10 +2,11 @@ import { createGlobalStyle } from 'styled-components';
 import { headerFont } from './fonts';
 
 const Colors = {
-  DARK_GREY: '#1a1919',
+  DARK_GREY: '#111010',
   GREY_60: '#999999', // 60 is the lightness
   GREY_20: '#333333',
-  GREY_TEXT: 'rgba(0, 0, 0, 0.54)',
+  GREY_TEXT_SECONDARY: 'rgba(0, 0, 0, 0.54)',
+  YELLOW: '#E8BE1B',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -21,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 
   body.light-mode {
     --backgroundColor: white;
-    --secondaryText: ${Colors.GREY_TEXT};
+    --secondaryText: ${Colors.GREY_TEXT_SECONDARY};
 
     background-color: var(--backgroundColor);
     color: ${Colors.GREY_20};
@@ -30,22 +31,22 @@ const GlobalStyle = createGlobalStyle`
       color: blue;
 
       &:visited {
-        color: red;
+        color: blue;
       }
     }
   }
   body.dark-mode {
     --backgroundColor: ${Colors.DARK_GREY};
-    --secondaryText: pink;
+    --secondaryText: ${Colors.GREY_60};
 
     background-color: var(--backgroundColor);
     color: ${Colors.GREY_60};
 
     a {
-      color: yellow;
+      color: ${Colors.YELLOW};
       
       &:visited {
-        color: green;
+        color: ${Colors.YELLOW};
       }
     }
   }
