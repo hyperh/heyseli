@@ -8,7 +8,6 @@ import useDarkMode from 'use-dark-mode';
 const Content = styled.div`
   width: 12em;
   height: 100vh;
-  padding: 2em 0 2em 2em;
 
   @media (max-width: 768px) {
     position: fixed;
@@ -42,11 +41,11 @@ const CloseBtnStyled = styled(CloseBtn)`
 
 const Name = styled.div`
   font-size: 2em;
-  padding: 0.5em;
+  padding: 0.5em 0;
 `;
 
 const Item = styled.div`
-  padding: 1em;
+  padding: 1em 0;
 `;
 
 const Sidebar = () => {
