@@ -22,7 +22,7 @@ const Resume = () => (
     </div>
 
     <div>
-      <h1>Education</h1>
+      <h2>Education</h2>
       {education.map((x) => {
         const { school, type, faculty, gradYear } = x;
         return (
