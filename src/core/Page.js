@@ -14,23 +14,37 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: 100%;
     width: 100%;
-    color: rgba(0, 0, 0, 87);
     font-weight: 300;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   body.light-mode {
+    --secondaryText: rgba(0, 0, 0, 0.54);
+
     background-color: #fff;
     color: #333;
-    transition: all 0.3s ease;
+
+    a {
+      color: blue;
+    }
+
+    a:visited {
+      color: red;
+    }
   }
   body.dark-mode {
+    --secondaryText: pink;
+
     background-color: #1a1919;
     color: #999;
-    transition: all 0.3s ease;
-  }
 
-  a:visited {
-    color: green;
+    a {
+      color: yellow;
+    }
+
+    a:visited {
+      color: green;
+    }
   }
 
   /* To make sure padding doesn't change size of elements */

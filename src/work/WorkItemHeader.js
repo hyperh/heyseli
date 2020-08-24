@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `;
 
 const Platforms = styled.p`
-  color: ${(props) => props.theme.secondaryText};
+  color: var(--secondaryText);
 `;
 
 const headerImgSide = '10em';
