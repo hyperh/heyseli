@@ -6,6 +6,7 @@ const Colors = {
   GREY_20: '#333333',
   GREY_TEXT_SECONDARY: 'rgba(0, 0, 0, 0.54)',
   YELLOW: '#E8BE1B',
+  TEAL: '#3AAFA9',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -26,10 +27,10 @@ const GlobalStyle = createGlobalStyle`
     color: var(--primaryText);
 
     a {
-      color: blue;
+      color: ${Colors.TEAL};
 
       &:visited {
-        color: blue;
+        color: ${Colors.TEAL};
       }
     }
   }
