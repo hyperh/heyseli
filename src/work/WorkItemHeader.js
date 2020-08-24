@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import ExternalLink from '../core/ExternalLink';
-import { secondaryTextDark } from '../core/colors';
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,7 +13,7 @@ const Wrapper = styled.div`
 `;
 
 const Platforms = styled.p`
-  color: ${secondaryTextDark};
+  color: var(--secondaryText);
 `;
 
 const headerImgSide = '10em';

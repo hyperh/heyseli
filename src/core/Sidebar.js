@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { MdMenu as OpenBtn, MdClose as CloseBtn } from 'react-icons/md';
+import { FiMoon as DarkBtn, FiSun as LightBtn } from 'react-icons/fi';
 import styled from 'styled-components';
+import useDarkMode from 'use-dark-mode';
 
 const Content = styled.div`
   width: 17em;
@@ -11,10 +13,10 @@ const Content = styled.div`
   @media (max-width: 768px) {
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color: var(--backgroundColor);
     width: 100vw;
     transition: left 0.3s;
-    left: ${(props) => (props.open ? '0' : '-100vw')};
+    left: ${(props) => (props.isOpen ? '0' : '-100vw')};
   }
 `;
 
@@ -47,55 +49,60 @@ const Item = styled.div`
   padding: 1em;
 `;
 
-class Sidebar extends Component {
-  constructor(props) {
-    super(props);
-    this.onClick = this.onClick.bind(this);
-    this.state = {
-      open: false,
-    };
-  }
+const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleOpen = () => setIsOpen(!isOpen);
 
-  onClick() {
-    this.setState({ open: !this.state.open });
-  }
+  const darkMode = useDarkMode(false);
 
-  render() {
-    const { open } = this.state;
+  return (
+    <header>
+      <OpenBtnStyled onClick={toggleOpen} />
 
-    return (
-      <header>
-        <OpenBtnStyled onClick={this.onClick} />
+      <Content isOpen={isOpen}>
+        {isOpen ? <CloseBtnStyled onClick={toggleOpen} /> : null}
+        <Name>heyse li</Name>
+        <nav>
+          <Item>
+            <Link to="/contact" onClick={toggleOpen}>
+              contact
+            </Link>
+          </Item>
+          <Item>
+            <Link to="/work" onClick={toggleOpen}>
+              work
+            </Link>
+          </Item>
+          <Item>
+            <Link to="/publications" onClick={toggleOpen}>
+              publications
+            </Link>
+          </Item>
+          <Item>
+            <Link to="/resume" onClick={toggleOpen}>
+              resume
+            </Link>
+          </Item>
 
-        <Content open={open}>
-          {open ? <CloseBtnStyled onClick={this.onClick} /> : null}
-          <Name>heyse li</Name>
-          <nav>
-            <Item>
-              <Link to="/contact" onClick={this.onClick}>
-                contact
-              </Link>
-            </Item>
-            <Item>
-              <Link to="/work" onClick={this.onClick}>
-                work
-              </Link>
-            </Item>
-            <Item>
-              <Link to="/publications" onClick={this.onClick}>
-                publications
-              </Link>
-            </Item>
-            <Item>
-              <Link to="/resume" onClick={this.onClick}>
-                resume
-              </Link>
-            </Item>
-          </nav>
-        </Content>
-      </header>
-    );
-  }
-}
+          <Item>
+            {darkMode.value ? (
+              <LightBtn
+                onClick={darkMode.toggle}
+                size={24}
+                title="Toggle light mode"
+              />
+            ) : (
+              <DarkBtn
+                onClick={darkMode.toggle}
+                size={24}
+                title="Toggle dark mode"
+              />
+            )}
+          </Item>
+        </nav>
+      </Content>
+    </header>
+  );
+};
 
 export default Sidebar;
