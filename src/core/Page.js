@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import Sidebar from './Sidebar';
 import Content from './Content';
 import { headerFont } from './fonts';
 import useDarkMode from 'use-dark-mode';
-import theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -71,7 +70,7 @@ const Page = ({ children }) => {
   const darkMode = useDarkMode(false);
 
   return (
-    <ThemeProvider theme={darkMode.value ? theme.dark : theme.light}>
+    <>
       <GlobalStyle />
       <Wrapper>
         <div>
@@ -80,7 +79,7 @@ const Page = ({ children }) => {
         </div>
         <Content>{children}</Content>
       </Wrapper>
-    </ThemeProvider>
+    </>
   );
 };
 
