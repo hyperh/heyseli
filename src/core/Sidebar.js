@@ -86,9 +86,17 @@ const Sidebar = () => {
 
           <Item>
             {darkMode.value ? (
-              <LightBtn onClick={darkMode.toggle} size={24} />
+              <LightBtn
+                onClick={darkMode.toggle}
+                size={24}
+                title="Toggle light mode"
+              />
             ) : (
-              <DarkBtn onClick={darkMode.toggle} size={24} />
+              <DarkBtn
+                onClick={darkMode.toggle}
+                size={24}
+                title="Toggle dark mode"
+              />
             )}
           </Item>
         </nav>
