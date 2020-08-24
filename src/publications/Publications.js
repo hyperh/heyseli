@@ -17,13 +17,14 @@ const Wrapper = styled.div`
 
 const Publications = () => (
   <Wrapper>
+    <h1>Publications</h1>
     <p>
       I used to be in academia. Here are the papers I published during my time
       there.
     </p>
     {data.map((datum) => (
       <div key={datum.type}>
-        <h1>{datum.type}</h1>
+        <h2>{datum.type}</h2>
         <ol>
           {sortByYearDesc(datum.items).map((item) => {
             const {
