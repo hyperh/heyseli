@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { MdMenu as OpenBtn, MdClose as CloseBtn } from 'react-icons/md';
 import { FiMoon as DarkBtn, FiSun as LightBtn } from 'react-icons/fi';
 import styled from 'styled-components';
-import useDarkMode from 'use-dark-mode';
+import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
 const Content = styled.div`
   width: 12em;
@@ -52,8 +52,6 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => setIsOpen(!isOpen);
 
-  const darkMode = useDarkMode(false);
-
   return (
     <header>
       <OpenBtnStyled onClick={toggleOpen} />
@@ -84,19 +82,33 @@ const Sidebar = () => {
           </Item>
 
           <Item>
-            {darkMode.value ? (
-              <LightBtn
-                onClick={darkMode.toggle}
-                size={24}
-                title="Toggle light mode"
-              />
-            ) : (
-              <DarkBtn
-                onClick={darkMode.toggle}
-                size={24}
-                title="Toggle dark mode"
-              />
-            )}
+            <ThemeToggler>
+              {({ theme, toggleTheme }) => {
+                // Don't render anything at compile time. Deferring rendering until we
+                // know which theme to use on the client avoids incorrect initial
+                // state being displayed.
+                if (theme == null) {
+                  return null;
+                }
+
+                const onClick = () =>
+                  toggleTheme(theme === 'dark' ? 'light' : 'dark');
+
+                return theme === 'dark' ? (
+                  <LightBtn
+                    onClick={onClick}
+                    size={24}
+                    title="Toggle light mode"
+                  />
+                ) : (
+                  <DarkBtn
+                    onClick={onClick}
+                    size={24}
+                    title="Toggle dark mode"
+                  />
+                );
+              }}
+            </ThemeToggler>
           </Item>
         </nav>
       </Content>

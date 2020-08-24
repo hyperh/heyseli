@@ -31,7 +31,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-use-dark-mode',
+    'gatsby-plugin-dark-mode',
     {
       resolve: `gatsby-plugin-typography`,
       options: {
