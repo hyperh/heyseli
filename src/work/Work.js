@@ -13,6 +13,10 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: baseline;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 const Work = () => (
