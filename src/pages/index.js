@@ -1,5 +1,5 @@
-import Contact from './contact';
+import About from './about';
 
-const HomePage = Contact;
+const HomePage = About;
 
 export default HomePage;

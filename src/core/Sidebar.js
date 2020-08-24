@@ -63,8 +63,8 @@ const Sidebar = () => {
         <Name>heyse li</Name>
         <nav>
           <Item>
-            <Link to="/contact" onClick={toggleOpen}>
-              contact
+            <Link to="/about" onClick={toggleOpen}>
+              about
             </Link>
           </Item>
           <Item>
