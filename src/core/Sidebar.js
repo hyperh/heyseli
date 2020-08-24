@@ -6,9 +6,8 @@ import styled from 'styled-components';
 import useDarkMode from 'use-dark-mode';
 
 const Content = styled.div`
-  width: 17em;
+  width: 12em;
   height: 100vh;
-  padding: 3em;
 
   @media (max-width: 768px) {
     position: fixed;
@@ -17,6 +16,7 @@ const Content = styled.div`
     width: 100vw;
     transition: left 0.3s;
     left: ${(props) => (props.isOpen ? '0' : '-100vw')};
+    padding: 4rem 2rem;
   }
 `;
 
@@ -42,11 +42,10 @@ const CloseBtnStyled = styled(CloseBtn)`
 
 const Name = styled.div`
   font-size: 2em;
-  padding: 0.5em;
 `;
 
 const Item = styled.div`
-  padding: 1em;
+  padding: 1em 0;
 `;
 
 const Sidebar = () => {
@@ -64,8 +63,8 @@ const Sidebar = () => {
         <Name>heyse li</Name>
         <nav>
           <Item>
-            <Link to="/contact" onClick={toggleOpen}>
-              contact
+            <Link to="/about" onClick={toggleOpen}>
+              about
             </Link>
           </Item>
           <Item>

@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   margin: auto;
   display: flex;
   justify-content: center;
+  padding: 4rem 2rem;
 `;
 
 const Page = ({ children }) => {

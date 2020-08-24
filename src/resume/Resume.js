@@ -1,15 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import data from './data';
-import { bodyFont } from '../core/fonts';
 
 const { experience, education } = data;
 
-const Wrapper = styled.div`
-  p {
-    font-family: ${bodyFont};
-  }
-`;
+const Wrapper = styled.div``;
 
 const Resume = () => (
   <Wrapper>
@@ -27,7 +22,7 @@ const Resume = () => (
     </div>
 
     <div>
-      <h1>Education</h1>
+      <h2>Education</h2>
       {education.map((x) => {
         const { school, type, faculty, gradYear } = x;
         return (

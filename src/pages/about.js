@@ -1,13 +1,13 @@
 import React from 'react';
-import Contact from '../contact/Contact';
+import Contact from '../about/About';
 import Page from '../core/Page';
 import SEO from '../core/SEO';
 
-const ContactPage = () => (
+const AboutPage = () => (
   <Page>
-    <SEO title="Contact" />
+    <SEO title="About" />
     <Contact />
   </Page>
 );
 
-export default ContactPage;
+export default AboutPage;

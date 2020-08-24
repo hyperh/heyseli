@@ -10,23 +10,26 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: baseline;
   flex-wrap: wrap;
 `;
 
 const Work = () => (
-  <Wrapper>
-    {sorted.map((item) => (
-      <WorkPreview
-        key={item.name}
-        name={item.name}
-        platform={item.platform}
-        link={item.link}
-        previewImg={item.previewImg}
-      />
-    ))}
-  </Wrapper>
+  <div>
+    <h1>Work</h1>
+    <Wrapper>
+      {sorted.map((item) => (
+        <WorkPreview
+          key={item.name}
+          name={item.name}
+          platform={item.platform}
+          link={item.link}
+          previewImg={item.previewImg}
+        />
+      ))}
+    </Wrapper>
+  </div>
 );
 
 export default Work;

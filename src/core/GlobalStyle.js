@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import { headerFont } from './fonts';
 
 const Colors = {
   DARK_GREY: '#111010',
@@ -7,40 +6,41 @@ const Colors = {
   GREY_20: '#333333',
   GREY_TEXT_SECONDARY: 'rgba(0, 0, 0, 0.54)',
   YELLOW: '#E8BE1B',
+  TEAL: '#3AAFA9',
 };
 
 const GlobalStyle = createGlobalStyle`
   html,
   body {
-    font-family: ${headerFont}, serif;
     margin: 0;
     height: 100%;
     width: 100%;
-    font-weight: 300;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   body.light-mode {
     --backgroundColor: white;
+    --primaryText: ${Colors.GREY_20};
     --secondaryText: ${Colors.GREY_TEXT_SECONDARY};
 
     background-color: var(--backgroundColor);
-    color: ${Colors.GREY_20};
+    color: var(--primaryText);
 
     a {
-      color: blue;
+      color: ${Colors.TEAL};
 
       &:visited {
-        color: blue;
+        color: ${Colors.TEAL};
       }
     }
   }
   body.dark-mode {
     --backgroundColor: ${Colors.DARK_GREY};
+    --primaryText: ${Colors.GREY_60};
     --secondaryText: ${Colors.GREY_60};
 
     background-color: var(--backgroundColor);
-    color: ${Colors.GREY_60};
+    color: var(--primaryText);
 
     a {
       color: ${Colors.YELLOW};

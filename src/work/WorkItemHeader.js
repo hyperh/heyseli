@@ -12,11 +12,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const Platforms = styled.p`
+const Platforms = styled.div`
   color: var(--secondaryText);
 `;
 
-const headerImgSide = '10em';
+const headerImgSide = '7em';
 const HeaderImg = styled.div`
   display: flex;
   justify-content: center;
@@ -43,10 +43,11 @@ const WorkItemHeader = ({ name, platforms, url, headerImg }) => (
       <Platforms>{platforms.join(', ')}</Platforms>
       {typeof url === 'string' && <ExternalLink to={url}>Link</ExternalLink>}
       {Array.isArray(url) &&
-        url.map((u) => (
-          <p key={u.name}>
+        url.map((u, i) => (
+          <span key={u.name}>
             <ExternalLink to={u.value}>{u.name}</ExternalLink>
-          </p>
+            {i === url.length - 1 ? '' : ', '}
+          </span>
         ))}
     </div>
   </Wrapper>

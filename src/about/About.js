@@ -11,7 +11,6 @@ import ExternalLink from '../core/ExternalLink';
 import data from './data';
 import HiddenEmail from './HiddenEmail';
 import IntroLink from './IntroLink';
-import { bodyFont } from '../core/fonts';
 
 const linkStyle = `
 display: flex;
@@ -33,14 +32,13 @@ const StyledLink = styled(Link)`
 
 const Wrapper = styled.div`
   width: 100%;
-  font-family: ${bodyFont};
-  font-weight: 300;
 `;
 
 /* eslint-disable max-len */
 const { email, twitter, medium, github, github2 } = data;
 const Contact = () => (
   <Wrapper>
+    <h1>About</h1>
     <p>
       Hi! Thanks for visiting. I&apos;m Heyse and I&apos;m a full stack
       developer and designer. I love to bring ideas to life.

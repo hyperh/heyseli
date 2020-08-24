@@ -6,7 +6,6 @@ import CitationChicago from './CitationChicago';
 import Tags from './Tags';
 import data from './data';
 import ExternalLink from '../core/ExternalLink';
-import { bodyFont } from '../core/fonts';
 
 /* eslint-disable max-len, global-require */
 const sortByYear = sortBy((o) => o.year);
@@ -14,22 +13,18 @@ const sortByYearDesc = (objs) => reverse(sortByYear(objs));
 
 const Wrapper = styled.div`
   width: 100%;
-
-  p {
-    font-family: ${bodyFont};
-    font-weight: 300;
-  }
 `;
 
 const Publications = () => (
   <Wrapper>
+    <h1>Publications</h1>
     <p>
       I used to be in academia. Here are the papers I published during my time
       there.
     </p>
     {data.map((datum) => (
       <div key={datum.type}>
-        <h1>{datum.type}</h1>
+        <h2>{datum.type}</h2>
         <ol>
           {sortByYearDesc(datum.items).map((item) => {
             const {
