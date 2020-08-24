@@ -13,13 +13,17 @@ const Text = styled.div`
   }
 `;
 
+const StyledH2 = styled.h2`
+  margin-bottom: 0.5rem;
+`;
+
 const IntroLink = ({ Icon, header, desc, url, Link }) => (
   <Link to={url}>
     <IconWrapper>
       <Icon />
     </IconWrapper>
     <Text>
-      <h2>{header}</h2>
+      <StyledH2>{header}</StyledH2>
       <div>{desc}</div>
     </Text>
   </Link>
