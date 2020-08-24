@@ -41,7 +41,6 @@ const CloseBtnStyled = styled(CloseBtn)`
 
 const Name = styled.div`
   font-size: 2em;
-  padding: 0.5em 0;
 `;
 
 const Item = styled.div`
