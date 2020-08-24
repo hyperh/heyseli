@@ -6,9 +6,9 @@ import styled from 'styled-components';
 import useDarkMode from 'use-dark-mode';
 
 const Content = styled.div`
-  width: 17em;
+  width: 12em;
   height: 100vh;
-  padding: 3em;
+  padding: 2em 0 2em 2em;
 
   @media (max-width: 768px) {
     position: fixed;
