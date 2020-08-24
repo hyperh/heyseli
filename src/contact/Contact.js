@@ -38,6 +38,7 @@ const Wrapper = styled.div`
 const { email, twitter, medium, github, github2 } = data;
 const Contact = () => (
   <Wrapper>
+    <h1>About</h1>
     <p>
       Hi! Thanks for visiting. I&apos;m Heyse and I&apos;m a full stack
       developer and designer. I love to bring ideas to life.
