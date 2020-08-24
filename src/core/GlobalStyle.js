@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import { headerFont } from './fonts';
 
 const Colors = {
   DARK_GREY: '#111010',
@@ -12,11 +11,9 @@ const Colors = {
 const GlobalStyle = createGlobalStyle`
   html,
   body {
-    font-family: ${headerFont}, serif;
     margin: 0;
     height: 100%;
     width: 100%;
-    font-weight: 300;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 

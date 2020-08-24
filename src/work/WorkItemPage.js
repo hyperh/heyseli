@@ -4,14 +4,11 @@ import React from 'react';
 import styled from 'styled-components';
 import WorkItemHeader from './WorkItemHeader';
 import Gallery from './Gallery';
-import { bodyFont } from '../core/fonts';
 import Page from '../core/Page';
 import data from './data';
 import SEO from '../core/SEO';
 
 const fontStyle = `
-font-family: ${bodyFont};
-font-weight: 300;
 `;
 const Desc = styled.div`
   ${fontStyle};

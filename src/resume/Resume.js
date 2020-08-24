@@ -1,15 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import data from './data';
-import { bodyFont } from '../core/fonts';
 
 const { experience, education } = data;
 
-const Wrapper = styled.div`
-  p {
-    font-family: ${bodyFont};
-  }
-`;
+const Wrapper = styled.div``;
 
 const Resume = () => (
   <Wrapper>

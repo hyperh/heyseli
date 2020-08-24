@@ -6,7 +6,6 @@ import CitationChicago from './CitationChicago';
 import Tags from './Tags';
 import data from './data';
 import ExternalLink from '../core/ExternalLink';
-import { bodyFont } from '../core/fonts';
 
 /* eslint-disable max-len, global-require */
 const sortByYear = sortBy((o) => o.year);
@@ -14,11 +13,6 @@ const sortByYearDesc = (objs) => reverse(sortByYear(objs));
 
 const Wrapper = styled.div`
   width: 100%;
-
-  p {
-    font-family: ${bodyFont};
-    font-weight: 300;
-  }
 `;
 
 const Publications = () => (
