@@ -1,17 +1,10 @@
 import Typography from 'typography';
+import theme from 'typography-theme-moraga';
 
-const typography = new Typography({
-  baseFontSize: '18px',
-  baseLineHeight: 1.666,
-  headerFontFamily: [
-    'Avenir Next',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif',
-  ],
-  bodyFontFamily: ['Georgia', 'serif'],
-});
+// Override
+theme.headerColor = 'var(--primaryText)';
+theme.scaleRatio = 2;
+
+const typography = new Typography(theme);
 
 export default typography;
