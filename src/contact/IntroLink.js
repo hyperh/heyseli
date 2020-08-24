@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
-import { headerFont } from '../core/fonts';
 import IconWrapper from './IconWrapper';
 
 const Text = styled.div`
@@ -14,18 +13,13 @@ const Text = styled.div`
   }
 `;
 
-const Header = styled.div`
-  font-family: ${headerFont};
-  font-weight: bold;
-`;
-
 const IntroLink = ({ Icon, header, desc, url, Link }) => (
   <Link to={url}>
     <IconWrapper>
       <Icon />
     </IconWrapper>
     <Text>
-      <Header>{header}</Header>
+      <h1>{header}</h1>
       <div>{desc}</div>
     </Text>
   </Link>
