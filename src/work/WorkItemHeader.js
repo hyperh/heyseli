@@ -16,7 +16,7 @@ const Platforms = styled.p`
   color: var(--secondaryText);
 `;
 
-const headerImgSide = '10em';
+const headerImgSide = '7em';
 const HeaderImg = styled.div`
   display: flex;
   justify-content: center;
