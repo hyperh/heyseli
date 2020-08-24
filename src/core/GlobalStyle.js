@@ -19,10 +19,11 @@ const GlobalStyle = createGlobalStyle`
 
   body.light-mode {
     --backgroundColor: white;
+    --primaryText: ${Colors.GREY_20};
     --secondaryText: ${Colors.GREY_TEXT_SECONDARY};
 
     background-color: var(--backgroundColor);
-    color: ${Colors.GREY_20};
+    color: var(--primaryText);
 
     a {
       color: blue;
@@ -34,10 +35,11 @@ const GlobalStyle = createGlobalStyle`
   }
   body.dark-mode {
     --backgroundColor: ${Colors.DARK_GREY};
+    --primaryText: ${Colors.GREY_60};
     --secondaryText: ${Colors.GREY_60};
 
     background-color: var(--backgroundColor);
-    color: ${Colors.GREY_60};
+    color: var(--primaryText);
 
     a {
       color: ${Colors.YELLOW};
