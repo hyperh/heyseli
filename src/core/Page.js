@@ -9,14 +9,12 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: 4rem 2rem;
-  max-width: 60rem;
+  max-width: 55rem;
   background-color: var(--backgroundColor);
 
   /* Center the page */
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 
   /* Border and shadow */
   box-shadow: rgba(0, 0, 0, 0.2) 0 0.125rem 0.3125rem 0;
