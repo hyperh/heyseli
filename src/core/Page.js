@@ -6,12 +6,21 @@ import Content from './Content';
 import GlobalStyle from './GlobalStyle';
 
 const Wrapper = styled.div`
-  height: 100%;
-  width: 100%;
-  margin: auto;
   display: flex;
   justify-content: center;
   padding: 4rem 2rem;
+  max-width: 60rem;
+  background-color: var(--backgroundColor);
+
+  /* Center the page */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  /* Border and shadow */
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0.125rem 0.3125rem 0;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.1);
 `;
 
 const Page = ({ children }) => {
@@ -20,7 +29,6 @@ const Page = ({ children }) => {
       <GlobalStyle />
       <Wrapper>
         <Sidebar />
-
         <Content>{children}</Content>
       </Wrapper>
     </>

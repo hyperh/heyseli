@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import lightBg from './assets/beanstalk.png';
+import darkBg from './assets/beanstalk-dark.png';
 
 const Colors = {
   DARK_GREY: '#111010',
@@ -13,8 +15,6 @@ const GlobalStyle = createGlobalStyle`
   html,
   body {
     margin: 0;
-    height: 100%;
-    width: 100%;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
@@ -23,8 +23,8 @@ const GlobalStyle = createGlobalStyle`
     --primaryText: ${Colors.GREY_20};
     --secondaryText: ${Colors.GREY_TEXT_SECONDARY};
 
-    background-color: var(--backgroundColor);
     color: var(--primaryText);
+    background-image: url(${lightBg});
 
     a {
       color: ${Colors.TEAL};
@@ -39,8 +39,8 @@ const GlobalStyle = createGlobalStyle`
     --primaryText: ${Colors.GREY_60};
     --secondaryText: ${Colors.GREY_60};
 
-    background-color: var(--backgroundColor);
     color: var(--primaryText);
+    background-image: url(${darkBg});
 
     a {
       color: ${Colors.YELLOW};
