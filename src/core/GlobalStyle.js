@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   html,
   body {
     margin: 0;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
   }
 
   body.light {
@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     --secondaryText: ${Colors.GREY_TEXT_SECONDARY};
 
     color: var(--primaryText);
-    background-image: url(${lightBg});
+    background: url(${lightBg});
 
     a {
       color: ${Colors.TEAL};
@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
     --secondaryText: ${Colors.GREY_60};
 
     color: var(--primaryText);
-    background-image: url(${darkBg});
+    background: url(${darkBg});
 
     a {
       color: ${Colors.YELLOW};

@@ -9,8 +9,9 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: 4rem 2rem;
-  max-width: 55rem;
+  max-width: 60rem;
   background-color: var(--backgroundColor);
+  transition: background-color 0.3s ease;
 
   /* Center the page */
   margin-left: auto;
